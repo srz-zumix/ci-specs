@@ -1,0 +1,3 @@
+[submodule "ci-skip"]
+	path = ci-skip
+	url = https://github.com/srz-zumix/ci-skip.git
