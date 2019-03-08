@@ -13,5 +13,5 @@
 |[Semaphore CI](https://semaphoreci.com)||
 |[Semaphore CI 2.0](https://semaphoreci.com/product)||
 |[Shippable](http://shippable.com)||
-|[Travis CI](https://travis-ci.org/)|
+|[Travis CI](https://travis-ci.com/)|
 |[wercker](http://www.wercker.com/)||
