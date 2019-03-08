@@ -5,7 +5,7 @@
 |[Bitrise](https://www.bitrise.io)||
 |[Buddy](https://buddy.works)||
 |[Circle CI](https://circleci.com)||
-|[Cirrus CI]https://cirrus-ci.org/)||
+|[Cirrus CI](https://cirrus-ci.org/)||
 |[Codefresh](https://codefresh.io/)||
 |[Codeship](https://codeship.com/)||
 |[Rocro](https://rocro.com/)||
