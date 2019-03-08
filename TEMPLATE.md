@@ -10,7 +10,8 @@
 |[Codeship](https://codeship.com/)||
 |[Rocro](https://rocro.com/)||
 |[Scrutinizer](https://scrutinizer-ci.com)||
-|[Semaphore](https://semaphoreci.com)||
+|[Semaphore CI](https://semaphoreci.com)||
+|[Semaphore CI 2.0](https://semaphoreci.com/product)||
 |[Shippable](http://shippable.com)||
 |[Travis CI](https://travis-ci.org/)|
 |[wercker](http://www.wercker.com/)||
