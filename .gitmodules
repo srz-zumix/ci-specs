@@ -1,3 +1,6 @@
 [submodule "ci-skip"]
 	path = ci-skip
 	url = https://github.com/srz-zumix/ci-skip.git
+[submodule "ci-yaml"]
+	path = ci-yaml
+	url = https://github.com/srz-zumix/ci-yaml.git
