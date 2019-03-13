@@ -8,6 +8,7 @@
 |[Cirrus CI](https://cirrus-ci.org/)||
 |[Codefresh](https://codefresh.io/)||
 |[Codeship](https://codeship.com/)||
+|[Drone Cloud](https://cloud.drone.io/)||
 |[Rocro](https://rocro.com/)||
 |[Scrutinizer](https://scrutinizer-ci.com)||
 |[Semaphore CI](https://semaphoreci.com)||
