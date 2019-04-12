@@ -16,13 +16,13 @@ ci services specs check
 
 ## CI Status
 
-|CI|Status Page|
+|Status Page|Subscribe|
 |:--|:--|
-|[AppVeyor](https://www.appveyor.com)||
+|[AppVeyor](https://status.appveyor.com/#)|[Atom Feed](https://status.appveyor.com/history.atom),[RSS](https://status.appveyor.com/history.rss)|
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|
 |[Bitrise](https://www.bitrise.io)||
 |[Buddy](https://buddy.works)||
-|[Circle CI](https://circleci.com)|[https://status.circleci.com/](https://status.circleci.com/)|
+|[Circle CI](https://status.circleci.com/)|[Atom Feed](https://status.circleci.com/history.atom),[RSS](https://status.circleci.com/history.rss),[Twitter](https://twitter.com/CircleCIstatus),Webhook|
 |[Cirrus CI](https://cirrus-ci.org/)||
 |[Codefresh](https://codefresh.io/)||
 |[Codeship](https://codeship.com/)||
