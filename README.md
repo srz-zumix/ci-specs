@@ -18,11 +18,11 @@ ci services specs check
 
 |Status Page|Subscribe|
 |:--|:--|
-|[AppVeyor](https://status.appveyor.com/#)|[Atom Feed](https://status.appveyor.com/history.atom),[RSS](https://status.appveyor.com/history.rss)|
+|[AppVeyor](https://status.appveyor.com/#)|Email,[Atom Feed](https://status.appveyor.com/history.atom),[RSS](https://status.appveyor.com/history.rss)|
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|
 |[Bitrise](https://www.bitrise.io)||
 |[Buddy](https://buddy.works)||
-|[Circle CI](https://status.circleci.com/)|[Atom Feed](https://status.circleci.com/history.atom),[RSS](https://status.circleci.com/history.rss),[Twitter](https://twitter.com/CircleCIstatus),Webhook|
+|[Circle CI](https://status.circleci.com/)|Email,Phone,[Atom Feed](https://status.circleci.com/history.atom),[RSS](https://status.circleci.com/history.rss),[Twitter](https://twitter.com/CircleCIstatus),Webhook|
 |[Cirrus CI](https://cirrus-ci.org/)||
 |[Codefresh](https://codefresh.io/)||
 |[Codeship](https://codeship.com/)||
