@@ -34,3 +34,26 @@ ci services specs check
 |[Shippable](http://shippable.com)||
 |[Travis CI](https://travis-ci.com/)|
 |[wercker](http://www.wercker.com/)||
+
+# Open Source or Free Plan Available Features and Limitations
+
+|CI|OSS or Free|Build Limit|
+|:--|:--|:--|
+|[AppVeyor](https://www.appveyor.com)|[Free for OSS](https://www.appveyor.com/pricing/)|-|
+|[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|[Free for OSS](https://azure.microsoft.com/ja-jp/pricing/details/devops/azure-devops-services/)|-|
+|[Bitrise](https://www.bitrise.io)||
+|[Buddy](https://buddy.works)||
+|[Circle CI](https://circleci.com)||
+|[Cirrus CI](https://cirrus-ci.org/)||
+|[Codefresh](https://codefresh.io/)||
+|[Codeship](https://codeship.com/)||
+|[Drone Cloud](https://cloud.drone.io/)||
+|[Rocro](https://rocro.com/)||
+|[Scrutinizer](https://scrutinizer-ci.com)||
+|[Semaphore CI](https://semaphoreci.com)||
+|[Semaphore CI 2.0](https://semaphoreci.com/product)||
+|[Shippable](http://shippable.com)||
+|[Travis CI](https://travis-ci.com/)|
+|[wercker](http://www.wercker.com/)||
+
+
