@@ -45,7 +45,7 @@ ci services specs check
 |[Buddy](https://buddy.works)||||
 |[Circle CI](https://circleci.com)||||
 |[Cirrus CI](https://cirrus-ci.org/)||||
-|[Codefresh](https://codefresh.io/)||||
+|[Codefresh](https://codefresh.io/)|[Free Plan](https://codefresh.io/pricing/)|Unlimited|-|-|15min?|
 |[Codeship](https://codeship.com/)||||
 |[Drone Cloud](https://cloud.drone.io/)||||
 |[Rocro](https://rocro.com/)||||
