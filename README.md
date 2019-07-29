@@ -44,7 +44,7 @@ ci services specs check
 |[Bitrise](https://www.bitrise.io)|[Free for OSS](https://blog.bitrise.io/free-developer-plan-features-for-open-source-projects-on-bitrise)|Unlimited|45min/build||
 |[Buddy](https://buddy.works)||||
 |[Circle CI](https://circleci.com)||||
-|[Cirrus CI](https://cirrus-ci.org/)||||
+|[Cirrus CI](https://cirrus-ci.org/)|[Free for OSS](https://cirrus-ci.org/features/#free-for-open-source)|||
 |[Codefresh](https://codefresh.io/)|[Free Plan](https://codefresh.io/pricing/)|Unlimited|-|15min ?|
 |[Codeship](https://codeship.com/)||||
 |[Drone Cloud](https://cloud.drone.io/)||||
