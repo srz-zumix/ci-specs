@@ -37,15 +37,15 @@ ci services specs check
 
 # Open Source or Free Plan Available Features and Limitations
 
-|CI|OSS or Free|Build Limit|Timeout|No Output Timeout|
+|CI|OSS or Free|Build Limit|Timeout|No Output Timeout|Any Limits|
 |:--|:--|:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com)|[Free for OSS](https://www.appveyor.com/pricing/)|Unlimited|-||
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|[Free for OSS](https://azure.microsoft.com/ja-jp/pricing/details/devops/azure-devops-services/)|Unlimited|-||
-|[Bitrise](https://www.bitrise.io)|[Free for OSS](https://blog.bitrise.io/free-developer-plan-features-for-open-source-projects-on-bitrise)|Unlimited|45min/build||
+|[Bitrise](https://www.bitrise.io)|[Free for OSS](https://blog.bitrise.io/free-developer-plan-features-for-open-source-projects-on-bitrise)|Unlimited|45min||
 |[Buddy](https://buddy.works)||||
 |[Circle CI](https://circleci.com)||||
-|[Cirrus CI](https://cirrus-ci.org/)|[Free for OSS](https://cirrus-ci.org/features/#free-for-open-source)|||
-|[Codefresh](https://codefresh.io/)|[Free Plan](https://codefresh.io/pricing/)|Unlimited|-|15min ?|
+|[Cirrus CI](https://cirrus-ci.org/)|[Free for OSS](https://cirrus-ci.org/features/#free-for-open-source)||[60min](https://cirrus-ci.org/faq/#instance-timed-out)(max 2h)||[Parallel VMs limit](https://cirrus-ci.org/faq/#are-there-any-limits)|
+|[Codefresh](https://codefresh.io/)|[Free Plan](https://codefresh.io/pricing/)|Unlimited|60min?|15min ?|
 |[Codeship](https://codeship.com/)||||
 |[Drone Cloud](https://cloud.drone.io/)||||
 |[Rocro](https://rocro.com/)||||
