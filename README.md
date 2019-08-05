@@ -48,7 +48,7 @@ ci services specs check
 |~~[Codefresh](https://codefresh.io/)~~|~~[Free Plan](https://codefresh.io/pricing/)~~|~~Unlimited?~~|~~60min?~~|~~15min ?~~|
 |[Codefresh](https://codefresh.io/)|[Free Plan](https://github.com/marketplace/codefresh)|120/month|60min?|15min ?|
 |[Codeship](https://codeship.com/)||||
-|[Drone Cloud](https://cloud.drone.io/)||||
+|[Drone Cloud](https://cloud.drone.io/)|Free for OSS|||
 |[Rocro](https://rocro.com/)||||
 |[Scrutinizer](https://scrutinizer-ci.com)||||
 |[Semaphore CI](https://semaphoreci.com)||||
