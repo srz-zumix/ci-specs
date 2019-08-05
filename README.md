@@ -42,7 +42,7 @@ ci services specs check
 |[AppVeyor](https://www.appveyor.com)|[Free for OSS](https://www.appveyor.com/pricing/)|Unlimited|-||
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|[Free for OSS](https://azure.microsoft.com/ja-jp/pricing/details/devops/azure-devops-services/)|Unlimited|-||
 |[Bitrise](https://www.bitrise.io)|[Free for OSS](https://blog.bitrise.io/free-developer-plan-features-for-open-source-projects-on-bitrise)|Unlimited|45min||
-|[Buddy](https://buddy.works)||||
+|[Buddy](https://buddy.works)|[Free for OSS](https://buddy.works/free-for-open-source)||5 projects / 500 MB cache / 1 GB & 2vCPU performance|
 |[Circle CI](https://circleci.com)||||
 |[Cirrus CI](https://cirrus-ci.org/)|[Free for OSS](https://cirrus-ci.org/features/#free-for-open-source)||[60min](https://cirrus-ci.org/faq/#instance-timed-out)(max 2h)||[Parallel VMs limit](https://cirrus-ci.org/faq/#are-there-any-limits)|
 |~~[Codefresh](https://codefresh.io/)~~|~~[Free Plan](https://codefresh.io/pricing/)~~|~~Unlimited?~~|~~60min?~~|~~15min ?~~|
