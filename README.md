@@ -45,7 +45,8 @@ ci services specs check
 |[Buddy](https://buddy.works)||||
 |[Circle CI](https://circleci.com)||||
 |[Cirrus CI](https://cirrus-ci.org/)|[Free for OSS](https://cirrus-ci.org/features/#free-for-open-source)||[60min](https://cirrus-ci.org/faq/#instance-timed-out)(max 2h)||[Parallel VMs limit](https://cirrus-ci.org/faq/#are-there-any-limits)|
-|[Codefresh](https://codefresh.io/)|[Free Plan](https://codefresh.io/pricing/)|Unlimited|60min?|15min ?|
+|~~[Codefresh](https://codefresh.io/)~~|~~[Free Plan](https://codefresh.io/pricing/)~~|~~Unlimited?~~|~~60min?~~|~~15min ?~~|
+|[Codefresh](https://codefresh.io/)|[Free Plan](https://github.com/marketplace/codefresh)|120|60min?|15min ?|
 |[Codeship](https://codeship.com/)||||
 |[Drone Cloud](https://cloud.drone.io/)||||
 |[Rocro](https://rocro.com/)||||
