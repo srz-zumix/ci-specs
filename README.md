@@ -44,14 +44,14 @@ ci services specs check
 |[Bitrise](https://www.bitrise.io)|[Free for OSS](https://blog.bitrise.io/free-developer-plan-features-for-open-source-projects-on-bitrise)|Unlimited|45min||
 |[Buddy](https://buddy.works)|[Free for OSS](https://buddy.works/free-for-open-source)|120/month|||5 projects / 500 MB cache / 1 GB & 2vCPU performance|
 |[Circle CI](https://circleci.com)||||
-|[Cirrus CI](https://cirrus-ci.org/)|[Free for OSS](https://cirrus-ci.org/features/#free-for-open-source)||[60min](https://cirrus-ci.org/faq/#instance-timed-out)(max 2h)||[Parallel VMs limit](https://cirrus-ci.org/faq/#are-there-any-limits)|
+|[Cirrus CI](https://cirrus-ci.org/)|[Free for OSS](https://cirrus-ci.org/features/#free-for-open-source)|Unlimited?|[60min](https://cirrus-ci.org/faq/#instance-timed-out)(max 2h)||[Parallel VMs limit](https://cirrus-ci.org/faq/#are-there-any-limits)|
 |~~[Codefresh](https://codefresh.io/)~~|~~[Free Plan](https://codefresh.io/pricing/)~~|~~Unlimited?~~|~~60min?~~|~~15min ?~~|
 |[Codefresh](https://codefresh.io/)|[Free Plan](https://github.com/marketplace/codefresh)|120/month|60min?|15min ?|
 |[Codeship](https://codeship.com/)||||
 |[Drone Cloud](https://cloud.drone.io/)|Free for OSS|Unlimited?|-|-||
 |[Rocro](https://rocro.com/)||||
 |[Scrutinizer](https://scrutinizer-ci.com)||||
-|[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|||
+|[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|-||
 |[Shippable](http://shippable.com)||||
 |[Travis CI](https://travis-ci.com/)|||
 |[wercker](http://www.wercker.com/)||||
