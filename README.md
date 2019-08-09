@@ -40,7 +40,7 @@ ci services specs check
 |:--|:--|:--|:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com/docs/build-environment/)|:ballot_box_with_check:|:ballot_box_with_check:|||
 |[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:||:ballot_box_with_check:|
-|[Bitrise](https://www.bitrise.io)||
+|[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:||:ballot_box_with_check:|||
 |[Buddy](https://buddy.works)||
 |[Circle CI](https://circleci.com)||
 |[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|
