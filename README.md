@@ -20,7 +20,7 @@ ci services specs check
 |[Bitrise](https://www.bitrise.io)|[Free for OSS](https://blog.bitrise.io/free-developer-plan-features-for-open-source-projects-on-bitrise)|Unlimited|45min||
 |[Buddy](https://buddy.works)|[Free for OSS](https://buddy.works/free-for-open-source)|120 build/month|?|?|5 projects / 500 MB cache / 1 GB & 2vCPU performance|
 |[Circle CI](https://circleci.com)||||
-|[Cirrus CI](https://cirrus-ci.org/)|[Free for OSS](https://cirrus-ci.org/features/#free-for-open-source)|Unlimited?|[60min](https://cirrus-ci.org/faq/#instance-timed-out)(max 2h)||[Parallel VMs limit](https://cirrus-ci.org/faq/#are-there-any-limits)|
+|[Cirrus CI](https://cirrus-ci.org/)|[Free for OSS](https://cirrus-ci.org/pricing/)|Unlimited?|[60min](https://cirrus-ci.org/faq/#instance-timed-out)(max 2h)||[Parallel VMs limit](https://cirrus-ci.org/faq/#are-there-any-limits)|
 |~~[Codefresh](https://codefresh.io/)~~|~~[Free Plan](https://codefresh.io/pricing/)~~|~~Unlimited?~~|~~60min?~~|~~15min ?~~|
 |[Codefresh](https://codefresh.io/)|[Free Plan](https://github.com/marketplace/codefresh)|120 build/month|60min?|15min ?|
 |[Codeship](https://codeship.com/)|[Forever Free](https://codeship.com/pricing)|100 build/month|?|?||
@@ -32,7 +32,29 @@ ci services specs check
 |[Travis CI](https://travis-ci.com/)|||
 |[wercker](http://www.wercker.com/)||||
 
-## Etc
+## Support 
+
+### OS
+
+## Etc.
+
+|CI|Linux|Windows|macOS|FreeBSD|
+|:--|:--|:--|:--|:--|:--|
+|[AppVeyor](https://www.appveyor.com)||
+|[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|
+|[Bitrise](https://www.bitrise.io)||
+|[Buddy](https://buddy.works)||
+|[Circle CI](https://circleci.com)||
+|[Cirrus CI](https://cirrus-ci.org/)||
+|[Codefresh](https://codefresh.io/)||
+|[Codeship](https://codeship.com/)||
+|[Drone Cloud](https://cloud.drone.io/)||
+|[INSPECODE](https://rocro.com/inspecode)||
+|[Scrutinizer](https://scrutinizer-ci.com)||
+|[Semaphore CI 2.0](https://semaphoreci.com/product)||
+|[Shippable](http://shippable.com)||
+|[Travis CI](https://travis-ci.com/)|
+|[wercker](http://www.wercker.com/)||
 
 [CI Status](./docs/ci-status.md)
 
