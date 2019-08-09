@@ -39,8 +39,8 @@ ci services specs check
 
 |CI|OSS or Free|Build Limit|Timeout|No Output Timeout|Any Limits|
 |:--|:--|:--|:--|:--|:--|
-|[AppVeyor](https://www.appveyor.com)|[Free for OSS](https://www.appveyor.com/pricing/)|Unlimited|-||
-|[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|[Free for OSS](https://azure.microsoft.com/ja-jp/pricing/details/devops/azure-devops-services/)|Unlimited|-||
+|[AppVeyor](https://www.appveyor.com)|[Free for OSS](https://www.appveyor.com/pricing/)|Unlimited|-|-||
+|[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|[Free for OSS](https://azure.microsoft.com/ja-jp/pricing/details/devops/azure-devops-services/)|Unlimited|-|-||
 |[Bitrise](https://www.bitrise.io)|[Free for OSS](https://blog.bitrise.io/free-developer-plan-features-for-open-source-projects-on-bitrise)|Unlimited|45min||
 |[Buddy](https://buddy.works)|[Free for OSS](https://buddy.works/free-for-open-source)|120/month|||5 projects / 500 MB cache / 1 GB & 2vCPU performance|
 |[Circle CI](https://circleci.com)||||
