@@ -47,7 +47,7 @@ ci services specs check
 |[Cirrus CI](https://cirrus-ci.org/)|[Free for OSS](https://cirrus-ci.org/features/#free-for-open-source)|Unlimited?|[60min](https://cirrus-ci.org/faq/#instance-timed-out)(max 2h)||[Parallel VMs limit](https://cirrus-ci.org/faq/#are-there-any-limits)|
 |~~[Codefresh](https://codefresh.io/)~~|~~[Free Plan](https://codefresh.io/pricing/)~~|~~Unlimited?~~|~~60min?~~|~~15min ?~~|
 |[Codefresh](https://codefresh.io/)|[Free Plan](https://github.com/marketplace/codefresh)|120/month|60min?|15min ?|
-|[Codeship](https://codeship.com/)||||
+|[Codeship](https://codeship.com/)|[Forever Free](https://codeship.com/pricing)|100/month|-|-||
 |[Drone Cloud](https://cloud.drone.io/)|Free for OSS|Unlimited?|-|-||
 |[Rocro](https://rocro.com/)||||
 |[Scrutinizer](https://scrutinizer-ci.com)||||
