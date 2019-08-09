@@ -43,13 +43,13 @@ ci services specs check
 |[Bitrise](https://www.bitrise.io)||
 |[Buddy](https://buddy.works)||
 |[Circle CI](https://circleci.com)||
-|[Cirrus CI](https://cirrus-ci.org/)|✅|✅|✅|✅|
+|[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|
 |[Codefresh](https://codefresh.io/)||
 |[Codeship](https://codeship.com/)||
 |[Drone Cloud](https://cloud.drone.io/)||
 |[INSPECODE](https://rocro.com/inspecode)||
 |[Scrutinizer](https://scrutinizer-ci.com)||
-|[Semaphore CI 2.0](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|✅||||
+|[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:||||
 |[Shippable](http://shippable.com)||
 |[Travis CI](https://travis-ci.com/)|
 |[wercker](http://www.wercker.com/)||
