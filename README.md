@@ -39,7 +39,7 @@ ci services specs check
 ## Etc.
 
 |CI|Linux|Windows|macOS|FreeBSD|
-|:--|:--|:--|:--|:--|:--|
+|:--|:--|:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com)||
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|
 |[Bitrise](https://www.bitrise.io)||
