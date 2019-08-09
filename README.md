@@ -6,17 +6,10 @@ ci services specs check
 
 [https://github.com/ligurio/awesome-ci](https://github.com/ligurio/awesome-ci) 
 
-## CI Skip
+## CI Examples
 
-[CI Skip](https://github.com/srz-zumix/ci-skip)
-
-## CI Yaml
-
-[CI Yaml](https://github.com/srz-zumix/ci-yaml)
-
-## CI Status
-
-[CI Status](./docs/ci-status.md)
+* [CI Skip](https://github.com/srz-zumix/ci-skip)
+* [CI Yaml](https://github.com/srz-zumix/ci-yaml)
 
 # Open Source or Free Plan Available Features and Limitations
 
@@ -38,3 +31,8 @@ ci services specs check
 |[Shippable](http://shippable.com)||||
 |[Travis CI](https://travis-ci.com/)|||
 |[wercker](http://www.wercker.com/)||||
+
+## Etc
+
+[CI Status](./docs/ci-status.md)
+
