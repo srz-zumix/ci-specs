@@ -19,7 +19,7 @@ ci services specs check
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|[Free for OSS](https://azure.microsoft.com/ja-jp/pricing/details/devops/azure-devops-services/)|Unlimited|?|?||
 |[Bitrise](https://www.bitrise.io)|[Free for OSS](https://blog.bitrise.io/free-developer-plan-features-for-open-source-projects-on-bitrise)|Unlimited|45min||
 |[Buddy](https://buddy.works)|[Free for OSS](https://buddy.works/free-for-open-source)|120 build/month|?|?|5 projects / 500 MB cache / 1 GB & 2vCPU performance|
-|[Circle CI](https://circleci.com)||||
+|[Circle CI](https://circleci.com)|[Free Plan](https://circleci.com/pricing/usage/)|Unlimited?|2,500 free credits / week|||
 |[Cirrus CI](https://cirrus-ci.org/)|[Free for OSS](https://cirrus-ci.org/pricing/)|Unlimited?|[60min](https://cirrus-ci.org/faq/#instance-timed-out)(max 2h)||[Parallel VMs limit](https://cirrus-ci.org/faq/#are-there-any-limits)|
 |~~[Codefresh](https://codefresh.io/)~~|~~[Free Plan](https://codefresh.io/pricing/)~~|~~Unlimited?~~|~~60min?~~|~~15min ?~~|
 |[Codefresh](https://codefresh.io/)|[Free Plan](https://github.com/marketplace/codefresh)|120 build/month|60min?|15min ?|
@@ -36,13 +36,13 @@ ci services specs check
 
 ### Build Environment
 
-|CI|Linux|Windows|macOS|FreeBSD|Self Host|
+|CI|Linux|Windows|macOS|FreeBSD|Self Agent|
 |:--|:--|:--|:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com/docs/build-environment/)|:ballot_box_with_check:|:ballot_box_with_check:|||
 |[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:||:ballot_box_with_check:|
 |[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:||:ballot_box_with_check:|||
 |[Buddy](https://buddy.works)|:ballot_box_with_check:|||||
-|[Circle CI](https://circleci.com)||
+|[Circle CI](https://circleci.com)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|||
 |[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|
 |[Codefresh](https://codefresh.io/)||
 |[Codeship](https://codeship.com/)||
