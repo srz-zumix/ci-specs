@@ -49,7 +49,7 @@ ci services specs check
 |[Drone Cloud](https://cloud.drone.io/)||
 |[INSPECODE](https://rocro.com/inspecode)||
 |[Scrutinizer](https://scrutinizer-ci.com)||
-|[Semaphore CI 2.0](https://semaphoreci.com/product)||
+|[Semaphore CI 2.0](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|✅||||
 |[Shippable](http://shippable.com)||
 |[Travis CI](https://travis-ci.com/)|
 |[wercker](http://www.wercker.com/)||
