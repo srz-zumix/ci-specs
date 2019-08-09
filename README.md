@@ -51,7 +51,7 @@ ci services specs check
 |[Drone Cloud](https://cloud.drone.io/)|Free for OSS|Unlimited?|-|-||
 |[Rocro](https://rocro.com/)||||
 |[Scrutinizer](https://scrutinizer-ci.com)||||
-|[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|$20/month|||
+|[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|||
 |[Shippable](http://shippable.com)||||
 |[Travis CI](https://travis-ci.com/)|||
 |[wercker](http://www.wercker.com/)||||
