@@ -34,11 +34,11 @@ ci services specs check
 
 ## Support 
 
-### OS
+### Build Environment
 
 |CI|Linux|Windows|macOS|FreeBSD|
 |:--|:--|:--|:--|:--|
-|[AppVeyor](https://www.appveyor.com)||
+|[AppVeyor](https://www.appveyor.com/docs/build-environment/)|:ballot_box_with_check:|:ballot_box_with_check:|||
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|
 |[Bitrise](https://www.bitrise.io)||
 |[Buddy](https://buddy.works)||
@@ -49,7 +49,7 @@ ci services specs check
 |[Drone Cloud](https://cloud.drone.io/)||
 |[INSPECODE](https://rocro.com/inspecode)||
 |[Scrutinizer](https://scrutinizer-ci.com)||
-|[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:||||
+|[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:||:ballot_box_with_check:||
 |[Shippable](http://shippable.com)||
 |[Travis CI](https://travis-ci.com/)|
 |[wercker](http://www.wercker.com/)||
