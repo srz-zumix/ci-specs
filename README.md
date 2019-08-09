@@ -45,8 +45,8 @@ ci services specs check
 |[Circle CI](https://circleci.com/pricing/usage/)|:ballot_box_with_check:|:heavy_dollar_sign:|:heavy_dollar_sign:|||
 |[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|
 |[Codefresh](https://codefresh.io/)|:ballot_box_with_check:|||||
-|[Codeship](https://codeship.com/)|ballot_box_with_check:|||||
-|[Drone Cloud](https://cloud.drone.io/)||
+|[Codeship](https://codeship.com/)|:ballot_box_with_check:|||||
+|[Drone Cloud](https://docs.drone.io/user-guide/pipeline/steps/#platform)|:ballot_box_with_check:|:ballot_box_with_check:|||[:ballot_box_with_check:](https://docs.drone.io/runners/)|
 |[INSPECODE](https://rocro.com/inspecode)||
 |[Scrutinizer](https://scrutinizer-ci.com)||
 |[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:||:ballot_box_with_check:||
