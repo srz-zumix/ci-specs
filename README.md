@@ -36,8 +36,6 @@ ci services specs check
 
 ### OS
 
-## Etc.
-
 |CI|Linux|Windows|macOS|FreeBSD|
 |:--|:--|:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com)||
@@ -55,6 +53,8 @@ ci services specs check
 |[Shippable](http://shippable.com)||
 |[Travis CI](https://travis-ci.com/)|
 |[wercker](http://www.wercker.com/)||
+
+## Etc.
 
 [CI Status](./docs/ci-status.md)
 
