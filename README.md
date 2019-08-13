@@ -47,7 +47,7 @@ ci services specs check
 |[Codefresh](https://codefresh.io/)|:ballot_box_with_check:|||||
 |[Codeship](https://codeship.com/)|:ballot_box_with_check:|||||
 |[Drone Cloud](https://docs.drone.io/user-guide/pipeline/steps/#platform)|:ballot_box_with_check:|:ballot_box_with_check:|||[:ballot_box_with_check:](https://docs.drone.io/runners/)|
-|[INSPECODE](https://rocro.com/inspecode)||
+|[INSPECODE](https://rocro.com/inspecode)|-|-|-|-|-|
 |[Scrutinizer](https://scrutinizer-ci.com)||
 |[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:||:ballot_box_with_check:||
 |[Shippable](http://shippable.com)||
