@@ -26,7 +26,7 @@ ci services specs check
 |[Codeship](https://codeship.com/)|[Forever Free](https://codeship.com/pricing)|100 build/month|?|?||
 |[Drone Cloud](https://cloud.drone.io/)|Free for OSS|Unlimited?|?|?||
 |[INSPECODE](https://rocro.com/inspecode)|[Free Plan](https://rocro.com/inspecode/pricing)|1500 minutes/month|?|?||
-|[Scrutinizer](https://scrutinizer-ci.com)|[Free for OSS](https://scrutinizer-ci.com/pricing)||||
+|[Scrutinizer](https://scrutinizer-ci.com)|[Free for OSS](https://scrutinizer-ci.com/pricing)|?|?||
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
 |[Shippable](http://shippable.com)||||
 |[Travis CI](https://travis-ci.com/)|||
@@ -48,7 +48,7 @@ ci services specs check
 |[Codeship](https://codeship.com/)|:ballot_box_with_check:|||||
 |[Drone Cloud](https://docs.drone.io/user-guide/pipeline/steps/#platform)|:ballot_box_with_check:|:ballot_box_with_check:|||[:ballot_box_with_check:](https://docs.drone.io/runners/)|
 |[INSPECODE](https://rocro.com/inspecode)|-|-|-|-|-|
-|[Scrutinizer](https://scrutinizer-ci.com)||
+|[Scrutinizer](https://scrutinizer-ci.com)|:ballot_box_with_check:|||||
 |[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:||:ballot_box_with_check:||
 |[Shippable](http://shippable.com)||
 |[Travis CI](https://travis-ci.com/)|
