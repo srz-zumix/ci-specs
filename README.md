@@ -28,7 +28,7 @@ ci services specs check
 |[INSPECODE](https://rocro.com/inspecode)|[Free Plan](https://rocro.com/inspecode/pricing)|1500 minutes/month|?|?||
 |[Scrutinizer](https://scrutinizer-ci.com)|[Free for OSS](https://scrutinizer-ci.com/pricing)|?|?||
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
-|[Shippable](http://shippable.com)||||
+|[Shippable](https://www.shippable.com/pricing.html)|Unlimited (Public), 150 builds/month (Private)|?|?||
 |[Travis CI](https://travis-ci.com/)|||
 |[wercker](http://www.wercker.com/)||||
 
@@ -36,21 +36,21 @@ ci services specs check
 
 ### Build Environment
 
-|CI|Linux|Windows|macOS|FreeBSD|Self Agent|
-|:--|:--|:--|:--|:--|:--|
-|[AppVeyor](https://www.appveyor.com/docs/build-environment/)|:ballot_box_with_check:|:ballot_box_with_check:|||
-|[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:||:ballot_box_with_check:|
-|[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:||:ballot_box_with_check:|||
-|[Buddy](https://buddy.works)|:ballot_box_with_check:|||||
-|[Circle CI](https://circleci.com/pricing/usage/)|:ballot_box_with_check:|:heavy_dollar_sign:|:heavy_dollar_sign:|||
-|[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|
-|[Codefresh](https://codefresh.io/)|:ballot_box_with_check:|||||
-|[Codeship](https://codeship.com/)|:ballot_box_with_check:|||||
-|[Drone Cloud](https://docs.drone.io/user-guide/pipeline/steps/#platform)|:ballot_box_with_check:|:ballot_box_with_check:|||[:ballot_box_with_check:](https://docs.drone.io/runners/)|
-|[INSPECODE](https://rocro.com/inspecode)|-|-|-|-|-|
-|[Scrutinizer](https://scrutinizer-ci.com)|:ballot_box_with_check:|||||
+|CI|Linux|Windows|macOS|FreeBSD|CentOS|Self Agent|
+|:--|:--|:--|:--|:--|:--|:--|
+|[AppVeyor](https://www.appveyor.com/docs/build-environment/)|:ballot_box_with_check:|:ballot_box_with_check:||||
+|[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|||:ballot_box_with_check:|
+|[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:||:ballot_box_with_check:||||
+|[Buddy](https://buddy.works)|:ballot_box_with_check:||||||
+|[Circle CI](https://circleci.com/pricing/usage/)|:ballot_box_with_check:|:heavy_dollar_sign:|:heavy_dollar_sign:||||
+|[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|||
+|[Codefresh](https://codefresh.io/)|:ballot_box_with_check:||||||
+|[Codeship](https://codeship.com/)|:ballot_box_with_check:||||||
+|[Drone Cloud](https://docs.drone.io/user-guide/pipeline/steps/#platform)|:ballot_box_with_check:|:ballot_box_with_check:||||[:ballot_box_with_check:](https://docs.drone.io/runners/)|
+|[INSPECODE](https://rocro.com/inspecode)|-|-|-|-|-|-|
+|[Scrutinizer](https://scrutinizer-ci.com)|:ballot_box_with_check:||||||
 |[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:||:ballot_box_with_check:||
-|[Shippable](http://shippable.com)||
+|[Shippable](http://shippable.com)|:ballot_box_with_check:|:ballot_box_with_check:|:heavy_dollar_sign:||:ballot_box_with_check:||
 |[Travis CI](https://travis-ci.com/)|
 |[wercker](http://www.wercker.com/)||
 
