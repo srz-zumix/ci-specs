@@ -51,7 +51,7 @@ ci services specs check
 |[Scrutinizer](https://scrutinizer-ci.com)|:ballot_box_with_check:||||||
 |[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:||:ballot_box_with_check:||
 |[Shippable](http://shippable.com)|:ballot_box_with_check:|:ballot_box_with_check:|:heavy_dollar_sign:||:ballot_box_with_check:||
-|[Travis CI](https://docs.travis-ci.com/user/multi-os/)|:ballot_box_with_check:|:ballot_box_with_check::ballot_box_with_check:||||
+|[Travis CI](https://docs.travis-ci.com/user/multi-os/)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|||
 |[wercker](http://www.wercker.com/)||
 
 ## Etc.
