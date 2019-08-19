@@ -9,6 +9,7 @@
 |[Codefresh](https://codefresh.io/)||
 |[Codeship](https://codeship.com/)||
 |[Drone Cloud](https://cloud.drone.io/)||
+|[GitHub Actions](https://help.github.com/en/articles/about-github-actions)||
 |[INSPECODE](https://rocro.com/inspecode)||
 |[Scrutinizer](https://scrutinizer-ci.com)||
 |[Semaphore CI 2.0](https://semaphoreci.com/product)||
