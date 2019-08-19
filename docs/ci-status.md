@@ -17,4 +17,4 @@
 |[Semaphore CI 2.0](https://semaphoreci.com/product)||
 |[Shippable](http://shippable.com)||
 |[Travis CI](https://travis-ci.com/)|
-|[wercker](http://www.wercker.com/)||
+|[wercker](http://status.wercker.com/)|Email,[Twitter](https://twitter.com/wercker),[Atom Feed](http://status.wercker.com/history.atom),[RSS](http://status.wercker.com/history.rss)|
