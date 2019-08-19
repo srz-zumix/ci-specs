@@ -31,7 +31,7 @@ ci services specs check
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
 |[Shippable](https://www.shippable.com/pricing.html)|Unlimited (Public), 150 builds/month (Private)|?|?||
 |[Travis CI](https://travis-ci.com/)|[Free for OSS](https://travis-ci.com/plans)|Unlimited|?|?||
-|[wercker](http://www.wercker.com/)||||
+|[wercker](http://www.wercker.com/)|?|?|?|?||
 
 ## Support 
 
@@ -54,7 +54,7 @@ ci services specs check
 |[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:||:ballot_box_with_check:||
 |[Shippable](http://shippable.com)|:ballot_box_with_check:|:ballot_box_with_check:|:heavy_dollar_sign:||:ballot_box_with_check:||
 |[Travis CI](https://docs.travis-ci.com/user/multi-os/)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|||
-|[wercker](http://www.wercker.com/)||
+|[wercker](http://www.wercker.com/)|-|-|-|-|-|-|
 
 ## Etc.
 
