@@ -11,9 +11,9 @@
 |[Codefresh](https://codefresh.io/)||
 |[Codeship](https://codeship.com/)||
 |[Drone Cloud](https://cloud.drone.io/)||
+|[GitHub Actions](https://www.githubstatus.com/)||
 |[INSPECODE](https://rocro.com/inspecode)||
 |[Scrutinizer](https://scrutinizer-ci.com)||
-|[Semaphore CI](https://semaphoreci.com)||
 |[Semaphore CI 2.0](https://semaphoreci.com/product)||
 |[Shippable](http://shippable.com)||
 |[Travis CI](https://travis-ci.com/)|
