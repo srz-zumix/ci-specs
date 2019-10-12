@@ -1,0 +1,26 @@
+language: python
+python: 2.7
+script:
+  - echo OK
+
+#### RESOURCES CONFIG (GLOBAL ACROSS SUBSCRIPTION)
+
+resources:
+  - name: ci-specs-state
+    type: state
+
+#### JOBS CONFIG (GLOBAL ACROSS SUBSCRIPTION)
+
+jobs:
+  - name: ci-specs_runCI
+    type: runCI
+    steps:
+      - OUT: ci-specs-state
+      
+  - name: post-build
+    type: runSh
+    steps:
+      - IN: ci-specs-state
+      - TASK:
+          script:
+            - echo "post build..."
