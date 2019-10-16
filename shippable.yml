@@ -16,7 +16,7 @@ jobs:
     type: runCI
     steps:
       - OUT: ci-specs-state
-      
+
   - name: post-build
     type: runSh
     steps:
@@ -24,3 +24,10 @@ jobs:
       - TASK:
           script:
             - echo "post build..."
+
+  - name: update-submodule
+    type: runSh
+    steps:
+      - TASK:
+          script:
+            - echo "update submodule..."
