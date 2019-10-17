@@ -48,7 +48,7 @@ ci services specs check
 |[Codefresh](https://codefresh.io/)|:ballot_box_with_check:|||||||
 |[Codeship](https://codeship.com/)|:ballot_box_with_check:|||||||
 |[Drone Cloud](https://docs.drone.io/user-guide/pipeline/steps/#platform)|:ballot_box_with_check:|:ballot_box_with_check:|||||[:ballot_box_with_check:](https://docs.drone.io/runners/)|
-|[GitHub Actions](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idruns-on)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|||||
+|[GitHub Actions](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idruns-on)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:ballot_box_with_check:|-|
 |[INSPECODE](https://rocro.com/inspecode)|-|-|-|-|-||-|
 |[Scrutinizer](https://scrutinizer-ci.com)|:ballot_box_with_check:|||||||
 |[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:||:ballot_box_with_check:|||||
