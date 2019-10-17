@@ -14,7 +14,7 @@ ci services specs check
 # Open Source or Free Plan Available Features and Limitations
 
 |CI|OSS or Free|Build Limit|Timeout|No Output Timeout|Any Limits|
-|:--|:--|:--|:--|:--|:--|:--|
+|:--|:--|:--|:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com)|[Free for OSS](https://www.appveyor.com/pricing/)|Unlimited|?|?||
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|[Free for OSS](https://azure.microsoft.com/ja-jp/pricing/details/devops/azure-devops-services/)|Unlimited|?|?||
 |[Bitrise](https://www.bitrise.io)|[Free for OSS](https://blog.bitrise.io/free-developer-plan-features-for-open-source-projects-on-bitrise)|Unlimited|45min|?||
@@ -38,7 +38,7 @@ ci services specs check
 ### Build Environment
 
 |CI|Linux|Windows|macOS|FreeBSD|CentOS|Container|Self Agent|
-|:--|:--|:--|:--|:--|:--|:--|
+|:--|:--|:--|:--|:--|:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com/docs/build-environment/)|:ballot_box_with_check:|:ballot_box_with_check:|-|-|-||[:ballot_box_with_check:](https://ci.appveyor.com/build-clouds)|
 |[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-||:ballot_box_with_check:|
 |[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:||:ballot_box_with_check:|||||
