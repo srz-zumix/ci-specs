@@ -44,7 +44,7 @@ ci services specs check
 |[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:||:ballot_box_with_check:|||||
 |[Buddy](https://buddy.works)|:ballot_box_with_check:|||||||
 |[Circle CI](https://circleci.com/docs/2.0/configuration-reference/#docker--machine--macos--windows-executor)|:ballot_box_with_check:|:ballot_box_with_check:|:heavy_dollar_sign:|-|-|:ballot_box_with_check:|-|
-|[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|[:ballot_box_with_check:](https://cirrus-ci.org/guide/docker-builder-vm/)|-|
+|[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|[:ballot_box_with_check:](https://cirrus-ci.org/guide/docker-builder-vm/)|[:ballot_box_with_check:](https://cirrus-ci.org/guide/supported-computing-services/)|
 |[Codefresh](https://codefresh.io/)|:ballot_box_with_check:|||||||
 |[Codeship](https://codeship.com/)|:ballot_box_with_check:|||||||
 |[Drone Cloud](https://docs.drone.io/user-guide/pipeline/steps/#platform)|:ballot_box_with_check:|:ballot_box_with_check:|||||[:ballot_box_with_check:](https://docs.drone.io/runners/)|
