@@ -40,7 +40,7 @@ ci services specs check
 |CI|Linux|Windows|macOS|FreeBSD|CentOS|Container|Self Agent|
 |:--|:--|:--|:--|:--|:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com/docs/build-environment/)|:ballot_box_with_check:|:ballot_box_with_check:|-|-|-||[:ballot_box_with_check:](https://ci.appveyor.com/build-clouds)|
-|[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-||:ballot_box_with_check:|
+|[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:ballot_box_with_check:|:ballot_box_with_check:|
 |[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:||:ballot_box_with_check:|||||
 |[Buddy](https://buddy.works)|:ballot_box_with_check:|||||||
 |[Circle CI](https://circleci.com/docs/2.0/configuration-reference/#docker--machine--macos--windows-executor)|:ballot_box_with_check:|:ballot_box_with_check:|:heavy_dollar_sign:|-|-|:ballot_box_with_check:|-|
