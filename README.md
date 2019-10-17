@@ -37,24 +37,24 @@ ci services specs check
 
 ### Build Environment
 
-|CI|Linux|Windows|macOS|FreeBSD|CentOS|Self Agent|
+|CI|Linux|Windows|macOS|FreeBSD|CentOS|Container|Self Agent|
 |:--|:--|:--|:--|:--|:--|:--|
-|[AppVeyor](https://www.appveyor.com/docs/build-environment/)|:ballot_box_with_check:|:ballot_box_with_check:||||
-|[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|||:ballot_box_with_check:|
-|[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:||:ballot_box_with_check:||||
-|[Buddy](https://buddy.works)|:ballot_box_with_check:||||||
-|[Circle CI](https://circleci.com/pricing/usage/)|:ballot_box_with_check:|:heavy_dollar_sign:|:heavy_dollar_sign:||||
-|[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|||
-|[Codefresh](https://codefresh.io/)|:ballot_box_with_check:||||||
-|[Codeship](https://codeship.com/)|:ballot_box_with_check:||||||
-|[Drone Cloud](https://docs.drone.io/user-guide/pipeline/steps/#platform)|:ballot_box_with_check:|:ballot_box_with_check:||||[:ballot_box_with_check:](https://docs.drone.io/runners/)|
-|[GitHub Actions](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idruns-on)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:||||
-|[INSPECODE](https://rocro.com/inspecode)|-|-|-|-|-|-|
-|[Scrutinizer](https://scrutinizer-ci.com)|:ballot_box_with_check:||||||
-|[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:||:ballot_box_with_check:||
-|[Shippable](http://shippable.com)|:ballot_box_with_check:|:ballot_box_with_check:|:heavy_dollar_sign:||:ballot_box_with_check:||
-|[Travis CI](https://docs.travis-ci.com/user/multi-os/)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|||
-|[wercker](http://www.wercker.com/)|-|-|-|-|-|-|
+|[AppVeyor](https://www.appveyor.com/docs/build-environment/)|:ballot_box_with_check:|:ballot_box_with_check:|-|-|-||[:ballot_box_with_check:](https://ci.appveyor.com/build-clouds)|
+|[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-||:ballot_box_with_check:|
+|[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:||:ballot_box_with_check:|||||
+|[Buddy](https://buddy.works)|:ballot_box_with_check:|||||||
+|[Circle CI](https://circleci.com/pricing/usage/)|:ballot_box_with_check:|:heavy_dollar_sign:|:heavy_dollar_sign:|||||
+|[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:||||
+|[Codefresh](https://codefresh.io/)|:ballot_box_with_check:|||||||
+|[Codeship](https://codeship.com/)|:ballot_box_with_check:|||||||
+|[Drone Cloud](https://docs.drone.io/user-guide/pipeline/steps/#platform)|:ballot_box_with_check:|:ballot_box_with_check:|||||[:ballot_box_with_check:](https://docs.drone.io/runners/)|
+|[GitHub Actions](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idruns-on)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|||||
+|[INSPECODE](https://rocro.com/inspecode)|-|-|-|-|-||-|
+|[Scrutinizer](https://scrutinizer-ci.com)|:ballot_box_with_check:|||||||
+|[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:||:ballot_box_with_check:|||||
+|[Shippable](http://shippable.com)|:ballot_box_with_check:|:ballot_box_with_check:|:heavy_dollar_sign:||:ballot_box_with_check:|||||
+|[Travis CI](https://docs.travis-ci.com/user/multi-os/)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|||||
+|[wercker](http://www.wercker.com/)|-|-|-|-|-||-|
 
 ## Etc.
 
