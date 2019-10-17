@@ -43,7 +43,7 @@ ci services specs check
 |[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-||:ballot_box_with_check:|
 |[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:||:ballot_box_with_check:|||||
 |[Buddy](https://buddy.works)|:ballot_box_with_check:|||||||
-|[Circle CI](https://circleci.com/pricing/usage/)|:ballot_box_with_check:|:ballot_box_with_check:|:heavy_dollar_sign:|-|-|:ballot_box_with_check:|-|
+|[Circle CI](https://circleci.com/docs/2.0/configuration-reference/#docker--machine--macos--windows-executor)|:ballot_box_with_check:|:ballot_box_with_check:|:heavy_dollar_sign:|-|-|:ballot_box_with_check:|-|
 |[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:||||
 |[Codefresh](https://codefresh.io/)|:ballot_box_with_check:|||||||
 |[Codeship](https://codeship.com/)|:ballot_box_with_check:|||||||
