@@ -11,7 +11,7 @@
 |[Codefresh](https://codefresh.io/)||
 |[Codeship](https://codeship.com/)||
 |[Drone Cloud](https://cloud.drone.io/)||
-|[GitHub Actions](https://www.githubstatus.com/)||
+|[GitHub Actions](https://www.githubstatus.com/)|Email|
 |[INSPECODE](https://rocro.com/inspecode)||
 |[Scrutinizer](https://scrutinizer-ci.com)||
 |[Semaphore CI 2.0](https://status.semaphoreci.com/)|Email,[Twitter](https://twitter.com/StatusSemaphore),[Atom Feed](https://status.semaphoreci.com/history.atom),[RSS](https://status.semaphoreci.com/history.rss)|
