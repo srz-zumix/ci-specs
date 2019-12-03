@@ -54,7 +54,8 @@ fi
 if [ "$PLATFORM" = "windows" ]; then
   set -x
   echo $NUMBER_OF_PROCESSORS
-  wmic MEMORYCHIP get
+  # wmic MEMORYCHIP get
+  wmic computersystem get TotalPhysicalMemory
   wmic cpu list /format:list
   set +x
 fi
