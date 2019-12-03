@@ -48,4 +48,11 @@ if [ "$PLATFORM" = "bsd" ]; then
   sysctl -n hw.ncpu
 fi
 
+if [ "$PLATFORM" = "windows" ]; then
+  set -x
+  echo $NUMBER_OF_PROCESSORS
+  wmic MEMORYCHIP get
+  wmic cpu list /format:list
+  set +x
+fi
 
