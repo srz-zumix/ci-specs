@@ -1,0 +1,2 @@
+script:
+  - ./.ci/spec.sh
