@@ -31,6 +31,7 @@ os_detect() {
 }
 
 os_detect
+echo $PLATFORM
 
 if [ "$PLATFORM" = "linux" ]; then
   set -x
