@@ -31,6 +31,7 @@ os_detect() {
 }
 
 os_detect
+uname
 echo $PLATFORM
 
 if [ "$PLATFORM" = "linux" ]; then
