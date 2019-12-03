@@ -33,8 +33,11 @@ os_detect() {
 os_detect
 
 if [ "$PLATFORM" = "linux" ]; then
+  set -x
   nproc
   free -m
+  lscpu
+  set +x
 fi
 
 if [ "$PLATFORM" = "osx" ]; then
