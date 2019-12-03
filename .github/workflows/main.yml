@@ -9,4 +9,4 @@ jobs:
         os: [ubuntu-latest, windows-latest, macos-latest]
     steps:
       - uses: actions/checkout@master
-      - run: ./.ci/spec.sh
+      - run: sh ./.ci/spec.sh
