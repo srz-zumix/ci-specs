@@ -51,7 +51,9 @@ if [ "$PLATFORM" = "osx" ]; then
   getconf _NPROCESSORS_ONLN
   echo ------------------------
   echo Memory
-  top -l 1 | grep PhysMem: | awk '{print $10}'
+  hwmemsize=$(sysctl -n hw.memsize)
+  ramsize=$(expr $hwmemsize / $((1024**3)))
+  echo "System Memory: ${ramsize} GB"
   vm_stat | perl -ne '/page size of (\d+)/ and $size=$1; /Pages\s+([^:]+)[^\d]+(\d+)/ and printf("%-16s % 16.2f Mi\n", "$1:", $2 * $size / 1048576);'
   echo ------------------------
   echo CPU
