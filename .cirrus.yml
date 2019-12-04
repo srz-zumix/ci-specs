@@ -1,0 +1,17 @@
+container_task:
+  auto_cancellation: true
+  container:
+    image: gcc:latest
+  spec_script: ./.ci/spec.sh
+
+freebsd_task:
+  auto_cancellation: true
+  freebsd_instance:
+    image: freebsd-11-2-release-amd64
+  spec_script: ./.ci/spec.sh
+
+osx_task:
+  auto_cancellation: true
+  osx_instance:
+    image: mojave-xcode-10.1
+  spec_script: ./.ci/spec.sh
