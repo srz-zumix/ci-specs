@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  spec:
+    docker:
+      - image: circleci/buildpack-deps:cosmic-browsers
+    steps:
+      - checkout
+      - run: ./.ci/spec.sh
+
+workflows:
+  version: 2
+  default-test:
+    jobs:
+      - spec
