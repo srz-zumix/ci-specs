@@ -2,9 +2,9 @@
 
 ci services specs check
 
-[![Peakflow Build Status](https://www.peakflow.io/en/projects/ci-spec/branch-statuses/master.svg)](https://www.peakflow.io/en/projects/ci-spec/build-groups?build_groups_q%5Bbranch_name_cont%5D=master)
-[![Shippable Run Status](https://api.shippable.com/projects/5c81c7142c0a8108001b1df3/badge?branch=master)](https://app.shippable.com/github/srz-zumix/ci-spec)
-[![Travis-CI Build Status](https://travis-ci.com/srz-zumix/ci-spec.svg?branch=master)](https://travis-ci.com/srz-zumix/ci-spec)
+[![Peakflow Build Status](https://www.peakflow.io/en/projects/ci-specs/branch-statuses/master.svg)](https://www.peakflow.io/en/projects/ci-specs/build-groups?build_groups_q%5Bbranch_name_cont%5D=master)
+[![Shippable Run Status](https://api.shippable.com/projects/5c81c7142c0a8108001b1df3/badge?branch=master)](https://app.shippable.com/github/srz-zumix/ci-specs)
+[![Travis-CI Build Status](https://travis-ci.com/srz-zumix/ci-specs.svg?branch=master)](https://travis-ci.com/srz-zumix/ci-specs)
 
 
 ## List of Continuous Integration services
