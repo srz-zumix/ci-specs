@@ -36,27 +36,47 @@ uname
 echo $PLATFORM
 
 if [ "$PLATFORM" = "linux" ]; then
-  set -x
+  echo NUMBER_OF_PROCESSORS
   nproc
+  echo ------------------------
+  echo Memory
   free -m
+  echo ------------------------
+  echo CPU
   lscpu
-  set +x
 fi
 
 if [ "$PLATFORM" = "osx" ]; then
+  echo NUMBER_OF_PROCESSORS
   getconf _NPROCESSORS_ONLN
+  echo ------------------------
+  echo Memory
+  vm_stat | perl -ne '/page size of (\d+)/ and $size=$1; /Pages\s+([^:]+)[^\d]+(\d+)/ and printf("%-16s % 16.2f Mi\n", "$1:", $2 * $size / 1048576);'
+  echo ------------------------
+  echo CPU
+  sysctl -a machdep.cpu
 fi
 
 if [ "$PLATFORM" = "bsd" ]; then
+  echo NUMBER_OF_PROCESSORS
   sysctl -n hw.ncpu
+  echo ------------------------
+  echo Memory
+  sysctl hw | egrep 'hw.(phys|user|real)'
+  echo ------------------------
+  echo CPU
+  sysctl dev.cpu
 fi
 
 if [ "$PLATFORM" = "windows" ]; then
-  set -x
+  echo NUMBER_OF_PROCESSORS
   echo $NUMBER_OF_PROCESSORS
+  echo ------------------------
+  echo Memory
   # wmic MEMORYCHIP get
   wmic computersystem get TotalPhysicalMemory
+  echo ------------------------
+  echo CPU
   wmic cpu list /format:list
-  set +x
 fi
 
