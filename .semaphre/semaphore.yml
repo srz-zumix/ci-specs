@@ -1,0 +1,20 @@
+version: v1.0
+name: ci-specs
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+
+auto_cancel:
+  running:
+    when: "branch != 'master'"
+  queued:
+    when: "branch = 'master'"
+
+blocks:
+  - name: sepc
+    task:
+      jobs:
+        - name: spec
+          commands:
+            - ./.ci/spec.sh
