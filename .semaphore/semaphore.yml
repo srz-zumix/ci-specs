@@ -17,6 +17,7 @@ blocks:
       jobs:
         - name: ubuntsu spec
           commands:
+            - checkout
             - ./.ci/spec.sh
     task:
       agent:
@@ -26,4 +27,5 @@ blocks:
       jobs:
         - name: macos spec
           commands:
+            - checkout
             - ./.ci/spec.sh
