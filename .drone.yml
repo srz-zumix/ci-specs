@@ -1,6 +1,10 @@
 kind: pipeline
 name: spec
 
+platform:
+  os: darwin
+  arch: amd64
+
 steps:
 - name: spec
   commands:
