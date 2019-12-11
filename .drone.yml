@@ -1,0 +1,7 @@
+kind: pipeline
+name: spec
+
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
