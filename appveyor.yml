@@ -1,7 +1,11 @@
 version: 1.0.{build}
+image:
+  - macOS
+  - Ubuntu
+  - Visual Studio 2019
 
 clone_depth: 1
 
 build_script:
-  cmd: |
+  sh: |
     ./.ci/spec.sh
