@@ -4,6 +4,7 @@ name: spec container
 
 steps:
 - name: spec
+  image: golang
   commands:
     - "./.ci/spec.sh"
 
