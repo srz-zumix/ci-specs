@@ -14,6 +14,5 @@ pool:
   vmImage: $(imageName)
 
 steps:
-- script: |
-    ./.ci/spec.sh
+- bash: ./.ci/spec.sh
   displayName: 'spec'
