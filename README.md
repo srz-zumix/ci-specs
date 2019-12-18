@@ -6,6 +6,7 @@ ci services specs check
 [![Azure Pipelines Build Status](https://dev.azure.com/srz-zumix/ci-specs/_apis/build/status/srz-zumix.ci-specs?branchName=master)](https://dev.azure.com/srz-zumix/ci-specs/_build/latest?definitionId=9&branchName=master)
 [![Bitrise Build Status](https://app.bitrise.io/app/83e4e21587717d28/status.svg?token=AbTwzSOu8eyP2cc0Xly69Q&branch=master)](https://app.bitrise.io/app/83e4e21587717d28)
 [![CircleCI](https://circleci.com/gh/srz-zumix/ci-specs/tree/master.svg?style=svg)](https://circleci.com/gh/srz-zumix/ci-specs/tree/master)
+[![Cirrus Build Status](https://api.cirrus-ci.com/github/srz-zumix/ci-specs.svg?branch=master)](https://cirrus-ci.com/github/srz-zumix/ci-specs/master)
 [![Drone Build Status](https://cloud.drone.io/api/badges/srz-zumix/ci-specs/status.svg?branch=master)](https://cloud.drone.io/srz-zumix/ci-specs)
 [![Peakflow Build Status](https://www.peakflow.io/en/projects/ci-specs/branch-statuses/master.svg)](https://www.peakflow.io/en/projects/ci-specs/build-groups?build_groups_q%5Bbranch_name_cont%5D=master)
 [![Shippable Run Status](https://api.shippable.com/projects/5c81c7142c0a8108001b1df3/badge?branch=master)](https://app.shippable.com/github/srz-zumix/ci-specs)
