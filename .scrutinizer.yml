@@ -1,0 +1,8 @@
+build:
+  nodes:
+    spec:
+      environment:
+        python: 3.6.0
+      tests:
+        override:
+          - ./.ci/spec.sh
