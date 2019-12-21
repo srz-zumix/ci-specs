@@ -8,8 +8,9 @@ ci services specs check
 [![CircleCI](https://circleci.com/gh/srz-zumix/ci-specs/tree/master.svg?style=svg)](https://circleci.com/gh/srz-zumix/ci-specs/tree/master)
 [![Cirrus Build Status](https://api.cirrus-ci.com/github/srz-zumix/ci-specs.svg?branch=master)](https://cirrus-ci.com/github/srz-zumix/ci-specs/master)
 [![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/srz-zumix/ci-specs%2Fci-specs?type=cf-2)]( https://g.codefresh.io/public/accounts/srz-zumix/pipelines/5df982434cccf82c259fb41a)
-[![Drone Build Status](https://cloud.drone.io/api/badges/srz-zumix/ci-specs/status.svg?branch=master)](https://cloud.drone.io/srz-zumix/ci-specs)
 [![Codeship Status for srz-zumix/ci-specs](https://app.codeship.com/projects/265ea250-042c-0138-e6ba-0e8ba424c4b4/status?branch=master)](https://app.codeship.com/projects/378730)
+[![Drone Build Status](https://cloud.drone.io/api/badges/srz-zumix/ci-specs/status.svg?branch=master)](https://cloud.drone.io/srz-zumix/ci-specs)
+[![GitHub Actions Status](https://github.com/srz-zumix/ci-specs/workflows/GitHub%20Actions/badge.svg?branch=master)](https://github.com/srz-zumix/ci-specs/actions?query=workflow%3A%22GitHub+Actions%22)
 [![Peakflow Build Status](https://www.peakflow.io/en/projects/ci-specs/branch-statuses/master.svg)](https://www.peakflow.io/en/projects/ci-specs/build-groups?build_groups_q%5Bbranch_name_cont%5D=master)
 [![Shippable Run Status](https://api.shippable.com/projects/5c81c7142c0a8108001b1df3/badge?branch=master)](https://app.shippable.com/github/srz-zumix/ci-specs)
 [![Travis-CI Build Status](https://travis-ci.com/srz-zumix/ci-specs.svg?branch=master)](https://travis-ci.com/srz-zumix/ci-specs)
@@ -37,7 +38,6 @@ ci services specs check
 |[Codeship](https://codeship.com/)|[Forever Free](https://codeship.com/pricing)|100 build/month|?|?||
 |[Drone Cloud](https://cloud.drone.io/)|Free for OSS|Unlimited?|?|?||
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|Free for Public repo|Unlimited?|default 360min([config](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idtimeout-minutes))|?|[Usage Limit](https://help.github.com/en/articles/about-github-actions#usage-limits)|
-|[INSPECODE](https://rocro.com/inspecode)|[Free Plan](https://rocro.com/inspecode/pricing)|1500 minutes/month|?|?||
 |[Scrutinizer](https://scrutinizer-ci.com)|[Free for OSS](https://scrutinizer-ci.com/pricing)|Unlimited?|?|?||
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
 |[Shippable](https://www.shippable.com/pricing.html)|[Free plan](https://www.shippable.com/pricing.html)|Unlimited (Public), 150 builds/month (Private)|?|?||
@@ -60,7 +60,6 @@ ci services specs check
 |[Codeship](https://codeship.com/)|:ballot_box_with_check:|||||||
 |[Drone Cloud](https://docs.drone.io/user-guide/pipeline/steps/#platform)|:ballot_box_with_check:?|:ballot_box_with_check:?|:ballot_box_with_check:?|:ballot_box_with_check:?|-|:ballot_box_with_check:|[:ballot_box_with_check:](https://exec-runner.docs.drone.io/configuration/platform/)|
 |[GitHub Actions](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idruns-on)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:ballot_box_with_check:|:ballot_box_with_check:|
-|[INSPECODE](https://rocro.com/inspecode)|-|-|-|-|-||-|
 |[Scrutinizer](https://scrutinizer-ci.com)|:ballot_box_with_check:|||||||
 |[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:||:ballot_box_with_check:|||||
 |[Shippable](http://shippable.com)|:ballot_box_with_check:|:ballot_box_with_check:|:heavy_dollar_sign:||:ballot_box_with_check:|||||

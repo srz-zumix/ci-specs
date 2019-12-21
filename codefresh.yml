@@ -10,11 +10,6 @@ steps:
     stage: checkout
     repo: '${{CF_REPO_OWNER}}/${{CF_REPO_NAME}}'
     revision: '${{CF_REVISION}}'
-    when:
-      condition:
-        all:
-          noSkipCiInCommitMessage1: 'includes(lower("${{CF_COMMIT_MESSAGE}}"), "skip ci") == false'
-          noSkipCiInCommitMessage2: 'includes(lower("${{CF_COMMIT_MESSAGE}}"), "ci skip") == false'
   SpecTests:
     title: Spec
     stage: spec
