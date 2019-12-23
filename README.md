@@ -13,6 +13,7 @@ ci services specs check
 [![GitHub Actions Status](https://github.com/srz-zumix/ci-specs/workflows/GitHub%20Actions/badge.svg?branch=master)](https://github.com/srz-zumix/ci-specs/actions?query=workflow%3A%22GitHub+Actions%22)
 [![Peakflow Build Status](https://www.peakflow.io/en/projects/ci-specs/branch-statuses/master.svg)](https://www.peakflow.io/en/projects/ci-specs/build-groups?build_groups_q%5Bbranch_name_cont%5D=master)
 [![Scrutinizer Build Status](https://scrutinizer-ci.com/g/srz-zumix/ci-specs/badges/build.png?b=master)](https://scrutinizer-ci.com/g/srz-zumix/ci-specs/build-status/master)
+[![Semaphore 2.0 Build Status](https://srz-zumix.semaphoreci.com/badges/ci-specs/branches/master.svg)](https://srz-zumix.semaphoreci.com/projects/ci-specs)
 [![Shippable Run Status](https://api.shippable.com/projects/5c81c7142c0a8108001b1df3/badge?branch=master)](https://app.shippable.com/github/srz-zumix/ci-specs)
 [![Travis-CI Build Status](https://travis-ci.com/srz-zumix/ci-specs.svg?branch=master)](https://travis-ci.com/srz-zumix/ci-specs)
 
@@ -41,6 +42,7 @@ ci services specs check
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|Free for Public repo|Unlimited?|default 360min([config](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idtimeout-minutes))|?|[Usage Limit](https://help.github.com/en/articles/about-github-actions#usage-limits)|
 |[Scrutinizer](https://scrutinizer-ci.com)|[Free for OSS](https://scrutinizer-ci.com/pricing)|Unlimited?|?|?||
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
+|[Semaphore CI 2.0](https://semaphoreci.com)|[FREE for OSS](https://semaphoreci.com/pricing)|Unlimited|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
 |[Shippable](https://www.shippable.com/pricing.html)|[Free plan](https://www.shippable.com/pricing.html)|Unlimited (Public), 150 builds/month (Private)|?|?||
 |[Travis CI](https://travis-ci.com/)|[Free for OSS](https://travis-ci.com/plans)|Unlimited|?|?||
 |[wercker](http://www.wercker.com/)|?|?|?|?||
