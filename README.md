@@ -47,7 +47,7 @@ ci services specs check
 |[Travis CI](https://travis-ci.com/)|[Free for OSS](https://travis-ci.com/plans)|Unlimited|?|?||
 |[wercker](http://www.wercker.com/)|?|?|?|?||
 
-## Support 
+## Suppor
 
 ### Build Environment
 
