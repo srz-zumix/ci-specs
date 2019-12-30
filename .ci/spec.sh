@@ -91,7 +91,8 @@ env
 echo ------------------------
 
 DATE=$(date)
-${BASEDIR}/name.sh $1
+. ${BASEDIR}/name.sh $1
+echo $CI_NAME
 
 curl \
   -H "Content-Type: application/json" \

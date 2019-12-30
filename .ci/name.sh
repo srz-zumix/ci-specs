@@ -1,72 +1,76 @@
 #!/bin/sh
 
-if [ -n "${CI_NAME+x}" ]; then
-    exit
-fi
+function get_name() {
+    if [ -n "${CI_NAME+x}" ]; then
+        return
+    fi
 
-if [ -z "${APPVEYOR+x}" ]; then
-    export CI_NAME="AppVeyor"
-    exit
-fi
+    if [ -z "${APPVEYOR+x}" ]; then
+        export CI_NAME="AppVeyor"
+        return
+    fi
 
-if [ -z "${CIRCLECI+x}" ]; then
-    export CI_NAME="CircleCI"
-    exit
-fi
+    if [ -n "${CIRCLECI+x}" ]; then
+        export CI_NAME="CircleCI"
+        return
+    fi
 
-if [ -z "${CIRRUS_CI+x}" ]; then
-    export CI_NAME="Cirrus CI"
-    exit
-fi
+    if [ -n "${CIRRUS_CI+x}" ]; then
+        export CI_NAME="Cirrus CI"
+        return
+    fi
 
-if [ -z "${CF_BUILD_URL+x}" ]; then
-    export CI_NAME="Codefresh"
-    exit
-fi
+    if [ -n "${CF_BUILD_URL+x}" ]; then
+        export CI_NAME="Codefresh"
+        return
+    fi
 
-if [ -z "${DRONE+x}" ]; then
-    export CI_NAME="Drone"
-    exit
-fi
+    if [ -n "${DRONE+x}" ]; then
+        export CI_NAME="Drone"
+        return
+    fi
 
-if [ -z "${GITHUB_ACTIONS+x}" ]; then
-    export CI_NAME="GitHub Actions"
-    exit
-fi
+    if [ -n "${GITHUB_ACTIONS+x}" ]; then
+        export CI_NAME="GitHub Actions"
+        return
+    fi
 
-# if [ -z "${CIRCLECI+x}" ]; then
-#     export CI_NAME="Peakflow"
-#     exit
-# fi
+    # if [ -n "${CIRCLECI+x}" ]; then
+    #     export CI_NAME="Peakflow"
+    #     return
+    # fi
 
-if [ -z "${SCRUTINIZER+x}" ]; then
-    export CI_NAME="Scrutinizer"
-    exit
-fi
+    if [ -n "${SCRUTINIZER+x}" ]; then
+        export CI_NAME="Scrutinizer"
+        return
+    fi
 
-if [ -z "${SEMAPHORE+x}" ]; then
-    export CI_NAME="Semaphore"
-    exit
-fi
+    if [ -n "${SEMAPHORE+x}" ]; then
+        export CI_NAME="Semaphore"
+        return
+    fi
 
-if [ -z "${SHIPPABLE+x}" ]; then
-    export CI_NAME="Shippable"
-    exit
-fi
+    if [ -n "${SHIPPABLE+x}" ]; then
+        export CI_NAME="Shippable"
+        return
+    fi
 
-if [ -z "${TRAVIS+x}" ]; then
-    export CI_NAME="Travis CI"
-    exit
-fi
+    if [ -n "${TRAVIS+x}" ]; then
+        export CI_NAME="Travis CI"
+        return
+    fi
 
-if [ -z "${CI+x}" ]; then
-    export CI_NAME="local"
-    exit
-fi
+    if [ -n "${WERCKER_RUN_URL+x}" ]; then
+        export CI_NAME="Wercker"
+        return
+    fi
 
-if [ -z "${WERCKER_RUN_URL+x}" ]; then
-    export CI_NAME="Wercker"
-    exit
-fi
 
-export CI_NAME=$1
+    if [ -n "${CI+x}" ]; then
+        export CI_NAME="local"
+        return
+    fi
+    export CI_NAME=$1
+}
+
+get_name
