@@ -83,3 +83,10 @@ if [ "$PLATFORM" = "windows" ]; then
   wmic cpu list /format:list
 fi
 
+DATE=$(date)
+NAME=$1
+
+curl -X POST \
+  --data-urlencode 'payload={"time": "${DATE}"
+  , "ci": "${CI_NAME}"' \ 
+  https://hook.integromat.com/iiwxwh9wkt8xery9qb976qzw57zvynki
