@@ -5,7 +5,7 @@ function get_name() {
         return
     fi
 
-    if [ -z "${APPVEYOR+x}" ]; then
+    if [ -n "${APPVEYOR+x}" ]; then
         export CI_NAME="AppVeyor"
         return
     fi
