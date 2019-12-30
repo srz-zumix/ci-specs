@@ -83,8 +83,13 @@ if [ "$PLATFORM" = "windows" ]; then
   wmic cpu list /format:list
 fi
 
+echo ------------------------
+echo ENV
+env
+echo ------------------------
+
 DATE=$(date)
-NAME=$1
+./name.sh $1
 
 curl \
   -H "Content-Type: application/json" \
