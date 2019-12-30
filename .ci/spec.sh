@@ -1,5 +1,7 @@
 #!/bin/sh
 
+BASEDIR=$(dirname $0)
+
 lower() {
     if [ $# -eq 0 ]; then
         cat <&0
@@ -89,7 +91,7 @@ env
 echo ------------------------
 
 DATE=$(date)
-./name.sh $1
+${BASEDIR}/name.sh $1
 
 curl \
   -H "Content-Type: application/json" \
