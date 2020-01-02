@@ -34,10 +34,12 @@ if [ -n "${GITHUB_ACTIONS+x}" ]; then
     return
 fi
 
-# if [ -n "${CIRCLECI+x}" ]; then
-#     export CI_NAME="Peakflow"
-#     return
-# fi
+if [ -n "${BUILD_URL+x}" ]; then
+    if [[ ${BUILD_URL} =~ "peakflow" ]]; then
+        export CI_NAME="Peakflow"
+        return
+    fi
+fi
 
 if [ -n "${SCRUTINIZER+x}" ]; then
     export CI_NAME="Scrutinizer"
