@@ -19,6 +19,11 @@ if [ -n "${BITRISE_IO+x}" ]; then
     return
 fi
 
+if [ -n "${BUDDY+x}" ]; then
+    export CI_NAME="Buddy"
+    return
+fi
+
 if [ -n "${CIRCLECI+x}" ]; then
     export CI_NAME="CircleCI"
     return
