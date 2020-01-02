@@ -9,6 +9,16 @@ if [ -n "${APPVEYOR+x}" ]; then
     return
 fi
 
+if [ -n "${AZURE_HTTP_USER_AGENT+x}" ]; then
+    export CI_NAME="Azure Pipelines"
+    return
+fi
+
+if [ -n "${BITRISE_IO+x}" ]; then
+    export CI_NAME="Bitrise"
+    return
+fi
+
 if [ -n "${CIRCLECI+x}" ]; then
     export CI_NAME="CircleCI"
     return
@@ -35,7 +45,7 @@ if [ -n "${GITHUB_ACTIONS+x}" ]; then
 fi
 
 if [ -n "${BUILD_URL+x}" ]; then
-    if [[ ${BUILD_URL} =~ "peakflow" ]]; then
+    if [ ${BUILD_URL} =~ "peakflow" ]; then
         export CI_NAME="Peakflow"
         return
     fi
