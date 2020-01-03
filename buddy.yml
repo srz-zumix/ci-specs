@@ -1,0 +1,14 @@
+- pipeline: "build"
+  trigger_mode: "ON_EVERY_PUSH"
+  ref_name: "master"
+  actions:
+  - action: "Execute: Spec"
+    type: "BUILD"
+    working_directory: "/buddy/ci-yaml"
+    docker_image_name: "library/ubuntu"
+    docker_image_tag: "16.04"
+    execute_commands:
+    - "./.ci/spec.sh"
+    mount_filesystem_path: "/buddy/ci-specs"
+    shell: "BASH"
+    trigger_condition: "ALWAYS"
