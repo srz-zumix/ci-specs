@@ -90,7 +90,8 @@ echo ENV
 env
 echo ------------------------
 
-DATE=$(TZ="Asia/Tokyo" date)
+# DATE=$(TZ="Asia/Tokyo" date)
+DATE=$(date -u)
 . ${BASEDIR}/name.sh $1
 echo $CI_NAME
 
