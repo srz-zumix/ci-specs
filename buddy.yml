@@ -4,7 +4,7 @@
   actions:
   - action: "Execute: Spec"
     type: "BUILD"
-    working_directory: "/buddy/ci-yaml"
+    working_directory: "/buddy/ci-specs"
     docker_image_name: "library/ubuntu"
     docker_image_tag: "16.04"
     execute_commands:
