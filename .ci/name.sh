@@ -50,7 +50,7 @@ if [ -n "${GITHUB_ACTIONS+x}" ]; then
 fi
 
 if [ -n "${BUILD_URL+x}" ]; then
-    if [ "${BUILD_URL}" =~ "peakflow" ]; then
+    if echo ${BUILD_URL} | grep -q peakflow; then
         export CI_NAME="Peakflow"
         return
     fi
