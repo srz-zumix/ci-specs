@@ -5,8 +5,8 @@
   - action: "Execute: Spec"
     type: "BUILD"
     working_directory: "/buddy/ci-specs"
-    docker_image_name: "curlimages/curl"
-    docker_image_tag: "latest"
+    docker_image_name: "library/gcc"
+    docker_image_tag: "7"
     execute_commands:
     - "./.ci/spec.sh"
     mount_filesystem_path: "/buddy/ci-specs"
