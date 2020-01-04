@@ -95,8 +95,11 @@ DATE=$(date -u)
 . ${BASEDIR}/name.sh $1
 echo $CI_NAME
 
+. ${BASEDIR}/commit-hash.sh
+echo $GIT_COMMIT
+
 curl \
   -H "Content-Type: application/json" \
   -X POST \
-  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"os\": \"${PLATFORM}\"}" \
+  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\"}" \
   https://hook.integromat.com/iiwxwh9wkt8xery9qb976qzw57zvynki
