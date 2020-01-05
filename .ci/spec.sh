@@ -44,6 +44,8 @@ if [ "$PLATFORM" = "linux" ]; then
   echo ------------------------
   echo Memory
   free -m
+  export RAMSIZE_MB=$(($(getconf _PHYS_PAGES) * $(getconf PAGE_SIZE) / (1024 * 1024)))
+  export RAMSIZE_GB=$(echo "scale=3; ${RAMSIZE_MB}/1024" | bc)
   echo ------------------------
   echo CPU
   lscpu
@@ -56,8 +58,9 @@ if [ "$PLATFORM" = "osx" ]; then
   echo ------------------------
   echo Memory
   hwmemsize=$(sysctl -n hw.memsize)
-  ramsize=$(expr $hwmemsize / $((1024**3)))
-  echo "System Memory: ${ramsize} GB"
+  export RAMSIZE_MB=$(expr $hwmemsize / $((1024**2)))
+  export RAMSIZE_GB=$(echo "scale=3; ${RAMSIZE_MB}/1024" | bc)
+  echo "System Memory: ${RAMSIZE_GB} MB"
   vm_stat | perl -ne '/page size of (\d+)/ and $size=$1; /Pages\s+([^:]+)[^\d]+(\d+)/ and printf("%-16s % 16.2f Mi\n", "$1:", $2 * $size / 1048576);'
   echo ------------------------
   echo CPU
@@ -71,6 +74,8 @@ if [ "$PLATFORM" = "bsd" ]; then
   echo ------------------------
   echo Memory
   sysctl hw | egrep 'hw.(phys|user|real)'
+  export RAMSIZE=$(hw | egrep 'hw.phys' | egrep -o [0-9]+)
+
   echo ------------------------
   echo CPU
   sysctl dev.cpu
@@ -83,6 +88,8 @@ if [ "$PLATFORM" = "windows" ]; then
   echo Memory
   # wmic MEMORYCHIP get
   wmic computersystem get TotalPhysicalMemory
+  export RAMSIZE=$(wmic computersystem get TotalPhysicalMemory | grep [0-9])
+  export RAMSIZE_GB=$(echo ${RAMSIZE} | awk '{printf ("%4.2f", $1/1024/1024/1024)}')
   echo ------------------------
   echo CPU
   wmic cpu list /format:list
@@ -100,9 +107,12 @@ echo $CI_NAME
 
 . ${BASEDIR}/commit-hash.sh
 echo $GIT_COMMIT
+echo "CORE: ${NUMBER_OF_PROCESSORS}"
+echo "RAM : ${RAMSIZE_GB}"
+export OS_NAME=$(uname -s)
 
 curl \
   -H "Content-Type: application/json" \
   -X POST \
-  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"core\": \"${NUMBER_OF_PROCESSORS}\"}" \
+  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"core\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\"}" \
   https://hook.integromat.com/iiwxwh9wkt8xery9qb976qzw57zvynki
