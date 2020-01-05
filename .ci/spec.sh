@@ -40,6 +40,7 @@ echo $PLATFORM
 if [ "$PLATFORM" = "linux" ]; then
   echo NUMBER_OF_PROCESSORS
   nproc
+  export NUMBER_OF_PROCESSORS=$(nproc)
   echo ------------------------
   echo Memory
   free -m
@@ -51,6 +52,7 @@ fi
 if [ "$PLATFORM" = "osx" ]; then
   echo NUMBER_OF_PROCESSORS
   getconf _NPROCESSORS_ONLN
+  export NUMBER_OF_PROCESSORS=$(getconf _NPROCESSORS_ONLN)
   echo ------------------------
   echo Memory
   hwmemsize=$(sysctl -n hw.memsize)
@@ -65,6 +67,7 @@ fi
 if [ "$PLATFORM" = "bsd" ]; then
   echo NUMBER_OF_PROCESSORS
   sysctl -n hw.ncpu
+  export NUMBER_OF_PROCESSORS=$(sysctl -n hw.ncpu)
   echo ------------------------
   echo Memory
   sysctl hw | egrep 'hw.(phys|user|real)'
@@ -101,5 +104,5 @@ echo $GIT_COMMIT
 curl \
   -H "Content-Type: application/json" \
   -X POST \
-  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\"}" \
+  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"core\": \"${NUMBER_OF_PROCESSORS}\"}" \
   https://hook.integromat.com/iiwxwh9wkt8xery9qb976qzw57zvynki
