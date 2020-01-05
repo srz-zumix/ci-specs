@@ -54,13 +54,6 @@ if [ -n "${GITHUB_SHA+x}" ]; then
     return
 fi
 
-if [ -n "${BUILD_URL+x}" ]; then
-    if echo ${BUILD_URL} | grep -q peakflow; then
-        export GIT_COMMIT="Peakflow"
-        return
-    fi
-fi
-
 if [ -n "${SCRUTINIZER_SHA1+x}" ]; then
     export GIT_COMMIT="${SCRUTINIZER_SHA1}"
     return
