@@ -44,8 +44,9 @@ if [ "$PLATFORM" = "linux" ]; then
   echo ------------------------
   echo Memory
   free -m
-  export RAMSIZE_MB=$(($(getconf _PHYS_PAGES) * $(getconf PAGE_SIZE) / (1024 * 1024)))
-  export RAMSIZE_GB=$(echo "scale=3; ${RAMSIZE_MB}/1024" | bc)
+  export RAMSIZE=$(($(getconf _PHYS_PAGES) * $(getconf PAGE_SIZE)))
+  # export RAMSIZE_GB=$(echo "scale=3; ${RAMSIZE}/1024/1024/1024" | bc)
+  export RAMSIZE_GB=$(echo ${RAMSIZE} | awk '{printf ("%4.2f", $1/1024/1024/1024)}')
   echo ------------------------
   echo CPU
   lscpu
@@ -57,9 +58,8 @@ if [ "$PLATFORM" = "osx" ]; then
   export NUMBER_OF_PROCESSORS=$(getconf _NPROCESSORS_ONLN)
   echo ------------------------
   echo Memory
-  hwmemsize=$(sysctl -n hw.memsize)
-  export RAMSIZE_MB=$(expr $hwmemsize / $((1024**2)))
-  export RAMSIZE_GB=$(echo "scale=3; ${RAMSIZE_MB}/1024" | bc)
+  export RAMSIZE=$(sysctl -n hw.memsize)
+  export RAMSIZE_GB=$(echo "scale=3; ${RAMSIZE}/1024/1024/1024" | bc)
   echo "System Memory: ${RAMSIZE_GB} MB"
   vm_stat | perl -ne '/page size of (\d+)/ and $size=$1; /Pages\s+([^:]+)[^\d]+(\d+)/ and printf("%-16s % 16.2f Mi\n", "$1:", $2 * $size / 1048576);'
   echo ------------------------
@@ -75,7 +75,7 @@ if [ "$PLATFORM" = "bsd" ]; then
   echo Memory
   sysctl hw | egrep 'hw.(phys|user|real)'
   export RAMSIZE=$(hw | egrep 'hw.phys' | egrep -o [0-9]+)
-
+  export RAMSIZE_GB=$(echo ${RAMSIZE} | awk '{printf ("%4.2f", $1/1024/1024/1024)}')
   echo ------------------------
   echo CPU
   sysctl dev.cpu
