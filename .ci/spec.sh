@@ -107,12 +107,20 @@ echo $CI_NAME
 
 . ${BASEDIR}/commit-hash.sh
 echo $GIT_COMMIT
-echo "CORE: ${NUMBER_OF_PROCESSORS}"
-echo "RAM : ${RAMSIZE_GB}"
+
+if [ -f /.dockerenv ]; then
+  export IS_DOCKER=true
+else
+  export IS_DOCKER=false
+fi
+
+echo "CORE  : ${NUMBER_OF_PROCESSORS}"
+echo "RAM   : ${RAMSIZE_GB}"
+echo "DOCKER: ${IS_DOCKER}"
 export OS_NAME=$(uname -s)
 
 curl \
   -H "Content-Type: application/json" \
   -X POST \
-  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"core\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\"}" \
+  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"docker\": \"${IS_DOCKER}\", \"core\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\"}" \
   https://hook.integromat.com/iiwxwh9wkt8xery9qb976qzw57zvynki
