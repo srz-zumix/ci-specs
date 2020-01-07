@@ -101,8 +101,8 @@ if [ "$PLATFORM" = "bsd" ]; then
   echo ------------------------
   echo DISK
   camcontrol devlist
-  camcontrol identify sda0
-  camcontrol identify sda0 | grep rotating
+  camcontrol identify da0
+  camcontrol identify da0 | grep rotating
 fi
 
 if [ "$PLATFORM" = "windows" ]; then
