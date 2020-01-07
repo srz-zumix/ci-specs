@@ -101,7 +101,7 @@ if [ "$PLATFORM" = "bsd" ]; then
   echo ------------------------
   echo DISK
   camcontrol devlist
-  dmesg
+  cat /var/run/dmesg.boot
 fi
 
 if [ "$PLATFORM" = "windows" ]; then
