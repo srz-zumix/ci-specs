@@ -50,6 +50,9 @@ if [ "$PLATFORM" = "linux" ]; then
   echo ------------------------
   echo CPU
   lscpu
+  echo ------------------------
+  echo DISK
+  cat /sys/block/sda/queue/rotational
 fi
 
 if [ "$PLATFORM" = "osx" ]; then
@@ -65,6 +68,9 @@ if [ "$PLATFORM" = "osx" ]; then
   echo ------------------------
   echo CPU
   sysctl -a machdep.cpu
+  echo ------------------------
+  echo DISK
+  diskutil info disk0
 fi
 
 if [ "$PLATFORM" = "bsd" ]; then
@@ -78,7 +84,11 @@ if [ "$PLATFORM" = "bsd" ]; then
   export RAMSIZE_GB=$(echo ${RAMSIZE} | awk '{printf ("%4.2f", $1/1024/1024/1024)}')
   echo ------------------------
   echo CPU
+  grep ^CPU /var/run/dmesg.boot
   sysctl dev.cpu
+  echo ------------------------
+  echo DISK
+  camcontrol devlist
 fi
 
 if [ "$PLATFORM" = "windows" ]; then
@@ -93,6 +103,9 @@ if [ "$PLATFORM" = "windows" ]; then
   echo ------------------------
   echo CPU
   wmic cpu list /format:list
+  echo ------------------------
+  echo DISK
+  PowerShell "Get-PhysicalDisk | Format-Table -AutoSize"
 fi
 
 echo ------------------------
@@ -114,7 +127,7 @@ else
   export IS_DOCKER=false
 fi
 
-echo "CORE  : ${NUMBER_OF_PROCESSORS}"
+echo "NPROC : ${NUMBER_OF_PROCESSORS}"
 echo "RAM   : ${RAMSIZE_GB}"
 echo "DOCKER: ${IS_DOCKER}"
 export OS_NAME=$(uname -s)
@@ -122,5 +135,5 @@ export OS_NAME=$(uname -s)
 curl \
   -H "Content-Type: application/json" \
   -X POST \
-  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"docker\": \"${IS_DOCKER}\", \"core\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\"}" \
+  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\"}" \
   https://hook.integromat.com/iiwxwh9wkt8xery9qb976qzw57zvynki
