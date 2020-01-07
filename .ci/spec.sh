@@ -74,7 +74,7 @@ if [ "$PLATFORM" = "bsd" ]; then
   echo ------------------------
   echo Memory
   sysctl hw | egrep 'hw.(phys|user|real)'
-  export RAMSIZE=$(hw | egrep 'hw.phys' | egrep -o [0-9]+)
+  export RAMSIZE=$(sysctl hw | egrep 'hw.phys' | egrep -o [0-9]+)
   export RAMSIZE_GB=$(echo ${RAMSIZE} | awk '{printf ("%4.2f", $1/1024/1024/1024)}')
   echo ------------------------
   echo CPU
