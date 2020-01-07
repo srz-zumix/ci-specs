@@ -53,6 +53,12 @@ if [ "$PLATFORM" = "linux" ]; then
   echo ------------------------
   echo DISK
   cat /sys/block/sda/queue/rotational
+  SSD=$(cat /sys/block/sda/queue/rotational)
+  if [ "${SSD}" -eq 0 ]; then
+    export DISK="SSD"
+  else
+    export DISK="HDD"
+  fi
 fi
 
 if [ "$PLATFORM" = "osx" ]; then
@@ -71,6 +77,12 @@ if [ "$PLATFORM" = "osx" ]; then
   echo ------------------------
   echo DISK
   diskutil info disk0
+  SSD=$(diskutil info disk0 | grep "Solid State" | grep Yes)
+  if [ -n "${SSD}" ]; then
+    export DISK="SSD"
+  else
+    export DISK="HDD"
+  fi
 fi
 
 if [ "$PLATFORM" = "bsd" ]; then
@@ -89,6 +101,7 @@ if [ "$PLATFORM" = "bsd" ]; then
   echo ------------------------
   echo DISK
   camcontrol devlist
+  camcontrol identify ada0 | grep rotating
 fi
 
 if [ "$PLATFORM" = "windows" ]; then
