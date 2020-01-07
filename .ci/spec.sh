@@ -106,6 +106,12 @@ if [ "$PLATFORM" = "windows" ]; then
   echo ------------------------
   echo DISK
   PowerShell "Get-PhysicalDisk | Format-Table -AutoSize"
+  SSD=$(PowerShell "Get-PhysicalDisk | Format-Table -AutoSize" | grep -o SSD)
+  if [ -n "${SSD}" ]; then
+    export DISK="SSD"
+  else
+    export DISK="HDD"
+  fi
 fi
 
 echo ------------------------
@@ -129,11 +135,12 @@ fi
 
 echo "NPROC : ${NUMBER_OF_PROCESSORS}"
 echo "RAM   : ${RAMSIZE_GB}"
+echo "DISK  : ${DISK}"
 echo "DOCKER: ${IS_DOCKER}"
 export OS_NAME=$(uname -s)
 
 curl \
   -H "Content-Type: application/json" \
   -X POST \
-  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\"}" \
+  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"disk\": \"${DISK}\", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\"}" \
   https://hook.integromat.com/iiwxwh9wkt8xery9qb976qzw57zvynki
