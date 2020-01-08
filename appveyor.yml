@@ -8,4 +8,4 @@ clone_depth: 1
 
 build_script:
   sh: |
-    ./.ci/spec.sh
+    bash ./.ci/spec.sh
