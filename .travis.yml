@@ -14,3 +14,16 @@ script:
 env:
   global:
   - secure: q21hTfLWozAHaFswGe01hU30WllQZrkhOnfu9RpSEGBnVBhU+HJnfX8+ml6B34ebVn3Dq++whE+fEXmcmvJPJJyim31thops0Kg2bCMU2G03tsTAUDe3Y+zoF2uu6Qk0m9MpfyN8u0nKgGVniFf5ceobZ/S2n8YGaN4H8rpuVrpCt9LY0d6J/a7Bglzd9/9iberw/pcHBup1ekAuk9FSc4NL+UcGF0rqbeGhzyFzJPBTOeqvP1cMrhTzTPBbiBSry+A4lxqu+3lNiMvq6bfMdkW43ouWf4WGqx70a5RVBY6aF8fuHVwDWv5NePx+uBmu9XfyrLZDOjSoE2udgMRaomXmEzwXkFz90qIOwqc74i1M4Wdwlnd5ziMRZLDn0nVPXLl+XBHCrTIV4a4rpKHMcIr2LMr3H0QmP09qgt+nePCkv3Q9wm7n6zlGBrdae4B2PX4KogQN1vmxila2D+C+0kySe5eReTp1LODHNoUH9NLNzxA1pa1RhiXTXEBGN9iB7KbLqSXjrxhy3A6gmjMH9RLtON/GnmU2hnJ6bRgTWZGMal4uYjzEcV+HqdKOZ8LBuUbCcgC7S+n9RmBzv99m3QPWctfNoER0/BBDmv62Cj7NPgGnX87yuBkyH12soGTailk8p2LzBq0pxHwVIoVNqr6UYKD1QRtG2POksuEHtfs=
+
+matrix:
+  include:
+  - os: osx
+    before_script:
+      - echo osx
+    script:
+      - ./.ci/spec.sh
+  - os: windows
+    before_script:
+      - echo windows
+    script:
+      - ./.ci/spec.sh

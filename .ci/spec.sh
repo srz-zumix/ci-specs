@@ -100,8 +100,13 @@ if [ "$PLATFORM" = "bsd" ]; then
   sysctl dev.cpu
   echo ------------------------
   echo DISK
-  camcontrol devlist
   geom disk list
+  SSD=$(geom disk list | grep rotationrate | egrep -o [0-9]+)
+  if [ "${SSD}" -eq 0 ]; then
+    export DISK="SSD"
+  else
+    export DISK="HDD"
+  fi
 fi
 
 if [ "$PLATFORM" = "windows" ]; then
