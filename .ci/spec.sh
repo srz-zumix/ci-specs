@@ -132,6 +132,8 @@ if [ "$PLATFORM" = "windows" ]; then
   fi
 fi
 
+df -h
+
 echo ------------------------
 echo ENV
 env
