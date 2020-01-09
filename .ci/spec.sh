@@ -132,7 +132,8 @@ if [ "$PLATFORM" = "windows" ]; then
   fi
 fi
 
-df -h
+df -l --output=avail -h -BG
+FREESPACE=$(df -l --output=avail -h -BG | grep -o [0-9]+G)
 
 echo ------------------------
 echo ENV
@@ -156,11 +157,12 @@ fi
 echo "NPROC : ${NUMBER_OF_PROCESSORS}"
 echo "RAM   : ${RAMSIZE_GB}"
 echo "DISK  : ${DISK}"
+echo "FREE  : ${FREESPACE}"
 echo "DOCKER: ${IS_DOCKER}"
 export OS_NAME=$(uname -s)
 
 curl \
   -H "Content-Type: application/json" \
   -X POST \
-  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"disk\": \"${DISK}\", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\"}" \
+  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"disk\": \"${DISK}\", \"disk_avail\": "${FREESPACE}", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\"}" \
   https://hook.integromat.com/iiwxwh9wkt8xery9qb976qzw57zvynki
