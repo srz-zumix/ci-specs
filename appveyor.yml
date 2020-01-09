@@ -8,4 +8,13 @@ clone_depth: 1
 
 build_script:
   sh: |
-    bash ./.ci/spec.sh
+    ./.ci/spec.sh
+
+for:
+-
+  matrix:
+    only:
+      - image: Visual Studio 2019
+  build_script:
+    sh: |
+      bash ./.ci/spec.sh
