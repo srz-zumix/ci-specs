@@ -112,7 +112,7 @@ if [ "$PLATFORM" = "bsd" ]; then
     export DISK="HDD"
   fi
   df -h
-  export FREESPACE=$(df -l --output=avail -h -BG ${BASEDIR} | egrep -o [0-9]+G)
+  export FREESPACE=$(df -l -H ${BASEDIR} | egrep -v Avail | xargs echo | cut -d" " -f4)
 fi
 
 if [ "$PLATFORM" = "windows" ]; then
