@@ -133,7 +133,7 @@ if [ "$PLATFORM" = "windows" ]; then
 fi
 
 df -l --output=avail -h -BG
-FREESPACE=$(df -l --output=avail -h -BG | grep -o [0-9]+G)
+FREESPACE=$(df -l --output=avail -h -BG | egrep -o [0-9]+G)
 
 echo ------------------------
 echo ENV
@@ -164,5 +164,5 @@ export OS_NAME=$(uname -s)
 curl \
   -H "Content-Type: application/json" \
   -X POST \
-  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"disk\": \"${DISK}\", \"disk_avail\": "${FREESPACE}", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\"}" \
+  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"disk\": \"${DISK}\", \"disk_avail\": \"${FREESPACE}\", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\"}" \
   https://hook.integromat.com/iiwxwh9wkt8xery9qb976qzw57zvynki
