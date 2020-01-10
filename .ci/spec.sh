@@ -59,6 +59,8 @@ if [ "$PLATFORM" = "linux" ]; then
   else
     export DISK="HDD"
   fi
+  df -h
+  export FREESPACE=$(df -l --output=avail -h -BG ${BASEDIR} | egrep -o [0-9]+G)
 fi
 
 if [ "$PLATFORM" = "osx" ]; then
@@ -83,6 +85,8 @@ if [ "$PLATFORM" = "osx" ]; then
   else
     export DISK="HDD"
   fi
+  df -h
+  export FREESPACE=$(df -l -H ${BASEDIR} | egrep -v Avail | xargs echo | cut -d" " -f4)
 fi
 
 if [ "$PLATFORM" = "bsd" ]; then
@@ -107,6 +111,8 @@ if [ "$PLATFORM" = "bsd" ]; then
   else
     export DISK="HDD"
   fi
+  df -h
+  export FREESPACE=$(df -l --output=avail -h -BG ${BASEDIR} | egrep -o [0-9]+G)
 fi
 
 if [ "$PLATFORM" = "windows" ]; then
@@ -130,10 +136,9 @@ if [ "$PLATFORM" = "windows" ]; then
   else
     export DISK="HDD"
   fi
+  df -h
+  export FREESPACE=$(df -l --output=avail -h -BG ${BASEDIR} | egrep -o [0-9]+G)
 fi
-
-df -h
-FREESPACE=$(df -l --output=avail -h -BG ${BASEDIR} | egrep -o [0-9]+G)
 
 echo ------------------------
 echo ENV
