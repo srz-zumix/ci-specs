@@ -133,7 +133,7 @@ if [ "$PLATFORM" = "windows" ]; then
 fi
 
 df -h
-FREESPACE=$(df ${BASEDIR} -l --output=avail -h -BG | egrep -o [0-9]+G)
+FREESPACE=$(df -l --output=avail -h -BG ${BASEDIR} | egrep -o [0-9]+G)
 
 echo ------------------------
 echo ENV
