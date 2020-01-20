@@ -39,7 +39,8 @@ ci services specs check
 |[Circle CI](https://circleci.com)|[Free for OSS](https://circleci.com/docs/2.0/oss/#overview)|100,000 free credits / week|autoscale|?|?||
 |[Cirrus CI](https://cirrus-ci.org/)|[Free for OSS](https://cirrus-ci.org/pricing/)|Unlimited?|[no limit](https://cirrus-ci.org/features/#no-concurrency-limit-no-queues)|[60min](https://cirrus-ci.org/faq/#instance-timed-out)(max 2h)|?|[Parallel VMs limit](https://cirrus-ci.org/faq/#are-there-any-limits)|
 |[Codefresh](https://codefresh.io/)|[Free Plan](https://codefresh.io/pricing/)|Unlimited|[Unlimited/1/2/3](https://codefresh.io/docs/docs/configure-ci-cd-pipeline/pipelines/#concurrency-policy)|60min?|15min ?|
-|[Codeship](https://codeship.com/)|[Forever Free](https://codeship.com/pricing)|100 build/month|?|?||
+|[Codeship Basic](https://codeship.com/)|[Forever Free](https://codeship.com/pricing/basic)|100 build/month|1|?|?||
+|[Codeship Pro](https://codeship.com/)|[Forever Free](https://codeship.com/pricing/pro)|100 build/month|1|?|?||
 |[Drone Cloud](https://cloud.drone.io/)|Free for OSS|Unlimited?|?|?||
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|Free for Public repo|Unlimited?|default 360min([config](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idtimeout-minutes))|?|[Usage Limit](https://help.github.com/en/articles/about-github-actions#usage-limits)|
 |[Scrutinizer](https://scrutinizer-ci.com)|[Free for OSS](https://scrutinizer-ci.com/pricing)|Unlimited?|?|?||
