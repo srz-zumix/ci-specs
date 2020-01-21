@@ -47,8 +47,8 @@ ci services specs check
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|Unlimited |default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE for OSS](https://semaphoreci.com/pricing)|Unlimited|Unlimited|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
 |[Shippable](https://www.shippable.com/pricing.html)|[Free plan](https://www.shippable.com/pricing.html)|Unlimited (Public), 150 builds/month (Private)|1|?|?||
-|[Travis CI](https://travis-ci.com/)|[Free for OSS](https://travis-ci.com/plans)|Unlimited|?|?||
-|[wercker](http://www.wercker.com/)|?|?|?|?||
+|[Travis CI](https://travis-ci.com/)|[Free for OSS](https://travis-ci.com/plans)|Unlimited|3|?|?||
+|[wercker](http://www.wercker.com/)|?|?|?|?|?||
 
 ## Suppor
 
