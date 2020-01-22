@@ -1,4 +1,4 @@
-on: [push, pull_request]
+on: [push]
 
 name: GitHub Actions
 jobs:
@@ -9,7 +9,8 @@ jobs:
         os: [ubuntu-latest, windows-latest, macos-latest]
     steps:
       - uses: actions/checkout@master
-      - env:
-        INTEGROMAT_WEBHOOK_URL: ${{ secret.INTEGROMAT_WEBHOOK }}
-      - run: ./.ci/spec.sh
+      - name: spec
+        env:
+          INTEGROMAT_WEBHOOK_URL: ${{ secret.INTEGROMAT_WEBHOOK }}
         shell: bash
+        run: ./.ci/spec.sh
