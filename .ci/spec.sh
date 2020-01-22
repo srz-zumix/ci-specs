@@ -166,8 +166,12 @@ echo "FREE  : ${FREESPACE}"
 echo "DOCKER: ${IS_DOCKER}"
 export OS_NAME=$(uname -s)
 
+if [ -z ${INTEGROMAT_WEBHOOK_URL} ]; then
+  export INTEGROMAT_WEBHOOK_URL="https://hook.integromat.com/iiwxwh9wkt8xery9qb976qzw57zvynki"
+fi
+
 curl \
   -H "Content-Type: application/json" \
   -X POST \
   -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"disk\": \"${DISK}\", \"disk_avail\": \"${FREESPACE}\", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\"}" \
-  https://hook.integromat.com/iiwxwh9wkt8xery9qb976qzw57zvynki
+  ${INTEGROMAT_WEBHOOK_URL}
