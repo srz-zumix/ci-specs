@@ -59,7 +59,7 @@ ci services specs check
 |[AppVeyor](https://www.appveyor.com/docs/build-environment/)|:ballot_box_with_check:|:ballot_box_with_check:|[:ballot_box_with_check:](https://www.appveyor.com/blog/2019/11/20/build-macos-projects-with-appveyor/)|-|-||[:ballot_box_with_check:](https://ci.appveyor.com/build-clouds)|
 |[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:ballot_box_with_check:|:ballot_box_with_check:|
 |[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:||:ballot_box_with_check:|||||
-|[Buddy](https://buddy.works)|:ballot_box_with_check:|||||||
+|[Buddy](https://buddy.works)|:ballot_box_with_check:|||||:ballot_box_with_check:||
 |[Circle CI](https://circleci.com/docs/2.0/configuration-reference/#docker--machine--macos--windows-executor)|:ballot_box_with_check:|:ballot_box_with_check:|[:ballot_box_with_check:](https://circleci.com/docs/2.0/oss/#overview)|-|-|:ballot_box_with_check:|-|
 |[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|[:ballot_box_with_check:](https://cirrus-ci.org/guide/docker-builder-vm/)|[:ballot_box_with_check:](https://cirrus-ci.org/guide/supported-computing-services/)|
 |[Codefresh](https://codefresh.io/)|:ballot_box_with_check:|||||:ballot_box_with_check:||
