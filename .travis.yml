@@ -7,7 +7,6 @@ before_script:
 - git submodule update
 - git submodule foreach git pull origin master
 script:
-- ./.ci/spec.sh
 - git add -A
 - git commit -m "update head [ci skip]" || true
 - git push https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git ${TRAVIS_BRANCH}
@@ -27,3 +26,9 @@ matrix:
       - echo windows
     script:
       - ./.ci/spec.sh
+  - os: linux
+    before_script:
+      - echo linux
+    script:
+      - ./.ci/spec.sh
+  - env: UPDATE_SUBMODULE=true
