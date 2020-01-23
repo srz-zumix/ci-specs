@@ -11,6 +11,6 @@ jobs:
       - uses: actions/checkout@master
       - name: spec
         env:
-          INTEGROMAT_WEBHOOK_URL: ${{ secret.INTEGROMAT_WEBHOOK }}
+          INTEGROMAT_WEBHOOK_URL: ${{ secrets.INTEGROMAT_WEBHOOK }}
         shell: bash
         run: ./.ci/spec.sh
