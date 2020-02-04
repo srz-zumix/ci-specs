@@ -6,3 +6,6 @@ build:
       tests:
         override:
           - ./.ci/spec.sh
+filter:
+  excluded_paths:
+      - '*'
