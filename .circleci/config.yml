@@ -14,6 +14,12 @@ jobs:
     steps:
       - checkout
       - run: ./.ci/spec.sh
+  spec-mac:
+    macos:
+      xcode: 11.3.0
+    steps:
+      - checkout
+      - run: ./.ci/spec.sh
   spec:
     docker:
       - image: circleci/buildpack-deps:cosmic-browsers
@@ -27,4 +33,5 @@ workflows:
     jobs:
       - spec-win
       - spec-linux
+      - spec-mac
       - spec
