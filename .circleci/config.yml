@@ -1,5 +1,19 @@
-version: 2
+version: 2.1
+
+orbs:
+  win: circleci/windows@2.2.0
+
 jobs:
+  spec-win:
+    executor: win/default 
+    steps:
+      - checkout
+      - run: ./.ci/spec.sh
+  spec-linux:
+    machine: true
+    steps:
+      - checkout
+      - run: ./.ci/spec.sh
   spec:
     docker:
       - image: circleci/buildpack-deps:cosmic-browsers
