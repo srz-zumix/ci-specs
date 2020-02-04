@@ -55,7 +55,7 @@ ci services specs check
 
 ### Build Environment
 
-|CI|Linux|Windows|MacOS|FreeBSD|CentOS|Container|Self Agent|
+|CI|Linux|Windows|macOS|FreeBSD|CentOS|Container|Self Agent|
 |:--|:--|:--|:--|:--|:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com/docs/build-environment/)|:ballot_box_with_check:|:ballot_box_with_check:|[:ballot_box_with_check:](https://www.appveyor.com/blog/2019/11/20/build-macos-projects-with-appveyor/)|-|-|[BYOC](https://www.appveyor.com/docs/byoc/docker/)|[:ballot_box_with_check:](https://ci.appveyor.com/build-clouds)|
 |[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:ballot_box_with_check:|:ballot_box_with_check:|
