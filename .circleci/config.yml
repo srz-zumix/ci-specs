@@ -25,4 +25,6 @@ workflows:
   version: 2
   default-test:
     jobs:
+      - spec-win
+      - spec-linux
       - spec
