@@ -5,10 +5,10 @@ orbs:
 
 jobs:
   spec-win:
-    executor: win/default 
+    executor: win/default
     steps:
       - checkout
-      - run: ./.ci/spec.sh
+      - run: bash ./.ci/spec.sh
   spec-linux:
     machine: true
     steps:
@@ -33,5 +33,5 @@ workflows:
     jobs:
       - spec-win
       - spec-linux
-      - spec-mac
+      # - spec-mac
       - spec
