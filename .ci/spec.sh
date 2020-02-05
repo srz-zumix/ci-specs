@@ -37,6 +37,8 @@ os_detect
 uname
 echo $PLATFORM
 
+export HAS_VS=false
+
 if [ "$PLATFORM" = "linux" ]; then
   echo NUMBER_OF_PROCESSORS
   nproc
@@ -138,6 +140,12 @@ if [ "$PLATFORM" = "windows" ]; then
   fi
   df -h
   export FREESPACE=$(df -l --output=avail -h -BG ${BASEDIR} | egrep -o [0-9]+G)
+
+  # visual studio
+  env | grep "VS[0-9]*COMNTOOLS"
+  if [ $? = 0 ]; then
+    export HAS_VS=true
+  fi
 fi
 
 echo ------------------------
@@ -164,6 +172,7 @@ echo "RAM   : ${RAMSIZE_GB}"
 echo "DISK  : ${DISK}"
 echo "FREE  : ${FREESPACE}"
 echo "DOCKER: ${IS_DOCKER}"
+echo "VS    : ${HAS_VS}"
 export OS_NAME=$(uname -s)
 
 if [ -z ${INTEGROMAT_WEBHOOK_URL} ]; then
@@ -173,5 +182,5 @@ fi
 curl \
   -H "Content-Type: application/json" \
   -X POST \
-  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"disk\": \"${DISK}\", \"disk_avail\": \"${FREESPACE}\", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\"}" \
+  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"disk\": \"${DISK}\", \"disk_avail\": \"${FREESPACE}\", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\", \"vs\":\"${HAS_VS}\" }" \
   ${INTEGROMAT_WEBHOOK_URL}
