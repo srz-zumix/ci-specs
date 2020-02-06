@@ -11,6 +11,9 @@ auto_cancel:
   queued:
     when: "branch = 'master'"
 
+env:
+  - secure: EM4cl+EoQAUwyXrqjLLds3100jum6qZpMo0k6XJiO1AQwBWspcUbKX3olw62CcoPq7AZ9pfmyuKmyIhtcRHhc46Y7n1B7Fy/ecPEbroQRDPlp+IO2MCPaLbZRGul1Avq13GOX0a1cJ+zGjghtDUUOYHMInppcoG7ksU1RHpBJMPfvWRKNsIQK169mfVV7kgAHOxbqnfVQYyK8aAOcmvccHGwUdbFcet2v8d+aIOBdPiGygr6h+mzR2X/5J2+1JKsVnG2yWEqt/mYhujK80wWLMojXCQ1SKjHEJupPxREz64QjVxxGGDp2A/OOBHBuLg5PCS/gL8d+/29O+Z3LA0OxQ==
+
 blocks:
   - name: "ubuntsu sepc"
     dependencies: []
