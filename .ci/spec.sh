@@ -141,7 +141,9 @@ if [ "$PLATFORM" = "windows" ]; then
   df -h
   export FREESPACE=$(df -l --output=avail -h -BG ${BASEDIR} | egrep -o [0-9]+G)
 
-  # visual studio
+  echo ------------------------
+  echo Visual Studio
+  echo ------------------------
   env | grep "VS[0-9]*COMNTOOLS"
   if [ $? = 0 ]; then
     export HAS_VS=true
