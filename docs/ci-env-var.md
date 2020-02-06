@@ -35,13 +35,13 @@
 |Buddy|:o:|Project| \*\*\*\*\*\*ENCRYPTED\*\*\*\*\*\* |
 |[CircleCI](https://circleci.com/docs/2.0/env-vars/)|:o:|Project| * x N |
 |[Cirrus CI](ENCRYPTED[9c27f429840137201c54a77bb56ad8698d0ae2ba6f5a2ceaabc02671e198707d1f6ba516199ee546df281d8a14b2c9cb])|:o:|Encrypt|SECRET|
-|Codefresh|:o:||:o:|
+|[Codefresh](https://codefresh.io/docs/docs/configure-ci-cd-pipeline/shared-configuration/)|:o:|Project|:o:|
 |Codeship Basic|:x: ?|-|-|
 |[Codeship Pro](https://documentation.codeship.com/pro/builds-and-configuration/environment-variables/#encrypting-your-environment-variables)|:o:|Encrypt|?|
-|Drone|:o:|Project|:o:|
+|[Drone](https://docs.drone.io/secret/)|:o:|Encyrpt, Project and YAML|\[secret:NAME\]|
 |GitHub Actions|:o:|Project| * x N |
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/environment-variables)|:small_red_triangle:|-|-|
 |[Semaphore 2.0](https://docs.semaphoreci.com/reference/pipeline-yaml-reference/#the-secrets-property)|:o:|Encrypt|:o:|
 |[Shippable](http://docs.shippable.com/ci/env-vars/#secure-variables)|:o:|Encrypt|:o:|
-|[Travis CI](https://docs.travis-ci.com/user/environment-variables/#encrypting-environment-variables)|:o:|Encrypt|:o:|
+|[Travis CI](https://docs.travis-ci.com/user/environment-variables/#encrypting-environment-variables)|:o:|Encrypt|\[secure\] *(Windows :x:)* |
 |[wercker](https://devcenter.wercker.com/administration/environment-variables/)|:o:|Project|:x:|
