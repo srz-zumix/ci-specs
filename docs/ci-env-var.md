@@ -36,7 +36,7 @@
 |[CircleCI](https://circleci.com/docs/2.0/env-vars/)|:o:|Project| * x N |
 |[Cirrus CI](ENCRYPTED[9c27f429840137201c54a77bb56ad8698d0ae2ba6f5a2ceaabc02671e198707d1f6ba516199ee546df281d8a14b2c9cb])|:o:|Encrypt|SECRET|
 |Codefresh|:o:||:o:|
-|Codeship Basic|:x: ?|||
+|Codeship Basic|:x: ?|-|-|
 |[Codeship Pro](https://documentation.codeship.com/pro/builds-and-configuration/environment-variables/#encrypting-your-environment-variables)|:o:|Encrypt|?|
 |Drone|:o:|Project|:o:|
 |GitHub Actions|:o:|Project| * x N |
