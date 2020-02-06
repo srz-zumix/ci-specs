@@ -1,3 +1,6 @@
+env:
+  INTEGROMAT_WEBHOOK_URL: ENCRYPTED[9c27f429840137201c54a77bb56ad8698d0ae2ba6f5a2ceaabc02671e198707d1f6ba516199ee546df281d8a14b2c9cb]
+
 cirrus_container_task:
   auto_cancellation: true
   container:
