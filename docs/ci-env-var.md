@@ -41,7 +41,7 @@
 |Drone|:o:|Project|:o:|
 |GitHub Actions|:o:|Project| * x N |
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/environment-variables)|:small_red_triangle:|-|-|
-|Semaphore 2.0|:o:|Project|:o:|
+|[Semaphore 2.0](https://docs.semaphoreci.com/reference/pipeline-yaml-reference/#the-secrets-property)|:o:|Encrypt|:o:|
 |[Shippable](http://docs.shippable.com/ci/env-vars/#secure-variables)|:o:|Encrypt|:o:|
 |[Travis CI](https://docs.travis-ci.com/user/environment-variables/#encrypting-environment-variables)|:o:|Encrypt|:o:|
 |[wercker](https://devcenter.wercker.com/administration/environment-variables/)|:o:|Project|:x:|
