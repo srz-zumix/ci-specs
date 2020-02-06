@@ -10,7 +10,7 @@
 |[Cirrus CI](https://cirrus-ci.org/guide/writing-tasks/#environment-variables)|true|CIRRUS_CI|
 |[Codefresh](https://codefresh.io/docs/docs/codefresh-yaml/variables/#exporting-environment-variables-from-a-freestyle-step)|true|CF_BUILD_URL|
 |[Codeship](https://documentation.codeship.com/basic/builds-and-configuration/set-environment-variables/)|true|CI_NAME=codeship|
-|[Drone Cloud](https://0-8-0.docs.drone.io/environment-reference/)|drone|DRONE|
+|[Drone](https://0-8-0.docs.drone.io/environment-reference/)|drone|DRONE|
 |[GitHub Actions](https://help.github.com/ja/actions/automating-your-workflow-with-github-actions/using-environment-variables#default-environment-variables)|-|GITHUB_ACTIONS|
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/environment-variables)|true|SCRUTINIZER|
 |[Semaphore 2.0](https://docs.semaphoreci.com/ci-cd-environment/environment-variables/)|true|SEMAPHORE|
@@ -21,17 +21,26 @@
 
 ## Secret Environment Variables
 
-|Services|Secret|Mask|
-|:--|:--|:--|
-|AppVeyor|:o:|:o:|
-|Azure Pipelines|:o:|:o:|
-|Bitrise|:o:|:o:|
-|Buddy|:o:|:o:|
-|[CircleCI](https://circleci.com/docs/2.0/env-vars/)|:o:|:o:|
-|Cirrus CI|:o:|:o:|
-|AppVeyor|:o:|:o:|
-|AppVeyor|:o:|:o:|
-|AppVeyor|:o:|:o:|
-|AppVeyor|:o:|:o:|
-|AppVeyor|:o:|:o:|
-|AppVeyor|:o:|:o:|
+|Type||
+|:--|:--|
+|Project|Add a secret environment variable in the project settings. Set in the execution environment.|
+|Project and YAML|Add a secret environment variable in the project settings. Set in the execution environment, Requires loading with YAML config.|
+|Encrypt|Set the encrypted value in config.|
+
+|Services|Secret|Type|Mask|
+|:--|:--|:--|:--|
+|AppVeyor|:o:|Project| * x N |
+|[Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#secret-variables)|:o:|Project and YAML| * x N |
+|Bitrise|:o:|Project| \[REDACTED\] |
+|Buddy|:o:|Project| \*\*\*\*\*\*ENCRYPTED\*\*\*\*\*\* |
+|[CircleCI](https://circleci.com/docs/2.0/env-vars/)|:o:|Project| * x N |
+|[Cirrus CI](ENCRYPTED[9c27f429840137201c54a77bb56ad8698d0ae2ba6f5a2ceaabc02671e198707d1f6ba516199ee546df281d8a14b2c9cb])|:o:|Encrypt|SECRET|
+|Codefresh|:o:||:o:|
+|Codeship|:o:||:o:|
+|Drone|:o:|Project|:o:|
+|GitHub Actions|:o:|Project| * x N |
+|[Scrutinizer](https://scrutinizer-ci.com/docs/build/environment-variables)|:small_red_triangle:|-|-|
+|Semaphore 2.0|:o:|Project|:o:|
+|[Shippable](http://docs.shippable.com/ci/env-vars/#secure-variables)|:o:|Encrypt|:o:|
+|[Travis CI](https://docs.travis-ci.com/user/environment-variables/#encrypting-environment-variables)|:o:|Encrypt|:o:|
+|[wercker](https://devcenter.wercker.com/administration/environment-variables/)|:o:|Project|:x:|
