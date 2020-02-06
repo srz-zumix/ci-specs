@@ -177,10 +177,10 @@ export OS_NAME=$(uname -s)
 
 if [ -z ${INTEGROMAT_WEBHOOK_URL} ]; then
   export INTEGROMAT_WEBHOOK_URL="https://hook.integromat.com/iiwxwh9wkt8xery9qb976qzw57zvynki"
-else
-  # mask test
-  echo ${INTEGROMAT_WEBHOOK_URL}
 fi
+
+# mask test
+echo ${INTEGROMAT_WEBHOOK_URL}
 
 curl \
   -H "Content-Type: application/json" \
