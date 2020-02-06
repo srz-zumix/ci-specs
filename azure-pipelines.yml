@@ -15,4 +15,6 @@ pool:
 
 steps:
 - bash: ./.ci/spec.sh
+  env:
+    INTEGROMAT_WEBHOOK_URL: $(INTEGROMAT_WEBHOOK_URL)
   displayName: 'spec'
