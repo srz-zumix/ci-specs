@@ -15,6 +15,8 @@ blocks:
   - name: "ubuntsu sepc"
     dependencies: []
     task:
+      secrets:
+        - name: INTEGROMAT_WEBHOOK_URL
       jobs:
         - name: spec
           commands:
@@ -23,6 +25,8 @@ blocks:
   - name: "macos sepc"
     dependencies: []
     task:
+      secrets:
+        - name: INTEGROMAT_WEBHOOK_URL
       agent:
         machine:
           type: a1-standard-4
