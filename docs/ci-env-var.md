@@ -29,17 +29,17 @@
 
 |Services|Secret|Type|Echo Mask|
 |:--|:--|:--|:--|
-|AppVeyor|:o:|Server| * x N |
+|[AppVeyor](https://www.appveyor.com/docs/build-configuration/#secure-variables)|:o:|YAML, Server| * x N |
 |[Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#secret-variables)|:o:|Server and YAML| * x N |
-|Bitrise|:o:|Server| \[REDACTED\] |
-|Buddy|:o:|Server| \*\*\*\*\*\*ENCRYPTED\*\*\*\*\*\* |
+|[Bitrise](https://devcenter.bitrise.io/builds/env-vars-secret-env-vars/#about-secrets)|:o:|Server| \[REDACTED\] |
+|[Buddy](https://buddy.works/docs/pipelines/handling-secrets#environment-variables-encryption)|:o:|Server| \*\*\*\*\*\*ENCRYPTED\*\*\*\*\*\* |
 |[CircleCI](https://circleci.com/docs/2.0/env-vars/)|:o:|Server| * x N |
 |[Cirrus CI](ENCRYPTED[9c27f429840137201c54a77bb56ad8698d0ae2ba6f5a2ceaabc02671e198707d1f6ba516199ee546df281d8a14b2c9cb])|:o:|YAML|SECRET|
 |[Codefresh](https://codefresh.io/docs/docs/configure-ci-cd-pipeline/shared-configuration/)|:o:|Server|:x:|
 |Codeship Basic|:x: ?|-|-|
 |[Codeship Pro](https://documentation.codeship.com/pro/builds-and-configuration/environment-variables/#encrypting-your-environment-variables)|:o:|YAML|?|
 |[Drone](https://docs.drone.io/secret/)|:o:|YAML, Server and YAML|\[secret:NAME\]|
-|GitHub Actions|:o:|Server| * x N |
+|[GitHub Actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)|:o:|Server| * x N |
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/environment-variables)|:small_red_triangle:|-|-|
 |[Semaphore 2.0](https://docs.semaphoreci.com/guided-tour/environment-variables-and-secrets/)|:o:|YAML|:o:|
 |[Shippable](http://docs.shippable.com/ci/env-vars/#secure-variables)|:o:|YAML|:o:|
