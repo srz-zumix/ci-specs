@@ -11,6 +11,9 @@ resources:
 
 #### JOBS CONFIG (GLOBAL ACROSS SUBSCRIPTION)
 
+env:
+  - secure: KVd5n1GcaLeyYxq0iTSxYyXDwyKZHT/YVxkkl/yJZ8NiXfDglhK78dphjGyMmN/pqf9MtUfbmqClqkzr/gUwk0nB/zJpfVzI75shJvOM3YCVbRLNk76lGNn4qkCdOWQhmYeD40CT09tgmhIONWmnzR1aM9n/L05bbUDcEGuSz6lPeLcT3C/zEJAET9TC3DIQrK/E1BjzvVLb2R5yn8kRY6Mn1grDfN0UZQr4De5cfHqei6j0iBb00IxHyD9xLqvTvpi2R0xJZ0prgaar8+F7sEIvcQDlTMV3kDfh9VJUE+146aF/BOdXvm8BJj/IduBL/hvO5hYr1sbzestQ0nUUEA==
+
 jobs:
   - name: ci-specs_runCI
     type: runCI
