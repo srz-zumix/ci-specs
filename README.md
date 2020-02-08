@@ -42,7 +42,7 @@ ci services specs check
 |[Codefresh](https://codefresh.io/)|[Free Plan](https://codefresh.io/pricing/)|Unlimited|[Unlimited/1/2/3](https://codefresh.io/docs/docs/configure-ci-cd-pipeline/pipelines/#concurrency-policy)|60min?|15min ?|
 |[Codeship Basic](https://codeship.com/)|[Forever Free](https://codeship.com/pricing/basic)|100 build/month|1|?|?||
 |[Codeship Pro](https://codeship.com/)|[Forever Free](https://codeship.com/pricing/pro)|100 build/month|1|?|?||
-|[Drone Cloud](https://cloud.drone.io/)|Free for OSS|Unlimited?|?|?|?||
+|[Drone](https://cloud.drone.io/)|Free for OSS|Unlimited?|?|?|?||
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|Free for Public repo|Unlimited|20|default 360min([config](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idtimeout-minutes))|?|[Usage Limit](https://help.github.com/en/articles/about-github-actions#usage-limits)|
 |[Scrutinizer](https://scrutinizer-ci.com)|[Free for OSS](https://scrutinizer-ci.com/pricing)|Unlimited?|?|?|?||
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|Unlimited |default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
@@ -57,15 +57,15 @@ ci services specs check
 
 |CI|Linux|Windows|macOS|FreeBSD|CentOS|Container|Self Agent|
 |:--|:--|:--|:--|:--|:--|:--|:--|
-|[AppVeyor](https://www.appveyor.com/docs/build-environment/)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check: [[*]](https://www.appveyor.com/blog/2019/11/20/build-macos-projects-with-appveyor/)|-|-|[BYOC](https://www.appveyor.com/docs/byoc/docker/)|:ballot_box_with_check: [[*]](https://ci.appveyor.com/build-clouds)|
+|[AppVeyor](https://www.appveyor.com/docs/build-environment/)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|[BYOC](https://www.appveyor.com/docs/byoc/docker/)|:ballot_box_with_check: [[*]](https://ci.appveyor.com/build-clouds)|
 |[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:ballot_box_with_check:|:ballot_box_with_check:|
 |[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:||:ballot_box_with_check:|||||
-|[Buddy](https://buddy.works)|:ballot_box_with_check:|||||:ballot_box_with_check:||
+|[Buddy](https://buddy.works)|-|-|-|-|-|:ballot_box_with_check:||
 |[Circle CI](https://circleci.com/docs/2.0/configuration-reference/#docker--machine--macos--windows-executor)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check: [[*]](https://circleci.com/docs/2.0/oss/#overview)|-|-|:ballot_box_with_check:|-|
 |[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|:ballot_box_with_check: [[*]](https://cirrus-ci.org/guide/docker-builder-vm/)|:heavy_dollar_sign: [[*]](https://cirrus-ci.org/guide/supported-computing-services/)|
 |[Codefresh](https://codefresh.io/)|:ballot_box_with_check:|[Beta](https://codefresh.io/docs/docs/incubation/windows-beta/)|:ballot_box_with_check:[[*]](https://codefresh.io/docs/docs/incubation/osx-ios-builds/)|||:ballot_box_with_check:||
 |[Codeship](https://codeship.com/)|-|-|-|-|-|:ballot_box_with_check:|-|
-|[Drone Cloud](https://docs.drone.io/user-guide/pipeline/steps/#platform)|:ballot_box_with_check:?|:ballot_box_with_check:?|:ballot_box_with_check:?|:ballot_box_with_check:?|-|:ballot_box_with_check:|:ballot_box_with_check: [[*]](https://exec-runner.docs.drone.io/configuration/platform/)|
+|[Drone](https://docs.drone.io/user-guide/pipeline/steps/#platform)||:ballot_box_with_check:?|:ballot_box_with_check:?|:ballot_box_with_check:?|-|:ballot_box_with_check:|:ballot_box_with_check: [[*]](https://exec-runner.docs.drone.io/configuration/platform/)|
 |[GitHub Actions](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idruns-on)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:ballot_box_with_check:|:ballot_box_with_check:|
 |[Scrutinizer](https://scrutinizer-ci.com)|:ballot_box_with_check:|||||||
 |[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:||:ballot_box_with_check:|||||

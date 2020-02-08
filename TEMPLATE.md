@@ -8,10 +8,10 @@
 |[Cirrus CI](https://cirrus-ci.org/)||
 |[Codefresh](https://codefresh.io/)||
 |[Codeship](https://codeship.com/)||
-|[Drone Cloud](https://cloud.drone.io/)||
+|[Drone](https://cloud.drone.io/)||
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)||
 |[Scrutinizer](https://scrutinizer-ci.com)||
-|[Semaphore CI 2.0](https://semaphoreci.com/product)||
+|[Semaphore 2.0](https://semaphoreci.com/product)||
 |[Shippable](http://shippable.com)||
 |[Travis CI](https://travis-ci.com/)|
 |[wercker](http://www.wercker.com/)||

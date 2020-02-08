@@ -11,31 +11,203 @@ steps:
   commands:
     - "./.ci/spec.sh"
 
-# ---
-# kind: pipeline
-# type: exec
-# name: spec mac
+---
+kind: pipeline
+type: exec
+name: spec darwin amd64
 
-# platform:
-#   os: darwin
-#   arch: amd64
+platform:
+  os: darwin
+  arch: amd64
 
-# steps:
-# - name: spec
-#   commands:
-#     - "./.ci/spec.sh"
+steps: &exec-spec
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
-# ---
-# kind: pipeline
-# type: exec
-# name: spec linux
+---
+kind: pipeline
+type: exec
+name: spec linux amd64
 
-# platform:
-#   os: linux
-#   arch: amd64
+platform:
+  os: linux
+  arch: amd64
 
-# steps:
-# - name: spec
-#   commands:
-#     - "./.ci/spec.sh"
+steps: *exec-spec
 
+---
+kind: pipeline
+type: exec
+name: spec linux arm64
+
+platform:
+  os: linux
+  arch: arm64
+
+steps: *exec-spec
+
+---
+kind: pipeline
+type: exec
+name: spec linux arm
+
+platform:
+  os: linux
+  arch: arm
+
+steps: *exec-spec
+
+---
+kind: pipeline
+type: exec
+name: spec linux 386
+
+platform:
+  os: linux
+  arch: 386
+
+steps: *exec-spec
+
+---
+kind: pipeline
+type: exec
+name: spec windows amd64
+
+platform:
+  os: windows
+  arch: amd64
+
+steps: *exec-spec
+
+---
+kind: pipeline
+type: exec
+name: spec windows amd64
+
+platform:
+  os: windows
+  arch: amd64
+
+steps: *exec-spec
+
+---
+kind: pipeline
+type: exec
+name: spec windows 386
+
+platform:
+  os: windows
+  arch: 386
+
+steps: *exec-spec
+
+---
+kind: pipeline
+type: exec
+name: spec freebsd amd64
+
+platform:
+  os: freebsd
+  arch: amd64
+
+steps: *exec-spec
+
+---
+kind: pipeline
+type: exec
+name: spec freebsd arm
+
+platform:
+  os: freebsd
+  arch: arm
+
+steps: *exec-spec
+
+---
+kind: pipeline
+type: exec
+name: spec freebsd 386
+
+platform:
+  os: freebsd
+  arch: 386
+
+steps: *exec-spec
+
+---
+kind: pipeline
+type: exec
+name: spec netbsd amd64
+
+platform:
+  os: netbsd
+  arch: amd64
+
+steps: *exec-spec
+
+---
+kind: pipeline
+type: exec
+name: spec netbsd arm
+
+platform:
+  os: netbsd
+  arch: arm
+
+steps: *exec-spec
+
+---
+kind: pipeline
+type: exec
+name: spec openbsd amd64
+
+platform:
+  os: openbsd
+  arch: amd64
+
+steps: *exec-spec
+
+---
+kind: pipeline
+type: exec
+name: spec openbsd arm
+
+platform:
+  os: openbsd
+  arch: arm
+
+steps: *exec-spec
+
+---
+kind: pipeline
+type: exec
+name: spec openbsd 386
+
+platform:
+  os: openbsd
+  arch: 386
+
+steps: *exec-spec
+
+---
+kind: pipeline
+type: exec
+name: spec dragonfly amd64
+
+platform:
+  os: dragonfly
+  arch: amd64
+
+steps: *exec-spec
+
+---
+kind: pipeline
+type: exec
+name: spec solaris amd64
+
+platform:
+  os: solaris
+  arch: amd64
+
+steps: *exec-spec

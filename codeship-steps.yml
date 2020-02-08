@@ -1,0 +1,3 @@
+- name: spec
+  service: gcc
+  command: ./.ci/spec.sh
