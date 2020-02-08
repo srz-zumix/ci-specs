@@ -20,7 +20,7 @@ platform:
   os: darwin
   arch: amd64
 
-steps: &exec-spec
+steps:
 - name: spec
   commands:
     - "./.ci/spec.sh"
@@ -34,7 +34,10 @@ platform:
   os: linux
   arch: amd64
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -45,7 +48,10 @@ platform:
   os: linux
   arch: arm64
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -56,7 +62,10 @@ platform:
   os: linux
   arch: arm
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -67,7 +76,10 @@ platform:
   os: linux
   arch: 386
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -78,7 +90,10 @@ platform:
   os: windows
   arch: amd64
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -89,7 +104,10 @@ platform:
   os: windows
   arch: amd64
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -100,7 +118,10 @@ platform:
   os: windows
   arch: 386
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -111,7 +132,10 @@ platform:
   os: freebsd
   arch: amd64
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -122,7 +146,10 @@ platform:
   os: freebsd
   arch: arm
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -133,7 +160,10 @@ platform:
   os: freebsd
   arch: 386
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -144,7 +174,10 @@ platform:
   os: netbsd
   arch: amd64
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -155,7 +188,10 @@ platform:
   os: netbsd
   arch: arm
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -166,7 +202,10 @@ platform:
   os: openbsd
   arch: amd64
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -177,7 +216,10 @@ platform:
   os: openbsd
   arch: arm
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -188,7 +230,10 @@ platform:
   os: openbsd
   arch: 386
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -199,7 +244,10 @@ platform:
   os: dragonfly
   arch: amd64
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
 
 ---
 kind: pipeline
@@ -210,4 +258,7 @@ platform:
   os: solaris
   arch: amd64
 
-steps: *exec-spec
+steps:
+- name: spec
+  commands:
+    - "./.ci/spec.sh"
