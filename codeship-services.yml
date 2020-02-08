@@ -1,2 +1,4 @@
 gcc:
   image: gcc
+  volumes:
+    - ./:/work
