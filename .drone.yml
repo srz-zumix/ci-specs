@@ -98,20 +98,6 @@ steps:
 ---
 kind: pipeline
 type: exec
-name: spec windows amd64
-
-platform:
-  os: windows
-  arch: amd64
-
-steps:
-- name: spec
-  commands:
-    - "./.ci/spec.sh"
-
----
-kind: pipeline
-type: exec
 name: spec windows 386
 
 platform:
