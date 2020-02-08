@@ -1,4 +1,6 @@
 gcc:
   image: gcc
+  encrypted_env_file:
+    - ./.ci/codeship/env.encrypted
   volumes:
     - ./:/work
