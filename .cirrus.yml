@@ -1,6 +1,10 @@
 env:
   INTEGROMAT_WEBHOOK_URL: ENCRYPTED[9c27f429840137201c54a77bb56ad8698d0ae2ba6f5a2ceaabc02671e198707d1f6ba516199ee546df281d8a14b2c9cb]
 
+windows_container:
+  image: cirrusci/windowsservercore:2019
+  os_version: 2019
+
 cirrus_container_task:
   auto_cancellation: true
   container:
@@ -21,7 +25,4 @@ cirrus_osx_task:
 
 cirrus_windows_task:
   auto_cancellation: true
-  container:
-    image: cirrusci/windowsservercore:2019
-    os_version: 2019
   spec_script: ./.ci/spec.sh
