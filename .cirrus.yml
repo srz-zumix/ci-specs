@@ -18,3 +18,10 @@ cirrus_osx_task:
   osx_instance:
     image: mojave-xcode
   spec_script: ./.ci/spec.sh
+
+cirrus_windows_task:
+  auto_cancellation: true
+  container:
+    image: cirrusci/windowsservercore:2019
+    os_version: 2019
+  spec_script: ./.ci/spec.sh
