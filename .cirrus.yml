@@ -9,7 +9,7 @@ cirrus_container_task:
   auto_cancellation: true
   container:
     image: gcc:latest
-  spec_script: sh ./.ci/spec.sh
+  spec_script: bash ./.ci/spec.sh
 
 cirrus_freebsd_task:
   auto_cancellation: true
@@ -25,4 +25,4 @@ cirrus_osx_task:
 
 cirrus_windows_task:
   auto_cancellation: true
-  spec_script: sh ./.ci/spec.sh
+  spec_script: bash ./.ci/spec.sh
