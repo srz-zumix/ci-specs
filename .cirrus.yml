@@ -25,4 +25,5 @@ cirrus_osx_task:
 
 cirrus_windows_task:
   auto_cancellation: true
+  install_script: choco install -y git
   spec_script: bash ./.ci/spec.sh
