@@ -63,11 +63,11 @@ ci services specs check
 |[Buddy](https://buddy.works)|-|-|-|-|-|:ballot_box_with_check:||
 |[Circle CI](https://circleci.com/docs/2.0/configuration-reference/#docker--machine--macos--windows-executor)|:ballot_box_with_check:|:ballot_box_with_check: [[*]](https://circleci.com/docs/2.0/oss/#overview)|:ballot_box_with_check:|-|-|:ballot_box_with_check:|-|
 |[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|:ballot_box_with_check: [[*]](https://cirrus-ci.org/guide/docker-builder-vm/)|:heavy_dollar_sign: [[*]](https://cirrus-ci.org/guide/supported-computing-services/)|
-|[Codefresh](https://codefresh.io/)|:ballot_box_with_check:|:ballot_box_with_check:[[*]](https://codefresh.io/docs/docs/incubation/osx-ios-builds/)|[Beta](https://codefresh.io/docs/docs/incubation/windows-beta/)|||:ballot_box_with_check:||
+|[Codefresh](https://codefresh.io/)|:ballot_box_with_check:|:ballot_box_with_check:[[*]](https://codefresh.io/docs/docs/incubation/osx-ios-builds/)|[Beta](https://codefresh.io/docs/docs/incubation/windows-beta/)|-|-|:ballot_box_with_check:||
 |[Codeship](https://codeship.com/)|-|-|-|-|-|:ballot_box_with_check:|-|
 |[Drone](https://docs.drone.io/user-guide/pipeline/steps/#platform)||-|-|-|-|:ballot_box_with_check:|:ballot_box_with_check: [[*]](https://exec-runner.docs.drone.io/configuration/platform/)|
 |[GitHub Actions](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idruns-on)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:ballot_box_with_check:|:ballot_box_with_check:|
-|[Scrutinizer](https://scrutinizer-ci.com)|:ballot_box_with_check:|||||||
+|[Scrutinizer](https://scrutinizer-ci.com)|:ballot_box_with_check:|-|-|-|-|||
 |[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:|:ballot_box_with_check:|-|-|-|:ballot_box_with_check: [\[*\]](https://docs.semaphoreci.com/ci-cd-environment/custom-ci-cd-environment-with-docker/)||
 |[Shippable](http://shippable.com)|:ballot_box_with_check:|:heavy_dollar_sign:|:ballot_box_with_check:|-|:ballot_box_with_check:|:ballot_box_with_check:|[:ballot_box_with_check:](http://docs.shippable.com/platform/runtime/nodes/#byon-nodes)|
 |[Travis CI](https://docs.travis-ci.com/user/multi-os/)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|||
