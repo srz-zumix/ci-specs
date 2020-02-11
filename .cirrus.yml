@@ -24,4 +24,6 @@ cirrus_windows_task:
   windows_container:
     image: cirrusci/windowsservercore:2019
     os_version: 2019
-  spec_script: C:\tools\msys64\usr\bin\bash -l .ci\spec.sh
+  spec_script: |
+    C:\tools\msys64\usr\bin\bash -c "pwd"
+    C:\tools\msys64\usr\bin\bash -c ".ci\spec.sh"
