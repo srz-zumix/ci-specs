@@ -24,8 +24,8 @@ cirrus_windows_task:
   windows_container:
     image: cirrusci/windowsservercore:2019
     os_version: 2019
-  env:
-    CIRRUS_SHELL: powershell
+  # env:
+  #   CIRRUS_SHELL: powershell
   check_script: cd C:\tools\msys64\usr\bin && dir
-  spec_script: |
-    & 'C:\tools\msys64\usr\bin\bash' -c ".ci\spec.sh"
+  # spec_script: |
+  #   & 'C:\tools\msys64\usr\bin\bash' -c ".ci\spec.sh"
