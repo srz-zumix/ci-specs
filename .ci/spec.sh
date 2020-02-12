@@ -38,6 +38,12 @@ uname
 echo $PLATFORM
 
 export HAS_VS=false
+if [ -f /.dockerenv ]; then
+  export IS_DOCKER=true
+else
+  export IS_DOCKER=false
+fi
+
 
 if [ "$PLATFORM" = "linux" ]; then
   echo NUMBER_OF_PROCESSORS
@@ -148,6 +154,10 @@ if [ "$PLATFORM" = "windows" ]; then
   if [ $? = 0 ]; then
     export HAS_VS=true
   fi
+  
+  if [ -f c:/License.txt ]; then
+    export IS_DOCKER=true
+  fi
 fi
 
 echo ------------------------
@@ -162,12 +172,6 @@ echo $CI_NAME
 
 . ${BASEDIR}/commit-hash.sh
 echo $GIT_COMMIT
-
-if [ -f /.dockerenv ]; then
-  export IS_DOCKER=true
-else
-  export IS_DOCKER=false
-fi
 
 echo "NPROC : ${NUMBER_OF_PROCESSORS}"
 echo "RAM   : ${RAMSIZE_GB}"
