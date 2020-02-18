@@ -61,7 +61,7 @@ ci services specs check
 |[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:ballot_box_with_check:|:ballot_box_with_check:|
 |[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:|:ballot_box_with_check:|-|-|-|-||
 |[Buddy](https://buddy.works)|-|-|-|-|-|:ballot_box_with_check:||
-|[Circle CI](https://circleci.com/docs/2.0/configuration-reference/#docker--machine--macos--windows-executor)|:ballot_box_with_check:|:ballot_box_with_check: [[*]](https://circleci.com/docs/2.0/oss/#overview)|:ballot_box_with_check:|-|-|:ballot_box_with_check:|-|
+|[CircleCI](https://circleci.com/docs/2.0/configuration-reference/#docker--machine--macos--windows-executor)|:ballot_box_with_check:|:ballot_box_with_check: [[*]](https://circleci.com/docs/2.0/oss/#overview)|:ballot_box_with_check:|-|-|:ballot_box_with_check:|-|
 |[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|:ballot_box_with_check: [[*]](https://cirrus-ci.org/guide/docker-builder-vm/)|:heavy_dollar_sign: [[*]](https://cirrus-ci.org/guide/supported-computing-services/)|
 |[Codefresh](https://codefresh.io/)|:ballot_box_with_check:|:ballot_box_with_check:[[*]](https://codefresh.io/docs/docs/incubation/osx-ios-builds/)|[Beta](https://codefresh.io/docs/docs/incubation/windows-beta/)|-|-|:ballot_box_with_check:||
 |[Codeship](https://codeship.com/)|-|-|-|-|-|:ballot_box_with_check:|-|
