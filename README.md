@@ -36,8 +36,8 @@ ci services specs check
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|[Free for OSS](https://azure.microsoft.com/ja-jp/pricing/details/devops/azure-devops-services/)|Unlimited|10|[360min](https://docs.microsoft.com/en-us/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops#microsoft-hosted-cicd)|?||
 |[Bitrise](https://www.bitrise.io)|[Free for OSS](https://blog.bitrise.io/free-developer-plan-features-for-open-source-projects-on-bitrise)|Unlimited|1|45min|?||
 |[Buddy](https://buddy.works)|[Free for OSS](https://buddy.works/free-for-open-source)|120 build/month|1|?|?|5 projects / 500 MB cache / 1 GB & 2vCPU performance|
-|[Circle CI](https://circleci.com)|[Free Plan](https://circleci.com/pricing/)|2,500 free credits / week|1|[5h](https://circleci.com/docs/2.0/configuration-reference/#jobs)|default 10min ([config: no_output_timeout](https://circleci.com/docs/2.0/configuration-reference/#run))||
-|[Circle CI](https://circleci.com)|[Free for OSS](https://circleci.com/docs/2.0/oss/#overview)|100,000 free credits / week|autoscale|?|?||
+|[CircleCI](https://circleci.com)|[Free Plan](https://circleci.com/pricing/)|2,500 free credits / week|1|[5h](https://circleci.com/docs/2.0/configuration-reference/#jobs)|default 10min ([config: no_output_timeout](https://circleci.com/docs/2.0/configuration-reference/#run))||
+|[CircleCI](https://circleci.com)|[Free for OSS](https://circleci.com/docs/2.0/oss/#overview)|100,000 free credits / week|autoscale|?|?||
 |[Cirrus CI](https://cirrus-ci.org/)|[Free for OSS](https://cirrus-ci.org/pricing/)|Unlimited?|[no limit](https://cirrus-ci.org/features/#no-concurrency-limit-no-queues)|[60min](https://cirrus-ci.org/faq/#instance-timed-out)(max 2h)|?|[Parallel VMs limit](https://cirrus-ci.org/faq/#are-there-any-limits)|
 |[Codefresh](https://codefresh.io/)|[Free Plan](https://codefresh.io/pricing/)|Unlimited|[Unlimited/1/2/3](https://codefresh.io/docs/docs/configure-ci-cd-pipeline/pipelines/#concurrency-policy)|60min?|15min ?|
 |[Codeship Basic](https://codeship.com/)|[Forever Free](https://codeship.com/pricing/basic)|100 build/month|1|?|?||

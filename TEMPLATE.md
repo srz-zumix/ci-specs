@@ -4,7 +4,7 @@
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|
 |[Bitrise](https://www.bitrise.io)||
 |[Buddy](https://buddy.works)||
-|[Circle CI](https://circleci.com)||
+|[CircleCI](https://circleci.com)||
 |[Cirrus CI](https://cirrus-ci.org/)||
 |[Codefresh](https://codefresh.io/)||
 |[Codeship](https://codeship.com/)||
