@@ -25,6 +25,7 @@ ci services specs check
 
 ## CI Examples
 
+* [CI Parallel](https://github.com/srz-zumix/ci-parallel)
 * [CI Skip](https://github.com/srz-zumix/ci-skip)
 * [CI Yaml](https://github.com/srz-zumix/ci-yaml)
 
