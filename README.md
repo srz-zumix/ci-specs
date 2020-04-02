@@ -3,7 +3,7 @@
 ci services specs check
 
 [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/s5slt06sp2hh72pc/branch/master?svg=true)](https://ci.appveyor.com/project/srz-zumix/ci-specs/branch/master)
-[![Azure Pipelines Build Status](https://dev.azure.com/srz-zumix/ci-specs/_apis/build/status/srz-zumix.ci-specs?branchName=master)](https://dev.azure.com/srz-zumix/ci-specs/_build/latest?definitionId=9&branchName=master)
+[![Azure Pipelines Build Status](https://dev.azure.com/srz-zumix/ci-specs/_apis/build/status/ci-specs?branchName=master)](https://dev.azure.com/srz-zumix/ci-specs/_build/latest?definitionId=9&branchName=master)
 [![Bitrise Build Status](https://app.bitrise.io/app/83e4e21587717d28/status.svg?token=AbTwzSOu8eyP2cc0Xly69Q&branch=master)](https://app.bitrise.io/app/83e4e21587717d28)
 [![buddy pipeline](https://app.buddy.works/zumixcpp/ci-specs/pipelines/pipeline/231618/badge.svg?token=a0d4d12b159d24a0234f9ed9567ebb40a6268f39f8151ef552999864674de564 "buddy pipeline")](https://app.buddy.works/zumixcpp/ci-specs/pipelines/pipeline/231618)
 [![CircleCI](https://circleci.com/gh/srz-zumix/ci-specs/tree/master.svg?style=svg)](https://circleci.com/gh/srz-zumix/ci-specs/tree/master)
@@ -21,7 +21,7 @@ ci services specs check
 
 ## List of Continuous Integration services
 
-[https://github.com/ligurio/awesome-ci](https://github.com/ligurio/awesome-ci) 
+[https://github.com/ligurio/awesome-ci](https://github.com/ligurio/awesome-ci)
 
 ## CI Examples
 
