@@ -9,4 +9,4 @@
 	url = https://github.com/srz-zumix/ci-branch-filter.git
 [submodule "ci-parallel"]
 	path = ci-parallel
-	url = git@github.com:srz-zumix/ci-parallel.git
+	url = https://github.com/srz-zumix/ci-parallel.git
