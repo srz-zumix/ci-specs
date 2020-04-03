@@ -29,7 +29,7 @@ ci services specs check
 * [CI Skip](https://github.com/srz-zumix/ci-skip)
 * [CI Yaml](https://github.com/srz-zumix/ci-yaml)
 
-# Open Source or Free Plan Available Features and Limitations
+## Open Source or Free Plan Available Features and Limitations
 
 |CI|OSS or Free|Build Limit|Concurrency|Timeout|No Output Timeout|Any Limits|
 |:--|:--|:--|:--|:--|:--|:--|
@@ -98,9 +98,7 @@ ci services specs check
 |[Travis CI](https://docs.travis-ci.com/user/multi-cpu-architectures/)|amd64, ppc64le, s390x, arm64|
 |[wercker](http://www.wercker.com/)||
 
-
 ## Etc.
 
 * [CI Envrionment Variables](./docs/ci-env-var.md)
 * [CI Status](./docs/ci-status.md)
-
