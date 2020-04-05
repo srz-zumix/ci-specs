@@ -27,6 +27,7 @@ ci services specs check
 
 * [CI Parallel](https://github.com/srz-zumix/ci-parallel)
 * [CI Skip](https://github.com/srz-zumix/ci-skip)
+* [CI Trigger](https://github.com/srz-zumix/ci-trigger)
 * [CI Yaml](https://github.com/srz-zumix/ci-yaml)
 
 ## Open Source or Free Plan Available Features and Limitations
@@ -101,5 +102,4 @@ ci services specs check
 ## Etc.
 
 * [CI Envrionment Variables](./docs/ci-env-var.md)
-* [CI Trigger](./docs/ci-trigger.md)
 * [CI Status](./docs/ci-status.md)

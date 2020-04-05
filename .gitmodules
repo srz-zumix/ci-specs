@@ -7,3 +7,6 @@
 [submodule "ci-parallel"]
 	path = ci-parallel
 	url = https://github.com/srz-zumix/ci-parallel.git
+[submodule "ci-trigger"]
+	path = ci-trigger
+	url = https://github.com/srz-zumix/ci-trigger.git
