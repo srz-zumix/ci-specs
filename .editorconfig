@@ -10,3 +10,7 @@ trim_trailing_whitespace = true
 
 [*.{yml,yaml,html}]
 indent_size = 2
+
+[*.{sh}]
+indent_size = 2
+

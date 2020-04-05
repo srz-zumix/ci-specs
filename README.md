@@ -101,4 +101,5 @@ ci services specs check
 ## Etc.
 
 * [CI Envrionment Variables](./docs/ci-env-var.md)
+* [CI Trigger](./docs/ci-trigger.md)
 * [CI Status](./docs/ci-status.md)

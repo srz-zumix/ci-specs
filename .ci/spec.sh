@@ -154,7 +154,7 @@ if [ "$PLATFORM" = "windows" ]; then
   if [ $? = 0 ]; then
     export HAS_VS=true
   fi
-  
+
   if [ -f c:/License.txt ]; then
     export IS_DOCKER=true
   fi
