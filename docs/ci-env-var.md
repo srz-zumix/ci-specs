@@ -35,7 +35,7 @@
 |[Buddy](https://buddy.works/docs/pipelines/handling-secrets#environment-variables-encryption)|:o:|Server| \*\*\*\*\*\*ENCRYPTED\*\*\*\*\*\* |
 |[CircleCI](https://circleci.com/docs/2.0/env-vars/)|:o:|Server| * x N |
 |[Cirrus CI](https://cirrus-ci.org/guide/writing-tasks/#encrypted-variables)|:o:|YAML|SECRET|
-|[Codefresh](https://codefresh.io/docs/docs/configure-ci-cd-pipeline/shared-configuration/)|:o:|Server|:x:|
+|[Codefresh](https://codefresh.io/docs/docs/configure-ci-cd-pipeline/shared-configuration/)|:o:|[YAML](https://codefresh-io.github.io/cli/contexts/create-context/create-secret-yaml-context/), Server|:x:|
 |Codeship Basic|:x: ?|-|-|
 |[Codeship Pro](https://documentation.codeship.com/pro/builds-and-configuration/environment-variables/#encrypting-your-environment-variables)|:o:|YAML|:x:|
 |[Drone](https://docs.drone.io/secret/)|:o:|YAML, Server and YAML|\[secret:NAME\]|
