@@ -4,9 +4,6 @@
 [submodule "ci-yaml"]
 	path = ci-yaml
 	url = https://github.com/srz-zumix/ci-yaml.git
-[submodule "ci-branch-filter"]
-	path = ci-branch-filter
-	url = https://github.com/srz-zumix/ci-branch-filter.git
 [submodule "ci-parallel"]
 	path = ci-parallel
 	url = https://github.com/srz-zumix/ci-parallel.git
