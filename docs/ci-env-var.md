@@ -35,7 +35,7 @@
 |[Buddy](https://buddy.works/docs/pipelines/handling-secrets#environment-variables-encryption)|:o:|Server| \*\*\*\*\*\*ENCRYPTED\*\*\*\*\*\* |
 |[CircleCI](https://circleci.com/docs/2.0/env-vars/)|:o:|Server| * x N |
 |[Cirrus CI](https://cirrus-ci.org/guide/writing-tasks/#encrypted-variables)|:o:|YAML|SECRET|
-|[Codefresh](https://codefresh.io/docs/docs/configure-ci-cd-pipeline/shared-configuration/)|:o:|[YAML](https://codefresh-io.github.io/cli/contexts/create-context/create-secret-yaml-context/), Server|:x:|
+|[Codefresh](https://codefresh.io/docs/docs/configure-ci-cd-pipeline/shared-configuration/)|:o:|[YAML](https://codefresh-io.github.io/cli/contexts/create-context/create-secret-yaml-context/), Server|[vault plugin](https://codefresh.io/docs/docs/yaml-examples/examples/vault-secrets-in-the-pipeline/)|
 |Codeship Basic|:x: ?|-|-|
 |[Codeship Pro](https://documentation.codeship.com/pro/builds-and-configuration/environment-variables/#encrypting-your-environment-variables)|:o:|YAML|:x:|
 |[Drone](https://docs.drone.io/secret/)|:o:|YAML, Server and YAML|\[secret:NAME\]|
@@ -43,5 +43,5 @@
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/environment-variables)|:small_red_triangle:|-|-|
 |[Semaphore 2.0](https://docs.semaphoreci.com/guided-tour/environment-variables-and-secrets/)|:o:|YAML, Server and YAML|:x:|
 |[Shippable](http://docs.shippable.com/ci/env-vars/#secure-variables)|:o:|YAML|:x:|
-|[Travis CI](https://docs.travis-ci.com/user/environment-variables/#encrypting-environment-variables)|:o:|YAML|\[secure\] *(Windows :x:)* |
+|[Travis CI](https://docs.travis-ci.com/user/environment-variables/#encrypting-environment-variables)|:o:|YAML, Server|\[secure\] *(Windows :x:)* |
 |[wercker](https://devcenter.wercker.com/administration/environment-variables/)|:o:|Server|:x:|

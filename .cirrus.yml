@@ -10,13 +10,13 @@ cirrus_container_task:
 cirrus_freebsd_task:
   auto_cancellation: true
   freebsd_instance:
-    image: freebsd-11-2-release-amd64
+    image_family: freebsd-12-1-snap
   spec_script: ./.ci/spec.sh
 
 cirrus_osx_task:
   auto_cancellation: true
   osx_instance:
-    image: mojave-xcode
+    image: catalina-xcode
   spec_script: ./.ci/spec.sh
 
 cirrus_windows_task:
