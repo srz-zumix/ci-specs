@@ -2,13 +2,12 @@ kind: pipeline
 type: docker
 name: spec container
 
-environment:
-  INTEGROMAT_WEBHOOK_URL:
-    from_secret: INTEGROMAT_WEBHOOK_URL
-
 steps:
 - name: spec
   image: golang
+  environment:
+    INTEGROMAT_WEBHOOK_URL:
+      from_secret: INTEGROMAT_WEBHOOK_URL
   commands:
     - "./.ci/spec.sh"
 
