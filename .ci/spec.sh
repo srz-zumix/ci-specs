@@ -150,7 +150,7 @@ if [ "$PLATFORM" = "windows" ]; then
   echo ------------------------
   echo Visual Studio
   echo ------------------------
-  HAS_VS=$(vswhere.bat)
+  HAS_VS=$(${BASEDIR}/vswhere.bat)
 
   if [ -f c:/License.txt ]; then
     export IS_DOCKER=true
