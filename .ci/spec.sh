@@ -150,10 +150,7 @@ if [ "$PLATFORM" = "windows" ]; then
   echo ------------------------
   echo Visual Studio
   echo ------------------------
-  env | grep "VS[0-9]*COMNTOOLS"
-  if [ $? = 0 ]; then
-    export HAS_VS=true
-  fi
+  HAS_VS=$(vswhere.bat)
 
   if [ -f c:/License.txt ]; then
     export IS_DOCKER=true
