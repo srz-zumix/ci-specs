@@ -4,7 +4,8 @@ image:
   - Ubuntu
   - Visual Studio 2019
 
-clone_depth: 1
+# https://help.appveyor.com/discussions/problems/1272-fatal-reference-is-not-a-tree-sha-on-git-checkout
+# clone_depth: 1
 
 build_script:
   sh: |
