@@ -32,7 +32,7 @@ ci services specs check
 
 ## Open Source or Free Plan Available Features and Limitations
 
-|CI|OSS or Free|Build Limit|Concurrency|Timeout|No Output Timeout|Any Limits|
+|CI|OSS or Free|Build Limit|[Concurrency](https://github.com/srz-zumix/ci-parallel)|Timeout|No Output Timeout|Any Limits|
 |:--|:--|:--|:--|:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com)|[Free for OSS](https://www.appveyor.com/pricing/)|Unlimited|1|[60min or less](https://www.appveyor.com/docs/build-configuration/#build-timeout)|?||
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|[Free for OSS](https://azure.microsoft.com/ja-jp/pricing/details/devops/azure-devops-services/)|Unlimited|10|[360min](https://docs.microsoft.com/en-us/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops#microsoft-hosted-cicd)|?||
@@ -40,18 +40,20 @@ ci services specs check
 |[Buddy](https://buddy.works)|[Free for OSS](https://buddy.works/free-for-open-source)|120 build/month|1|?|?|5 projects / 500 MB cache / 1 GB & 2vCPU performance|
 |[CircleCI](https://circleci.com)|[Free Plan](https://circleci.com/pricing/)|2,500 free credits / week|1(1 parallel)|[5h](https://circleci.com/docs/2.0/configuration-reference/#jobs)|default 10min ([config: no_output_timeout](https://circleci.com/docs/2.0/configuration-reference/#run))||
 |[CircleCI](https://circleci.com)|[Free for OSS](https://circleci.com/docs/2.0/oss/#overview)|100,000 free credits / week|1(4 parallel)|?|?||
-|[Cirrus CI](https://cirrus-ci.org/)|[Free for OSS](https://cirrus-ci.org/pricing/)|Unlimited?|[no limit](https://cirrus-ci.org/features/#no-concurrency-limit-no-queues)|[60min](https://cirrus-ci.org/faq/#instance-timed-out)(max 2h)|?|[Parallel VMs limit](https://cirrus-ci.org/faq/#are-there-any-limits)|
+|[Cirrus CI](https://cirrus-ci.org/)|[Free for OSS](https://cirrus-ci.org/pricing/)|Unlimited?|[Linux: 8, Windows: 2, FreeBSD: 2, macOS: 1](https://cirrus-ci.org/features/#no-concurrency-limit-no-queues)|[60min](https://cirrus-ci.org/faq/#instance-timed-out)(max 2h)|?|[Parallel VMs limit](https://cirrus-ci.org/faq/#are-there-any-limits)|
 |[Codefresh](https://codefresh.io/)|[Free Plan](https://codefresh.io/pricing/)|Unlimited|1 (2 step per build) |60min?|15min ?|
 |[Codeship Basic](https://codeship.com/)|[Forever Free](https://codeship.com/pricing/basic)|100 build/month|1|?|?||
-|[Codeship Pro](https://codeship.com/)|[Forever Free](https://codeship.com/pricing/pro)|100 build/month|1|[5h](https://documentation.codeship.com/pro/builds-and-configuration/steps/#step-timeouts)|[15min](https://documentation.codeship.com/pro/builds-and-configuration/steps/#step-timeouts)||
-|[Drone](https://cloud.drone.io/)|Free for OSS|Unlimited?|?|?|?||
+|[Codeship Pro](https://codeship.com/)|[Forever Free](https://codeship.com/pricing/pro)|100 build/month|1 (Paralle Steps is Unlimited?)|[5h](https://documentation.codeship.com/pro/builds-and-configuration/steps/#step-timeouts)|[15min](https://documentation.codeship.com/pro/builds-and-configuration/steps/#step-timeouts)||
+|[Drone](https://cloud.drone.io/)|Free for OSS|Unlimited?|Unlimited?|?|?||
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|Free for Public repo|Unlimited|20|default 360min([config](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idtimeout-minutes))|?|[Usage Limit](https://help.github.com/en/articles/about-github-actions#usage-limits)|
-|[Scrutinizer](https://scrutinizer-ci.com)|[Free for OSS](https://scrutinizer-ci.com/pricing)|Unlimited?|?|?|?||
+|[Scrutinizer](https://scrutinizer-ci.com)|[Free for OSS](https://scrutinizer-ci.com/pricing)|Unlimited?|1|?|?||
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|1|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE for OSS](https://semaphoreci.com/pricing)|Unlimited|Linux: 4, macOS: 1|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
 |[Shippable](https://www.shippable.com/pricing.html)|[Free plan](https://www.shippable.com/pricing.html)|Unlimited (Public), 150 builds/month (Private)|1|[60min](http://docs.shippable.com/ci/custom-timeouts/)|[10min](http://docs.shippable.com/ci/custom-timeouts/)||
-|[Travis CI](https://travis-ci.com/)|[Free for OSS](https://travis-ci.com/plans)|Unlimited|3|[50min](https://docs.travis-ci.com/user/customizing-the-build#build-timeouts)|[10min](https://docs.travis-ci.com/user/customizing-the-build#build-timeouts)||
-|[wercker](http://www.wercker.com/)|?|?|?|?|?||
+|[Travis CI](https://travis-ci.com/)|[Free for OSS](https://travis-ci.com/plans)|Unlimited|5|[50min](https://docs.travis-ci.com/user/customizing-the-build#build-timeouts)|[10min](https://docs.travis-ci.com/user/customizing-the-build#build-timeouts)||
+|[wercker](http://www.wercker.com/)|?|?|2|[default 25min](https://devcenter.wercker.com/reference/wercker-yml/)|[default 5min](https://devcenter.wercker.com/reference/wercker-yml/)||
+
+Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-parallel)
 
 ## Support
 
