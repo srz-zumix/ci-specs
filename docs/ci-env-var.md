@@ -12,7 +12,7 @@
 |[Codeship](https://documentation.codeship.com/basic/builds-and-configuration/set-environment-variables/)|true|CI_NAME=codeship|
 |[Drone](https://0-8-0.docs.drone.io/environment-reference/)|drone|DRONE|
 |[GitHub Actions](https://help.github.com/ja/actions/automating-your-workflow-with-github-actions/using-environment-variables#default-environment-variables)|-|GITHUB_ACTIONS|
-|[Razorops](https://docs.razorops.com/configuration/environment.html)|true||
+|[Razorops](https://docs.razorops.com/configuration/environment.html)|razorops|CI=razorops|
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/environment-variables)|true|SCRUTINIZER|
 |[Semaphore 2.0](https://docs.semaphoreci.com/ci-cd-environment/environment-variables/)|true|SEMAPHORE|
 |[Shippable](http://docs.shippable.com/ci/env-vars/#stdEnv)|true|SHIPPABLE|

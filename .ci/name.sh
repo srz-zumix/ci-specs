@@ -56,6 +56,13 @@ if [ -n "${BUILD_URL+x}" ]; then
     fi
 fi
 
+if [ -n "${CI+x}" ]; then
+    if [ ${CI} = "razorops" ]; then
+        export CI_NAME="Razorops"
+        return
+    fi
+fi
+
 if [ -n "${SCRUTINIZER+x}" ]; then
     export CI_NAME="Scrutinizer"
     return
