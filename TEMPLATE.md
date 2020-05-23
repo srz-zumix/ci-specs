@@ -10,6 +10,7 @@
 |[Codeship](https://codeship.com/)||
 |[Drone](https://cloud.drone.io/)||
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)||
+|[Razorops](https://razorops.com/)||
 |[Scrutinizer](https://scrutinizer-ci.com)||
 |[Semaphore 2.0](https://semaphoreci.com/product)||
 |[Shippable](http://shippable.com)||

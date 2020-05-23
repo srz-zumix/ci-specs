@@ -1,0 +1,5 @@
+tasks:
+  spec:
+    image: ubuntu:latest
+    commands:
+      - ./.ci/spec.sh

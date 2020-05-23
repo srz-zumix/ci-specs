@@ -12,6 +12,7 @@
 |[Codeship](https://documentation.codeship.com/basic/builds-and-configuration/set-environment-variables/)|true|CI_NAME=codeship|
 |[Drone](https://0-8-0.docs.drone.io/environment-reference/)|drone|DRONE|
 |[GitHub Actions](https://help.github.com/ja/actions/automating-your-workflow-with-github-actions/using-environment-variables#default-environment-variables)|-|GITHUB_ACTIONS|
+|[Razorops](https://docs.razorops.com/configuration/environment.html)|true||
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/environment-variables)|true|SCRUTINIZER|
 |[Semaphore 2.0](https://docs.semaphoreci.com/ci-cd-environment/environment-variables/)|true|SEMAPHORE|
 |[Shippable](http://docs.shippable.com/ci/env-vars/#stdEnv)|true|SHIPPABLE|
@@ -40,6 +41,7 @@
 |[Codeship Pro](https://documentation.codeship.com/pro/builds-and-configuration/environment-variables/#encrypting-your-environment-variables)|:o:|YAML|:x:|
 |[Drone](https://docs.drone.io/secret/)|:o:|YAML, Server and YAML|\[secret:NAME\]|
 |[GitHub Actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)|:o:|Server| * x N |
+|[Razorops](https://docs.razorops.com/configuration/environment.html)|:o:|Server|||
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/environment-variables)|:small_red_triangle:|-|-|
 |[Semaphore 2.0](https://docs.semaphoreci.com/guided-tour/environment-variables-and-secrets/)|:o:|YAML, Server and YAML|:x:|
 |[Shippable](http://docs.shippable.com/ci/env-vars/#secure-variables)|:o:|YAML|:x:|
