@@ -38,6 +38,7 @@ uname
 echo $PLATFORM
 
 export HAS_VS=false
+export HAS_VCPERF=false
 if [ -f /.dockerenv ]; then
   export IS_DOCKER=true
 else
@@ -155,6 +156,11 @@ if [ "$PLATFORM" = "windows" ]; then
   if [ -f c:/License.txt ]; then
     export IS_DOCKER=true
   fi
+
+  # vcperf
+  if [ -x "$(command -v vcperf)" ]; then
+    export HAS_VCPERF=true
+  fi
 fi
 
 echo ------------------------
@@ -176,6 +182,7 @@ echo "DISK  : ${DISK}"
 echo "FREE  : ${FREESPACE}"
 echo "DOCKER: ${IS_DOCKER}"
 echo "VS    : ${HAS_VS}"
+echo "VCPERF: ${HAS_VCPERF}"
 export OS_NAME=$(uname -s)
 
 if [ -z ${INTEGROMAT_WEBHOOK_URL} ]; then
@@ -188,5 +195,5 @@ echo ${INTEGROMAT_WEBHOOK_URL}
 curl \
   -H "Content-Type: application/json" \
   -X POST \
-  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"disk\": \"${DISK}\", \"disk_avail\": \"${FREESPACE}\", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\", \"vs\":\"${HAS_VS}\" }" \
+  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"disk\": \"${DISK}\", \"disk_avail\": \"${FREESPACE}\", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\", \"vs\":\"${HAS_VS}\", \"vcperf\":\"${HAS_VCPERF}\" }" \
   ${INTEGROMAT_WEBHOOK_URL}
