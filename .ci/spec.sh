@@ -158,9 +158,7 @@ if [ "$PLATFORM" = "windows" ]; then
   fi
 
   # vcperf
-  if [ -x "$(command -v vcperf)" ]; then
-    export HAS_VCPERF=true
-  fi
+  HAS_VCPERF=$(${BASEDIR}/has_vcperf.bat)
 fi
 
 echo ------------------------
