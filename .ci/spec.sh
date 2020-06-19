@@ -115,8 +115,8 @@ if [ "$PLATFORM" = "bsd" ]; then
   echo CPU
   grep ^CPU /var/run/dmesg.boot
   sysctl dev.cpu
-  arch
-  export ARCH=$(arch)
+  uname -m
+  export ARCH=$(uname -m)
   echo ------------------------
   echo DISK
   geom disk list
