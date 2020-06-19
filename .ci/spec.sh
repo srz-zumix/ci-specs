@@ -59,6 +59,8 @@ if [ "$PLATFORM" = "linux" ]; then
   echo ------------------------
   echo CPU
   lscpu
+  arch
+  export ARCH=$(arch)
   echo ------------------------
   echo DISK
   cat /sys/block/sda/queue/rotational
@@ -85,6 +87,8 @@ if [ "$PLATFORM" = "osx" ]; then
   echo ------------------------
   echo CPU
   sysctl -a machdep.cpu
+  arch
+  export ARCH=$(arch)
   echo ------------------------
   echo DISK
   diskutil info disk0
@@ -111,6 +115,8 @@ if [ "$PLATFORM" = "bsd" ]; then
   echo CPU
   grep ^CPU /var/run/dmesg.boot
   sysctl dev.cpu
+  arch
+  export ARCH=$(arch)
   echo ------------------------
   echo DISK
   geom disk list
@@ -136,6 +142,8 @@ if [ "$PLATFORM" = "windows" ]; then
   echo ------------------------
   echo CPU
   wmic cpu list /format:list
+  echo $PROCESSOR_ARCHITECTURE
+  export ARCH=$PROCESSOR_ARCHITECTURE
   echo ------------------------
   echo DISK
   PowerShell "Get-PhysicalDisk | Format-Table -AutoSize"
@@ -175,6 +183,7 @@ echo $CI_NAME
 echo $GIT_COMMIT
 
 echo "NPROC : ${NUMBER_OF_PROCESSORS}"
+echo "ARCH  : ${ARCH}"
 echo "RAM   : ${RAMSIZE_GB}"
 echo "DISK  : ${DISK}"
 echo "FREE  : ${FREESPACE}"
@@ -193,5 +202,5 @@ echo ${INTEGROMAT_WEBHOOK_URL}
 curl \
   -H "Content-Type: application/json" \
   -X POST \
-  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"disk\": \"${DISK}\", \"disk_avail\": \"${FREESPACE}\", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\", \"vs\":\"${HAS_VS}\", \"vcperf\":\"${HAS_VCPERF}\" }" \
+  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"arch\": \"${ARCH}\", \"disk\": \"${DISK}\", \"disk_avail\": \"${FREESPACE}\", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\", \"vs\":\"${HAS_VS}\", \"vcperf\":\"${HAS_VCPERF}\" }" \
   ${INTEGROMAT_WEBHOOK_URL}
