@@ -91,7 +91,7 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 |[Buddy](https://buddy.works)||
 |[Circle CI](https://circleci.com)||
 |[Cirrus CI](https://cirrus-ci.org/)||
-|[Codefresh](https://codefresh.io/)||
+|[Codefresh](https://codefresh.io/)|[arm](https://codefresh.io/docs/docs/incubation/arm-support/)|
 |[Codeship](https://codeship.com/)||
 |[Drone](https://cloud.drone.io/)||
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)||
