@@ -84,7 +84,7 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 ##### Linux
 
 |CI|Available Architectures|Agent Supported Architectures|
-|:--|:--|
+|:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com)||
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|
 |[Bitrise](https://www.bitrise.io)||
