@@ -83,7 +83,7 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 
 ##### Linux
 
-|CI|Architectures|
+|CI|Available Architectures|Agent Supported Architectures|
 |:--|:--|
 |[AppVeyor](https://www.appveyor.com)||
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|
@@ -91,14 +91,14 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 |[Buddy](https://buddy.works)||
 |[Circle CI](https://circleci.com)||
 |[Cirrus CI](https://cirrus-ci.org/)||
-|[Codefresh](https://codefresh.io/)|[arm](https://codefresh.io/docs/docs/incubation/arm-support/)|
+|[Codefresh](https://codefresh.io/)|amd64|[arm](https://codefresh.io/docs/docs/incubation/arm-support/)|
 |[Codeship](https://codeship.com/)||
-|[Drone](https://cloud.drone.io/)||
+|[Drone](https://cloud.drone.io/)|amd64|[Platform](https://docker-runner.docs.drone.io/configuration/platform/)|
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)||
 |[Scrutinizer](https://scrutinizer-ci.com)||
 |[Semaphore 2.0](https://semaphoreci.com/product)||
 |[Shippable](http://shippable.com)||
-|[Travis CI](https://docs.travis-ci.com/user/multi-cpu-architectures/)|amd64, ppc64le, s390x, arm64|
+|[Travis CI](https://docs.travis-ci.com/user/multi-cpu-architectures/)|amd64, ppc64le, s390x, arm64||
 |[wercker](http://www.wercker.com/)||
 
 ## Etc.
