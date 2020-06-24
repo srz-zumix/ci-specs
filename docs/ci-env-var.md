@@ -5,12 +5,12 @@
 |[AppVeyor](https://www.appveyor.com/docs/environment-variables/)|true|APPVEYOR|
 |[Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml)|-|AZURE_HTTP_USER_AGENT|
 |[Bitrise](https://devcenter.bitrise.io/jp/builds/available-environment-variables/)|true|BITRISE_IO|
-|[Buddy](https://buddy.works/docs/pipelines/environment-variables#default-environment-variables)|-|BUDDY|
+|[Buddy](https://buddy.works/docs/pipelines/environment-variables#default-environment-variables)|true|BUDDY|
 |[CircleCI](https://circleci.com/docs/2.0/env-vars/#built-in-environment-variables)|true|CIRCLECI|
 |[Cirrus CI](https://cirrus-ci.org/guide/writing-tasks/#environment-variables)|true|CIRRUS_CI|
 |[Codefresh](https://codefresh.io/docs/docs/codefresh-yaml/variables/#exporting-environment-variables-from-a-freestyle-step)|true|CF_BUILD_URL|
 |[Codeship](https://documentation.codeship.com/basic/builds-and-configuration/set-environment-variables/)|true|CI_NAME=codeship|
-|[Drone](https://0-8-0.docs.drone.io/environment-reference/)|drone|DRONE|
+|[Drone](https://0-8-0.docs.drone.io/environment-reference/)|true|DRONE|
 |[GitHub Actions](https://help.github.com/ja/actions/automating-your-workflow-with-github-actions/using-environment-variables#default-environment-variables)|true|GITHUB_ACTIONS|
 |[Razorops](https://docs.razorops.com/configuration/environment.html)|razorops|CI=razorops|
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/environment-variables)|true|SCRUTINIZER|
