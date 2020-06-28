@@ -65,7 +65,7 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 |:--|:--|:--|:--|:--|:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com/docs/build-environment/)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|[BYOC](https://www.appveyor.com/docs/byoc/docker/)|:ballot_box_with_check: [[*]](https://ci.appveyor.com/build-clouds)|
 |[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:ballot_box_with_check:|:ballot_box_with_check:|
-|[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:|:ballot_box_with_check:|-|-|-|::small_red_triangle:: [*](https://devcenter.bitrise.io/tutorials/docker/use-your-own-docker-image/)|-|
+|[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:|:ballot_box_with_check:|-|-|-|:small_red_triangle: [*](https://devcenter.bitrise.io/tutorials/docker/use-your-own-docker-image/)|-|
 |[Buddy](https://buddy.works)|-|-|-|-|-|:ballot_box_with_check:|-|
 |[CircleCI](https://circleci.com/docs/2.0/configuration-reference/#docker--machine--macos--windows-executor)|:ballot_box_with_check:|:ballot_box_with_check: [[*]](https://circleci.com/docs/2.0/oss/#overview)|:ballot_box_with_check:|-|-|:ballot_box_with_check:|-|
 |[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|:ballot_box_with_check: [[*]](https://cirrus-ci.org/guide/docker-builder-vm/)|:heavy_dollar_sign: [[*]](https://cirrus-ci.org/guide/supported-computing-services/)|
@@ -76,7 +76,7 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 |[Scrutinizer](https://scrutinizer-ci.com)|:ballot_box_with_check:|-|-|-|-|||
 |[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:|:ballot_box_with_check:|-|-|-|:ballot_box_with_check: [\[*\]](https://docs.semaphoreci.com/ci-cd-environment/custom-ci-cd-environment-with-docker/)|-|
 |[Shippable](http://shippable.com)|:ballot_box_with_check:|:heavy_dollar_sign:|:ballot_box_with_check:|-|:ballot_box_with_check:|:ballot_box_with_check:|[:ballot_box_with_check:](http://docs.shippable.com/platform/runtime/nodes/#byon-nodes)|
-|[Travis CI](https://docs.travis-ci.com/user/multi-os/)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|::small_red_triangle:: [*](https://docs.travis-ci.com/user/docker/)|-|
+|[Travis CI](https://docs.travis-ci.com/user/multi-os/)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:small_red_triangle: [*](https://docs.travis-ci.com/user/docker/)|-|
 |[wercker](http://www.wercker.com/)|-|-|-|-|-|:ballot_box_with_check:|-|
 
 #### CPU Architectures
