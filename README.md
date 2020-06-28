@@ -86,7 +86,7 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 |CI|Available Architectures|Agent Supported Architectures|
 |:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com)||
-|[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|
+|[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)||[x86,x64,arm,RHEL6](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser#install)|
 |[Bitrise](https://www.bitrise.io)||
 |[Buddy](https://buddy.works)||
 |[Circle CI](https://circleci.com)||
