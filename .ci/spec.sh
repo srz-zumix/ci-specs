@@ -2,6 +2,8 @@
 
 BASEDIR=$(dirname $0)
 
+. ${BASEDIR}/ci-normalize-envvars/ci-env.sh
+
 lower() {
     if [ $# -eq 0 ]; then
         cat <&0
@@ -176,11 +178,8 @@ echo ------------------------
 
 # DATE=$(TZ="Asia/Tokyo" date)
 DATE=$(date -u)
-. ${BASEDIR}/name.sh $1
-echo $CI_NAME
-
-. ${BASEDIR}/commit-hash.sh
-echo $GIT_COMMIT
+echo $CI_ENV_NAME
+echo $CI_ENV_GIT_COMMIT
 
 echo "NPROC : ${NUMBER_OF_PROCESSORS}"
 echo "ARCH  : ${ARCH}"
@@ -202,5 +201,5 @@ echo ${INTEGROMAT_WEBHOOK_URL}
 curl \
   -H "Content-Type: application/json" \
   -X POST \
-  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_NAME}\", \"commit\": \"${GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"arch\": \"${ARCH}\", \"disk\": \"${DISK}\", \"disk_avail\": \"${FREESPACE}\", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\", \"vs\":\"${HAS_VS}\", \"vcperf\":\"${HAS_VCPERF}\" }" \
+  -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_ENV_NAME}\", \"commit\": \"${CI_ENV_GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"arch\": \"${ARCH}\", \"disk\": \"${DISK}\", \"disk_avail\": \"${FREESPACE}\", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\", \"vs\":\"${HAS_VS}\", \"vcperf\":\"${HAS_VCPERF}\" }" \
   ${INTEGROMAT_WEBHOOK_URL}
