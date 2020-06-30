@@ -46,6 +46,8 @@ ci services specs check
 |[Codeship Pro](https://codeship.com/)|[Forever Free](https://codeship.com/pricing/pro)|100 build/month|1 (Paralle Steps is Unlimited?)|[5h](https://documentation.codeship.com/pro/builds-and-configuration/steps/#step-timeouts)|[15min](https://documentation.codeship.com/pro/builds-and-configuration/steps/#step-timeouts)||
 |[Drone](https://cloud.drone.io/)|Free for OSS|Unlimited?|Unlimited?|?|?||
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|Free for Public repo|Unlimited|20|default 360min([config](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idtimeout-minutes))|?|[Usage Limit](https://help.github.com/en/articles/about-github-actions#usage-limits)|
+|[Peakflow](https://www.peakflow.io/)||
+|[Razorops](https://razorops.com/)||
 |[Scrutinizer](https://scrutinizer-ci.com)|[Free for OSS](https://scrutinizer-ci.com/pricing)|Unlimited?|1|?|?||
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|1|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE for OSS](https://semaphoreci.com/pricing)|Unlimited|Linux: 4, macOS: 1|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
@@ -73,6 +75,8 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 |[Codeship](https://codeship.com/)|-|-|-|-|-|:ballot_box_with_check:|-|
 |[Drone](https://docs.drone.io/user-guide/pipeline/steps/#platform)||-|-|-|-|:ballot_box_with_check:|:ballot_box_with_check: [[*]](https://exec-runner.docs.drone.io/configuration/platform/)|
 |[GitHub Actions](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idruns-on)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:ballot_box_with_check:|:ballot_box_with_check:|
+|[Peakflow](https://www.peakflow.io/)||
+|[Razorops](https://razorops.com/)||
 |[Scrutinizer](https://scrutinizer-ci.com)|:ballot_box_with_check:|-|-|-|-|||
 |[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:|:ballot_box_with_check:|-|-|-|:ballot_box_with_check: [\[*\]](https://docs.semaphoreci.com/ci-cd-environment/custom-ci-cd-environment-with-docker/)|-|
 |[Shippable](http://shippable.com)|:ballot_box_with_check:|:heavy_dollar_sign:|:ballot_box_with_check:|-|:ballot_box_with_check:|:ballot_box_with_check:|[:ballot_box_with_check:](http://docs.shippable.com/platform/runtime/nodes/#byon-nodes)|
@@ -89,12 +93,14 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)||[x86,x64,arm,RHEL6](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser#install)|
 |[Bitrise](https://www.bitrise.io)||
 |[Buddy](https://buddy.works)||
-|[Circle CI](https://circleci.com)||
+|[CircleCI](https://circleci.com)||
 |[Cirrus CI](https://cirrus-ci.org/)||
 |[Codefresh](https://codefresh.io/)|amd64|[arm](https://codefresh.io/docs/docs/incubation/arm-support/)|
 |[Codeship](https://codeship.com/)||
 |[Drone](https://cloud.drone.io/)|amd64|[Platform](https://docker-runner.docs.drone.io/configuration/platform/)|
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)||
+|[Peakflow](https://www.peakflow.io/)||
+|[Razorops](https://razorops.com/)||
 |[Scrutinizer](https://scrutinizer-ci.com)||
 |[Semaphore 2.0](https://semaphoreci.com/product)||
 |[Shippable](http://shippable.com)||
