@@ -1,5 +1,7 @@
 # CI Git Submodules
 
+## Table
+
 |CI|SetUp|Default|
 |:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com)|Manual|FALSE|
@@ -20,3 +22,9 @@
 |[Shippable](http://shippable.com)|[Config](http://docs.shippable.com/ci/git-submodules/)|TRUE|
 |[Travis CI](https://travis-ci.com/)|[Config](https://docs.travis-ci.com/user/common-build-problems/#git-submodules-are-not-updated-correctly)|TRUE|
 |[wercker](http://www.wercker.com/)|[Manual](https://devcenter.wercker.com/integrations/git/submodules/)|FALSE|
+
+### Notes
+
+* Cirrus CI
+
+CirrusCI + FreeBSD : need `pkg install -y git`
