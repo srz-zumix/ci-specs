@@ -14,6 +14,8 @@ pool:
   vmImage: $(imageName)
 
 steps:
+- checkout: self
+  submodules: true
 - bash: ./.ci/spec.sh
   env:
     INTEGROMAT_WEBHOOK_URL: $(INTEGROMAT_WEBHOOK_URL)
