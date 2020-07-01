@@ -11,7 +11,7 @@ cirrus_container_task:
 cirrus_freebsd_task:
   auto_cancellation: true
   freebsd_instance:
-    image_family: freebsd-12-1-snap
+    image_family: freebsd-12-1
   submodule_script: *su
   spec_script: ./.ci/spec.sh
 
