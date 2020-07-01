@@ -8,7 +8,7 @@
 |[Buddy](https://buddy.works)|Auto|TRUE|
 |[CircleCI](https://circleci.com)|[Manual](https://circleci.com/docs/2.0/configuration-reference/#checkout)|FALSE|
 |[Cirrus CI](https://cirrus-ci.org/)|[Manual](https://github.com/cirruslabs/cirrus-ci-docs/issues/407)|FALSE|
-|[Codefresh](https://codefresh.io/)||
+|[Codefresh](https://codefresh.io/)|[Config](https://codefresh.io/docs/docs/codefresh-yaml/steps/git-clone/)|FALSE|
 |[Codeship](https://codeship.com/)||
 |[Drone](https://cloud.drone.io/)||
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|[Config](https://github.com/actions/checkout#usage)|FALSE|
