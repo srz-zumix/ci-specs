@@ -12,7 +12,7 @@ cirrus_freebsd_task:
   auto_cancellation: true
   freebsd_instance:
     image_family: freebsd-12-1-snap
-  install_script: pkg install git
+  install_script: pkg install -y git
   submodule_script: *su
   spec_script: ./.ci/spec.sh
 
