@@ -7,7 +7,7 @@ image:
 # https://help.appveyor.com/discussions/problems/1272-fatal-reference-is-not-a-tree-sha-on-git-checkout
 # clone_depth: 1
 
-before_script:
+before_build:
   sh: |
     git submodule update --init --recursive
 

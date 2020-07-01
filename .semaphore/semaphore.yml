@@ -21,6 +21,7 @@ blocks:
         - name: spec
           commands:
             - checkout
+            - git submodule update --init --recursive
             - ./.ci/spec.sh
   - name: "macos sepc"
     dependencies: []
@@ -35,4 +36,5 @@ blocks:
         - name: spec
           commands:
             - checkout
+            - git submodule update --init --recursive
             - ./.ci/spec.sh
