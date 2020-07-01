@@ -110,4 +110,5 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 ## Etc.
 
 * [CI Envrionment Variables](./docs/ci-env-var.md)
+* [CI Git Submodules](./docs/ci-submodules.md)
 * [CI Status](./docs/ci-status.md)

@@ -8,23 +8,28 @@ jobs:
     executor: win/default
     steps:
       - checkout
+      - &su
+        run: git submodule update --init --recursive
       - run: bash ./.ci/spec.sh
   spec-linux:
     machine: true
     steps:
       - checkout
+      - *su
       - run: ./.ci/spec.sh
   spec-mac:
     macos:
       xcode: 11.3.0
     steps:
       - checkout
+      - *su
       - run: ./.ci/spec.sh
   spec:
     docker:
       - image: circleci/buildpack-deps:cosmic-browsers
     steps:
       - checkout
+      - *su
       - run: ./.ci/spec.sh
 
 workflows:

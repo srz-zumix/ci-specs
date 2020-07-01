@@ -1,12 +1,12 @@
-# CI Git submodules update
+# CI Git Submodules
 
 |CI|SetUp|Default|
 |:--|:--|:--|
 |[AppVeyor](https://www.appveyor.com)|Manual|FALSE|
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)|[Config](https://docs.microsoft.com/en-us/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml#submodules)|FALSE|
 |[Bitrise](https://www.bitrise.io)|[Config](https://www.bitrise.io/integrations/steps/git-clone)|TRUE|
-|[Buddy](https://buddy.works)||
-|[CircleCI](https://circleci.com)||
+|[Buddy](https://buddy.works)|Auto|TRUE|
+|[CircleCI](https://circleci.com)|[Manual](https://circleci.com/docs/2.0/configuration-reference/#checkout)|FALSE|
 |[Cirrus CI](https://cirrus-ci.org/)|[Manual](https://github.com/cirruslabs/cirrus-ci-docs/issues/407)|FALSE|
 |[Codefresh](https://codefresh.io/)||
 |[Codeship](https://codeship.com/)||
