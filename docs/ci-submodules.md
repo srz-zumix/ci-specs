@@ -11,6 +11,7 @@
 |[Codefresh](https://codefresh.io/)|[Config](https://codefresh.io/docs/docs/codefresh-yaml/steps/git-clone/)|FALSE|
 |[Codeship Basic](https://codeship.com/)|[Manual](https://documentation.codeship.com/basic/continuous-integration/git-submodules/)|FALSE|
 |[Codeship Pro](https://codeship.com/)|AUTO|TRUE|
+|[Drone](https://cloud.drone.io/)|[Manual](https://docs.drone.io/pipeline/docker/syntax/cloning/#the---recursive-flag)|FALSE|
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|[Config](https://github.com/actions/checkout#usage)|FALSE|
 |[Peakflow](https://www.peakflow.io/)|Auto|TRUE|
 |[Razorops](https://razorops.com/)|Auto|TRUE|
