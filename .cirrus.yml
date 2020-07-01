@@ -5,18 +5,21 @@ cirrus_container_task:
   auto_cancellation: true
   container:
     image: gcc:latest
+  submodule_script: &su git submodule update --init --recursive
   spec_script: bash ./.ci/spec.sh
 
 cirrus_freebsd_task:
   auto_cancellation: true
   freebsd_instance:
     image_family: freebsd-12-1-snap
+  submodule_script: *su
   spec_script: ./.ci/spec.sh
 
 cirrus_osx_task:
   auto_cancellation: true
   osx_instance:
     image: catalina-xcode
+  submodule_script: *su
   spec_script: ./.ci/spec.sh
 
 cirrus_windows_task:
@@ -24,4 +27,5 @@ cirrus_windows_task:
   windows_container:
     image: cirrusci/windowsservercore:2019
     os_version: 2019
+  submodule_script: *su
   spec_script: .ci/spec.bat
