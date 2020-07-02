@@ -20,6 +20,9 @@ for:
   matrix:
     only:
       - image: Visual Studio 2019
+  before_build:
+    cmd: |
+      git submodule update --init --recursive
   build_script:
     cmd: |
       bash ./.ci/spec.sh
