@@ -191,6 +191,15 @@ echo "VS    : ${HAS_VS}"
 echo "VCPERF: ${HAS_VCPERF}"
 export OS_NAME=$(uname -s)
 
+if [ -z "${CI_ENV_NAME+x}" ]; then
+    echo CI_ENV_NAME is empty
+    exit 1
+fi
+if [ -z "${CI_ENV_GIT_COMMIT+x}" ]; then
+    echo CI_ENV_GIT_COMMIT is empty
+    exit 1
+fi
+
 if [ -z ${INTEGROMAT_WEBHOOK_URL} ]; then
   export INTEGROMAT_WEBHOOK_URL="https://hook.integromat.com/iiwxwh9wkt8xery9qb976qzw57zvynki"
 fi
