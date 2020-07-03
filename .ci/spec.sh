@@ -2,6 +2,10 @@
 
 BASEDIR=$(dirname $0)
 
+if [ ! -f ${BASEDIR}/ci-normalize-envvars/ci-env.sh ]; then
+    echo git submodule not updated
+    exit 1
+fi
 . ${BASEDIR}/ci-normalize-envvars/ci-env.sh
 
 lower() {
