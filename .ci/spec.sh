@@ -6,7 +6,7 @@ if [ ! -f ${BASEDIR}/ci-normalize-envvars/ci-env.sh ]; then
     echo git submodule not updated
     exit 1
 fi
-. ${BASEDIR}/ci-normalize-envvars/ci-envs.sh
+. ${BASEDIR}/ci-normalize-envvars/ci-env.sh
 
 lower() {
     if [ $# -eq 0 ]; then
