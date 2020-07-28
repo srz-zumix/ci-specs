@@ -189,7 +189,7 @@ echo base    : $CI_ENV_GIT_BASE_BRANCH
 echo source  : $CI_ENV_GIT_SOURCE_BRANCH
 echo target  : $CI_ENV_GIT_TARGET_BRANCH
 echo tag     : $CI_ENV_GIT_TAG
-echo tag name: $CI_ENV_GIT_TAG
+echo tag name: $CI_ENV_GIT_TAG_NAME
 
 echo "NPROC : ${NUMBER_OF_PROCESSORS}"
 echo "ARCH  : ${ARCH}"
