@@ -180,6 +180,8 @@ echo ENV
 env
 echo ------------------------
 
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
 # DATE=$(TZ="Asia/Tokyo" date)
 DATE=$(date -u)
 echo name    : $CI_ENV_NAME
@@ -188,6 +190,7 @@ echo branch  : $CI_ENV_GIT_BRANCH
 echo base    : $CI_ENV_GIT_BASE_BRANCH
 echo source  : $CI_ENV_GIT_SOURCE_BRANCH
 echo target  : $CI_ENV_GIT_TARGET_BRANCH
+echo current : $CURRENT_BRANCH
 echo tag     : $CI_ENV_GIT_TAG
 echo tag name: $CI_ENV_GIT_TAG_NAME
 
