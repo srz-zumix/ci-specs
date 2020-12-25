@@ -1,5 +1,10 @@
+version: v2
+
 tasks:
   spec:
-    image: gcc
-    commands:
-      - ./.ci/spec.sh
+    containers:
+      - image: iutest/razorops_test
+    steps:
+      - checkout
+      - commands:
+        - ./.ci/spec.sh
