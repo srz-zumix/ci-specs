@@ -194,27 +194,27 @@ echo "current : $CURRENT_BRANCH"
 echo "tag     : $CI_ENV_GIT_TAG"
 echo "tag name: $CI_ENV_GIT_TAG_NAME"
 
-if [ "${CI_ENV_GIT_BRANCH}" != "feature/envs" ]; then
-    exit 1
-fi
-if [ -n "${CI_ENV_GIT_SOURCE_BRANCH}" ]; then
-    if [ "${CI_ENV_GIT_SOURCE_BRANCH}" != "feature/envs" ]; then
-        exit 1
-    fi
-    if [ "${CI_ENV_GIT_TARGET_BRANCH}" != "master" ]; then
-        exit 1
-    fi
-    if [ "${CI_ENV_GIT_BASE_BRANCH}" != "master" ]; then
-        exit 1
-    fi
-else
-    if [ "${CI_ENV_GIT_BASE_BRANCH}" != "feature/envs" ]; then
-        exit 1
-    fi
-fi
-if [ "${CI_ENV_GIT_TAG}" != "false" ]; then
-    exit 1
-fi
+# if [ "${CI_ENV_GIT_BRANCH}" != "feature/envs" ]; then
+#     exit 1
+# fi
+# if [ -n "${CI_ENV_GIT_SOURCE_BRANCH}" ]; then
+#     if [ "${CI_ENV_GIT_SOURCE_BRANCH}" != "feature/envs" ]; then
+#         exit 1
+#     fi
+#     if [ "${CI_ENV_GIT_TARGET_BRANCH}" != "master" ]; then
+#         exit 1
+#     fi
+#     if [ "${CI_ENV_GIT_BASE_BRANCH}" != "master" ]; then
+#         exit 1
+#     fi
+# else
+#     if [ "${CI_ENV_GIT_BASE_BRANCH}" != "feature/envs" ]; then
+#         exit 1
+#     fi
+# fi
+# if [ "${CI_ENV_GIT_TAG}" != "false" ]; then
+#     exit 1
+# fi
 
 echo "NPROC : ${NUMBER_OF_PROCESSORS}"
 echo "ARCH  : ${ARCH}"
