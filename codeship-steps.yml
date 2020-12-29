@@ -1,5 +1,5 @@
 - name: spec
   service: gcc
   command: /work/.ci/spec.sh
-  registry: https://index.docker.io/v1/
-  encrypted_dockercfg_path: ./.ci/codeship/dockercfg.encrypted
+  # encrypted_dockercfg_path: ./.ci/codeship/dockercfg.encrypted
+  dockercfg_service: dockercfggen

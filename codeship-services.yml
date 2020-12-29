@@ -4,3 +4,8 @@ gcc:
     - ./.ci/codeship/env.encrypted
   volumes:
     - ./:/work
+
+dockercfggen:
+  image: codeship/myservice-dockercfg-generator
+  encrypted_env_file:
+    - ./.ci/codeship/docker.env.encrypted
