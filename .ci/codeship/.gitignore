@@ -1,3 +1,4 @@
-dockercfg
+dockercfg/
+*.env
+env
 dockercfg-sample
-docker.env
