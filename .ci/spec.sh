@@ -180,16 +180,41 @@ echo ENV
 env
 echo ------------------------
 
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
 # DATE=$(TZ="Asia/Tokyo" date)
 DATE=$(date -u)
-echo name    : $CI_ENV_NAME
-echo commit  : $CI_ENV_GIT_COMMIT
-echo branch  : $CI_ENV_GIT_BRANCH
-echo base    : $CI_ENV_GIT_BASE_BRANCH
-echo source  : $CI_ENV_GIT_SOURCE_BRANCH
-echo target  : $CI_ENV_GIT_TARGET_BRANCH
-echo tag     : $CI_ENV_GIT_TAG
-echo tag name: $CI_ENV_GIT_TAG_NAME
+echo "name    : $CI_ENV_NAME"
+echo "commit  : $CI_ENV_GIT_COMMIT"
+echo "branch  : $CI_ENV_GIT_BRANCH"
+echo "base    : $CI_ENV_GIT_BASE_BRANCH"
+echo "source  : $CI_ENV_GIT_SOURCE_BRANCH"
+echo "target  : $CI_ENV_GIT_TARGET_BRANCH"
+echo "current : $CURRENT_BRANCH"
+echo "tag     : $CI_ENV_GIT_TAG"
+echo "tag name: $CI_ENV_GIT_TAG_NAME"
+
+# if [ "${CI_ENV_GIT_BRANCH}" != "feature/envs" ]; then
+#     exit 1
+# fi
+# if [ -n "${CI_ENV_GIT_SOURCE_BRANCH}" ]; then
+#     if [ "${CI_ENV_GIT_SOURCE_BRANCH}" != "feature/envs" ]; then
+#         exit 1
+#     fi
+#     if [ "${CI_ENV_GIT_TARGET_BRANCH}" != "master" ]; then
+#         exit 1
+#     fi
+#     if [ "${CI_ENV_GIT_BASE_BRANCH}" != "master" ]; then
+#         exit 1
+#     fi
+# else
+#     if [ "${CI_ENV_GIT_BASE_BRANCH}" != "feature/envs" ]; then
+#         exit 1
+#     fi
+# fi
+# if [ "${CI_ENV_GIT_TAG}" != "false" ]; then
+#     exit 1
+# fi
 
 echo "NPROC : ${NUMBER_OF_PROCESSORS}"
 echo "ARCH  : ${ARCH}"
