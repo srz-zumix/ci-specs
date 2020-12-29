@@ -12,7 +12,11 @@ dockercfg/config.json: credentials.env Makefile ## create dockercfg
 	-v "/var/run/docker.sock:/var/run/docker.sock" \
 	codeship/dockercfg-generator /opt/data/dockercfg
 
-dockercfg.encrypted: dockercfg/config.json codeship.aes
+dockerconfig.json: Dockerconfig-sample.json dockercfg/config.json
+	cat dockercfg/config.json | jq '.auths[].auth' \
+		| xargs -I {} sed -e "s/REPLACE_USER_AND_TOKEN/{}/g" Dockerconfig-sample.json > $@
+
+dockercfg.encrypted: dockerconfig.json codeship.aes
 	jet encrypt $< $@
 
 env.encrypted: env codeship.aes
