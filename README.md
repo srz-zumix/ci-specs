@@ -48,7 +48,7 @@ ci services specs check
 |[Drone](https://cloud.drone.io/)|Free for OSS|Unlimited?|Unlimited?|?|?||
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|Free for Public repo|Unlimited|20|default 360min([config](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idtimeout-minutes))|?|[Usage Limit](https://help.github.com/en/articles/about-github-actions#usage-limits)|
 |[Peakflow](https://www.peakflow.io/)||
-|[Razorops](https://razorops.com/)||
+|[Razorops](https://razorops.com/)|[Free Plan](https://razorops.com/pricing)|200 builds/month|1|?|?||
 |[Scrutinizer](https://scrutinizer-ci.com)|[Free for OSS](https://scrutinizer-ci.com/pricing)|Unlimited?|1|?|?||
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|1|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE for OSS](https://semaphoreci.com/pricing)|Unlimited|Linux: 4, macOS: 1|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
