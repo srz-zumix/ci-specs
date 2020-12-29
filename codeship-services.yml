@@ -4,3 +4,12 @@ gcc:
     - ./.ci/codeship/env.encrypted
   volumes:
     - ./:/work
+
+build-gcc:
+  build:
+    image: codeship_example
+    dockerfile: ./.ci/codeship/Dockerfile
+  encrypted_env_file:
+    - ./.ci/codeship/env.encrypted
+  volumes:
+    - ./:/work

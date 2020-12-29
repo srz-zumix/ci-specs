@@ -1,4 +1,4 @@
 - name: spec
-  service: gcc
+  service: build-gcc
   command: /work/.ci/spec.sh
   encrypted_dockercfg_path: ./.ci/codeship/dockercfg.encrypted
