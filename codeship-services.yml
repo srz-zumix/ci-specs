@@ -1,5 +1,5 @@
-gcc:
-  image: gcc
+ubuntu:
+  image: ubuntu
   encrypted_env_file:
     - ./.ci/codeship/env.encrypted
   volumes:
