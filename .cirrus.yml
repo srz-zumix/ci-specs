@@ -29,4 +29,6 @@ cirrus_windows_task:
     image: cirrusci/windowsservercore:2019
     os_version: 2019
   submodule_script: *su
+  env:
+    - CIRRUS_SHELL: sh
   spec_script: .ci/spec.bat
