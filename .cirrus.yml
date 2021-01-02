@@ -31,4 +31,5 @@ cirrus_windows_task:
   submodule_script: *su
   env:
     - CIRRUS_SHELL: sh
-  spec_script: .ci/spec.bat
+  spec_script: ./.ci/spec.sh
+  # spec_script: .ci/spec.bat
