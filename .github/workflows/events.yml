@@ -1,0 +1,17 @@
+on:
+  push:
+  pull_request:
+  issue_comment:
+  page_build:
+  release:
+
+jobs:
+  context:
+    runs-on: ubuntu-18.04
+    name: Show Context
+    steps:
+    - name: $github
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: |
+        echo "$GITHUB_CONTEXT"
