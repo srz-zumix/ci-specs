@@ -49,7 +49,6 @@ workflows:
       - spec-linux
       # - spec-mac
       - spec
-      - su
   maintenance:
     triggers:
       - schedule:
