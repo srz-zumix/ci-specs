@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git checkout master
+git checkout -b submodule_update_work_branch origin/master
 git submodule init
 git submodule update
 git submodule foreach git pull origin master
