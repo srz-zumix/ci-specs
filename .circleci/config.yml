@@ -34,6 +34,9 @@ jobs:
   su:
     machine: true
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "05:5d:dc:4f:6c:fe:15:5f:02:62:64:27:88:09:dd:4d"
       - checkout
       - *su
       - run: ./.ci/update_submodule.sh
