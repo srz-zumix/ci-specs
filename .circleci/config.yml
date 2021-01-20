@@ -31,6 +31,12 @@ jobs:
       - checkout
       - *su
       - run: ./.ci/spec.sh
+  su:
+    machine: true
+    steps:
+      - checkout
+      - *su
+      - run: ./.ci/update_submodule.sh
 
 workflows:
   version: 2
@@ -40,3 +46,14 @@ workflows:
       - spec-linux
       # - spec-mac
       - spec
+      - su
+  maintenance:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - su
