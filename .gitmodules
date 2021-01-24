@@ -1,15 +1,15 @@
 [submodule "ci-skip"]
 	path = ci-skip
-	url = ci-skip.git
+	url = ./ci-skip.git
 [submodule "ci-yaml"]
 	path = ci-yaml
-	url = ci-yaml.git
+	url = ./ci-yaml.git
 [submodule "ci-parallel"]
 	path = ci-parallel
-	url = ci-parallel.git
+	url = ./ci-parallel.git
 [submodule "ci-trigger"]
 	path = ci-trigger
-	url = ci-trigger.git
+	url = ./ci-trigger.git
 [submodule ".ci/ci-normalize-envvars"]
 	path = .ci/ci-normalize-envvars
-	url = ci-normalize-envvars.git
+	url = ./ci-normalize-envvars.git
