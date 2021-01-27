@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set +x
+set +ex
 
 git config --global user.name "srz-zumix"
 git config --global user.email "srz-zumix@users.noreply.github.com"
