@@ -2,6 +2,7 @@
 
 |Services|CI|Service identification|
 |:--|:--|:--|
+|[Appcircle](https://docs.appcircle.io/environment-variables/appcircle-specific-environment-variables)|-|AC_APPCIRCLE|
 |[AppVeyor](https://www.appveyor.com/docs/environment-variables/)|true|APPVEYOR|
 |[Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml)|-|AZURE_HTTP_USER_AGENT|
 |[Bitrise](https://devcenter.bitrise.io/jp/builds/available-environment-variables/)|true|BITRISE_IO|
@@ -30,6 +31,7 @@
 
 |Services|Secret|Type|Echo Mask|
 |:--|:--|:--|:--|
+|[Appcircle](https://docs.appcircle.io/environment-variables/why-to-use-environment-variables-and-secrets)|:o:|Server| * x N |
 |[AppVeyor](https://www.appveyor.com/docs/build-configuration/#secure-variables)|:o:|YAML, Server| * x N |
 |[Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#secret-variables)|:o:|Server and YAML| * x N |
 |[Bitrise](https://devcenter.bitrise.io/builds/env-vars-secret-env-vars/#about-secrets)|:o:|Server| \[REDACTED\] |
