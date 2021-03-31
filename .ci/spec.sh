@@ -2,6 +2,11 @@
 
 BASEDIR=$(dirname $0)
 
+echo ------------------------
+echo ENV
+env
+echo ------------------------
+
 if [ ! -f ${BASEDIR}/ci-normalize-envvars/ci-env.sh ]; then
     echo git submodule not updated
     exit 1
@@ -175,12 +180,12 @@ if [ "$PLATFORM" = "windows" ]; then
   HAS_VCPERF=$(${BASEDIR}/has_vcperf.bat)
 fi
 
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
 echo ------------------------
 echo ENV
 env
 echo ------------------------
-
-CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
 # DATE=$(TZ="Asia/Tokyo" date)
 DATE=$(date -u)
