@@ -16,6 +16,7 @@ jobs:
       - name: submodule update
         run: |
           git fetch
+          git checkout master
           git submodule init
           git submodule update
           git submodule foreach git pull origin master
@@ -25,4 +26,4 @@ jobs:
           git commit -m "update head [ci skip]" || true
       - name: push
         run: |
-          git push origin HEAD
+          git push origin master
