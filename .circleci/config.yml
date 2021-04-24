@@ -31,6 +31,14 @@ jobs:
       - checkout
       - *su
       - run: ./.ci/spec.sh
+  spec-arm:
+    machine:
+      image: ubuntu-2004:202101-01
+    resource_class: arm.medium
+    steps:
+      - checkout
+      - *su
+      - run: ./.ci/spec.sh
   su:
     machine: true
     steps:
@@ -48,11 +56,12 @@ workflows:
       - spec-win
       - spec-linux
       # - spec-mac
+      - spec-arm
       - spec
   maintenance:
     triggers:
       - schedule:
-          cron: "0 0 * * *"
+          cron: "0 12 * * *"
           filters:
             branches:
               only:
