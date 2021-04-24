@@ -94,7 +94,7 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 |[Azure Pipelines](https://azure.microsoft.com/ja-jp/services/devops/pipelines/)||[x86,x64,arm,RHEL6](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser#install)|
 |[Bitrise](https://www.bitrise.io)||
 |[Buddy](https://buddy.works)||
-|[CircleCI](https://circleci.com)||
+|[CircleCI](https://circleci.com)|amd64,[arm64](https://circleci.com/docs/2.0/arm-resources/)|
 |[Cirrus CI](https://cirrus-ci.org/)||
 |[Codefresh](https://codefresh.io/)|amd64|[arm](https://codefresh.io/docs/docs/incubation/arm-support/)|
 |[Codeship](https://codeship.com/)||
