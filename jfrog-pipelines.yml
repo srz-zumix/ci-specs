@@ -7,7 +7,7 @@ resources:
       branches:
         include: master
 pipelines:
-  - name: ci-specs
+  - name: ci_specs
     steps:
       - name: spec
         type: Bash
