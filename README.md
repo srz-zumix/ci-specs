@@ -15,7 +15,6 @@ ci services specs check
 [![Peakflow Build Status](https://www.peakflow.io/en/projects/ci-specs/branch-statuses/master.svg)](https://www.peakflow.io/en/projects/ci-specs/build-groups?build_groups_q%5Bbranch_name_cont%5D=master)
 [![Scrutinizer Build Status](https://scrutinizer-ci.com/g/srz-zumix/ci-specs/badges/build.png?b=master)](https://scrutinizer-ci.com/g/srz-zumix/ci-specs/build-status/master)
 [![Semaphore 2.0 Build Status](https://srz-zumix.semaphoreci.com/badges/ci-specs/branches/master.svg)](https://srz-zumix.semaphoreci.com/projects/ci-specs)
-[![Shippable Run Status](https://api.shippable.com/projects/5c81c7142c0a8108001b1df3/badge?branch=master)](https://app.shippable.com/github/srz-zumix/ci-specs)
 [![Build Status](https://api.razorops.com/apps/blue-bird-3202/badge.svg?branch=master)](https://dashboard.razorops.com/apps/blue-bird-3202/workflows)
 [![Travis-CI Build Status](https://travis-ci.com/srz-zumix/ci-specs.svg?branch=master)](https://travis-ci.com/srz-zumix/ci-specs)
 [![wercker status](https://app.wercker.com/status/969fcccb15e08d93de063fa7bd7f28d2/s/master "wercker status")](https://app.wercker.com/project/byKey/969fcccb15e08d93de063fa7bd7f28d2)
@@ -47,13 +46,13 @@ ci services specs check
 |[Codeship Pro](https://codeship.com/)|[Forever Free](https://codeship.com/pricing/pro)|100 build/month|1 (Paralle Steps is Unlimited?)|[5h](https://documentation.codeship.com/pro/builds-and-configuration/steps/#step-timeouts)|[15min](https://documentation.codeship.com/pro/builds-and-configuration/steps/#step-timeouts)||
 |[Drone](https://cloud.drone.io/)|Free for OSS|Unlimited?|Unlimited?|?|?||
 |[GitHub Actions](https://help.github.com/en/articles/about-github-actions)|Free for Public repo|Unlimited|20|default 360min([config](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idtimeout-minutes))|?|[Usage Limit](https://help.github.com/en/articles/about-github-actions#usage-limits)|
+|[JFrog Pipelines](https://jfrog.com/pricing/)|[Free plan](https://jfrog.com/pricing/)|2,000 min/month| | | ||
 |[Peakflow](https://www.peakflow.io/)||
 |[Razorops](https://razorops.com/)|[Free Plan](https://razorops.com/pricing)|200 builds/month|1|?|?||
 |[Scrutinizer](https://scrutinizer-ci.com)|[Free for OSS](https://scrutinizer-ci.com/pricing)|Unlimited?|1|?|?||
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|1|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE for OSS](https://semaphoreci.com/pricing)|Unlimited|Linux: 4, macOS: 1|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
-|[Shippable](https://www.shippable.com/pricing.html)|[Free plan](https://www.shippable.com/pricing.html)|Unlimited (Public), 150 builds/month (Private)|1|[60min](http://docs.shippable.com/ci/custom-timeouts/)|[10min](http://docs.shippable.com/ci/custom-timeouts/)||
-|[Travis CI](https://travis-ci.com/)|[Trial](https://travis-ci.com/plans)|10,000 credits|1?|[50min](https://docs.travis-ci.com/user/customizing-the-build#build-timeouts)|[10min](https://docs.travis-ci.com/user/customizing-the-build#build-timeouts)||
+|[Travis CI](https://travis-ci.com/)|[Trial](https://travis-ci.com/plans)|10,000 credits(Request credit each time)|1?|[50min](https://docs.travis-ci.com/user/customizing-the-build#build-timeouts)|[10min](https://docs.travis-ci.com/user/customizing-the-build#build-timeouts)||
 |[wercker](http://www.wercker.com/)|?|?|2|[default 25min](https://devcenter.wercker.com/reference/wercker-yml/)|[default 5min](https://devcenter.wercker.com/reference/wercker-yml/)||
 
 Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-parallel)
@@ -76,11 +75,11 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 |[Codeship](https://codeship.com/)|-|-|-|-|-|:ballot_box_with_check:|-|
 |[Drone](https://docs.drone.io/user-guide/pipeline/steps/#platform)||-|-|-|-|:ballot_box_with_check:|:ballot_box_with_check: [[*]](https://exec-runner.docs.drone.io/configuration/platform/)|
 |[GitHub Actions](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idruns-on)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:ballot_box_with_check:|:ballot_box_with_check:|
-|[Peakflow](https://www.peakflow.io/)||
+|[JFrog Pipelines](https://www.jfrog.com/confluence/display/JFROG/JFrog+Pipelines)|:ballot_box_with_check:|:heavy_dollar_sign:|:ballot_box_with_check:|-|:ballot_box_with_check:|:ballot_box_with_check:||[Peakflow](https://www.peakflow.io/)||
 |[Razorops](https://razorops.com/)|-|-|-|-|-|:ballot_box_with_check:|-|
 |[Scrutinizer](https://scrutinizer-ci.com)|:ballot_box_with_check:|-|-|-|-|||
 |[Semaphore CI 2.0](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:|:ballot_box_with_check:|-|-|-|:ballot_box_with_check: [\[*\]](https://docs.semaphoreci.com/ci-cd-environment/custom-ci-cd-environment-with-docker/)|-|
-|[Shippable](http://shippable.com)|:ballot_box_with_check:|:heavy_dollar_sign:|:ballot_box_with_check:|-|:ballot_box_with_check:|:ballot_box_with_check:|[:ballot_box_with_check:](http://docs.shippable.com/platform/runtime/nodes/#byon-nodes)|
+[:ballot_box_with_check:](http://docs.shippable.com/platform/runtime/nodes/#byon-nodes)|
 |[Travis CI](https://docs.travis-ci.com/user/multi-os/)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:small_red_triangle: [*](https://docs.travis-ci.com/user/docker/)|-|
 |[wercker](http://www.wercker.com/)|-|-|-|-|-|:ballot_box_with_check:|-|
 
@@ -104,7 +103,6 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 |[Razorops](https://razorops.com/)||
 |[Scrutinizer](https://scrutinizer-ci.com)||
 |[Semaphore 2.0](https://semaphoreci.com/product)||
-|[Shippable](http://shippable.com)||
 |[Travis CI](https://docs.travis-ci.com/user/multi-cpu-architectures/)|amd64, ppc64le, s390x, arm64||
 |[wercker](http://www.wercker.com/)||
 

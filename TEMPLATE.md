@@ -11,11 +11,11 @@
 |[Codeship][]||
 |[Drone][]||
 |[GitHub Actions][]||
+|[JFrog Pipelines][]||
 |[Peakflow][]||
 |[Razorops][]||
 |[Scrutinizer][]||
 |[Semaphore][]||
-|[Shippable][]||
 |[Travis CI][]||
 |[wercker][]||
 
@@ -30,10 +30,10 @@
 [Codeship]:https://codeship.com/
 [Drone]:https://cloud.drone.io/
 [GitHub Actions]:https://help.github.com/en/articles/about-github-actions
+[JFrog Pipelines]:https://www.jfrog.com/confluence/display/JFROG/JFrog+Pipelines
 [Peakflow]:https://www.peakflow.io/
 [Razorops]:https://razorops.com/
 [Scrutinizer]:https://scrutinizer-ci.com
 [Semaphore]:https://semaphoreci.com/product
-[Shippable]:http://shippable.com
 [Travis CI]:https://travis-ci.com/
 [wercker]:http://www.wercker.com/
