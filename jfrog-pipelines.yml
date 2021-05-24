@@ -1,0 +1,19 @@
+resources:
+  - name: gitRepo
+    type: GitRepo
+    configuration:
+      gitProvider: GitHub
+      path: srz-zumix/ci-specs
+      branches:
+        include: master
+pipelines:
+  - name: ci-specs
+    steps:
+      - name: spec
+        type: Bash
+        configuration:
+          inputResources:
+            - name: gitRepo
+        execution:
+          onExecute:
+            - ./.ci/spec.sh
