@@ -5,9 +5,13 @@ resources:
       gitProvider: GitHub
       path: srz-zumix/ci-specs
       branches:
-        include: master
+        include:
+          - master
+          - ^feature/.*
 pipelines:
-  - name: ci_specs
+  - name: centos
+    configuration:
+      nodePool: centos-latest
     steps:
       - name: spec
         type: Bash
@@ -16,4 +20,4 @@ pipelines:
             - name: gitRepo
         execution:
           onExecute:
-            - ./.ci/spec.sh
+            - ${res_gitRepo_resourcePath}/.ci/spec.sh
