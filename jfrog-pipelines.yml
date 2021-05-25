@@ -1,5 +1,5 @@
 resources:
-  - name: gitRepo
+  - name: ci_specs_gitRepo
     type: GitRepo
     configuration:
       gitProvider: GitHub
@@ -17,7 +17,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitRepo
+            - name: ci_specs_gitRepo
         execution:
           onExecute:
-            - ${res_gitRepo_resourcePath}/.ci/spec.sh
+            - ${res_ci_specs_gitRepo_resourcePath}/.ci/spec.sh
