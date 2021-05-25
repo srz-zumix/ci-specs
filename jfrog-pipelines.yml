@@ -5,9 +5,7 @@ resources:
       gitProvider: GitHub
       path: srz-zumix/ci-specs
       branches:
-        include:
-          - master
-          - ^feature/.*
+        include: master|^feature/.*
 pipelines:
   - name: centos
     configuration:
