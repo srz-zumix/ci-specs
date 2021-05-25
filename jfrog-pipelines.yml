@@ -18,4 +18,7 @@ pipelines:
             - name: ci_specs_gitRepo
         execution:
           onExecute:
-            - ${res_ci_specs_gitRepo_resourcePath}/.ci/spec.sh
+            - pusd ${res_ci_specs_gitRepo_resourcePath}
+            - git submodule update --init --recursive
+            - .ci/spec.sh
+            - popd
