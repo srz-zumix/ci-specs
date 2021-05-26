@@ -22,3 +22,18 @@ pipelines:
             - git submodule update --init --recursive
             - .ci/spec.sh
             - popd
+  - name: ubuntu
+    configuration:
+      nodePool: ubuntu-latest
+    steps:
+      - name: spec
+        type: Bash
+        configuration:
+          inputResources:
+            - name: ci_specs_gitRepo
+        execution:
+          onExecute:
+            - pushd ${res_ci_specs_gitRepo_resourcePath}
+            - git submodule update --init --recursive
+            - .ci/spec.sh
+            - popd

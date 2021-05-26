@@ -13,13 +13,12 @@
 |[Codeship](https://documentation.codeship.com/basic/builds-and-configuration/set-environment-variables/)|true|CI_NAME=codeship|
 |[Drone](https://0-8-0.docs.drone.io/environment-reference/)|true|DRONE|
 |[GitHub Actions](https://help.github.com/ja/actions/automating-your-workflow-with-github-actions/using-environment-variables#default-environment-variables)|true|GITHUB_ACTIONS|
+|[JFrog Pipelines](https://www.jfrog.com/confluence/display/JFROG/Pipelines+Environment+Variables)|true|JFROG_CLI_BUILD_NAME|
 |[Razorops](https://docs.razorops.com/configuration/environment.html)|razorops|CI=razorops|
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/environment-variables)|true|SCRUTINIZER|
 |[Semaphore 2.0](https://docs.semaphoreci.com/ci-cd-environment/environment-variables/)|true|SEMAPHORE|
-|[Shippable](http://docs.shippable.com/ci/env-vars/#stdEnv)|true|SHIPPABLE|
 |[Travis CI](https://docs.travis-ci.com/user/environment-variables/)|true|TRAVIS|
 |[wercker](https://devcenter.wercker.com/administration/environment-variables/available-env-vars/)|true|WERCKER_RUN_URL|
-
 
 ## Secret Environment Variables
 
