@@ -7,7 +7,7 @@ resources:
       branches:
         include: master|^feature/.*
 pipelines:
-  - name: centos
+  - name: ci_specs_centos
     configuration:
       nodePool: centos-latest
     steps:
@@ -22,7 +22,7 @@ pipelines:
             - git submodule update --init --recursive
             - .ci/spec.sh
             - popd
-  - name: ubuntu
+  - name: ci_specs_ubuntu
     configuration:
       nodePool: ubuntu-latest
     steps:
