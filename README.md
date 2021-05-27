@@ -52,7 +52,7 @@ ci services specs check
 |[Scrutinizer](https://scrutinizer-ci.com)|[Free for OSS](https://scrutinizer-ci.com/pricing)|Unlimited?|1|?|?||
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|1|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
 |[Semaphore CI 2.0](https://semaphoreci.com)|[FREE for OSS](https://semaphoreci.com/pricing)|Unlimited|Linux: 4, macOS: 1|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
-|[Travis CI](https://travis-ci.com/)|[Trial](https://travis-ci.com/plans)|10,000 credits(Request credit each time)|1?|[50min](https://docs.travis-ci.com/user/customizing-the-build#build-timeouts)|[10min](https://docs.travis-ci.com/user/customizing-the-build#build-timeouts)||
+|[Travis CI](https://travis-ci.com/)|[Trial / Free for OSS](https://travis-ci.com/plans)|first 10,000 credits / Request credit each time|1?|[50min](https://docs.travis-ci.com/user/customizing-the-build#build-timeouts)|[10min](https://docs.travis-ci.com/user/customizing-the-build#build-timeouts)||
 |[wercker](http://www.wercker.com/)|?|?|2|[default 25min](https://devcenter.wercker.com/reference/wercker-yml/)|[default 5min](https://devcenter.wercker.com/reference/wercker-yml/)||
 
 Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-parallel)
