@@ -1,19 +1,9 @@
-dist: trusty
-sudo: false
+dist: focal
 language: cpp
-before_script:
-- if [[ "${TRAVIS_BRANCH}" != "master" ]] && [[ -n "${TRAVIS_PULL_REQUEST_BRANCH}" ]]; then travis_terminate 0; fi
-- git checkout master
-- git submodule init
-- git submodule update
-- git submodule foreach git pull origin master
 script:
-- git add -A
-- git commit -m "update head [ci skip]" || true
-- git push https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git ${TRAVIS_BRANCH}
+  - "./.ci/spec.sh"
 env:
   global:
-  - secure: q21hTfLWozAHaFswGe01hU30WllQZrkhOnfu9RpSEGBnVBhU+HJnfX8+ml6B34ebVn3Dq++whE+fEXmcmvJPJJyim31thops0Kg2bCMU2G03tsTAUDe3Y+zoF2uu6Qk0m9MpfyN8u0nKgGVniFf5ceobZ/S2n8YGaN4H8rpuVrpCt9LY0d6J/a7Bglzd9/9iberw/pcHBup1ekAuk9FSc4NL+UcGF0rqbeGhzyFzJPBTOeqvP1cMrhTzTPBbiBSry+A4lxqu+3lNiMvq6bfMdkW43ouWf4WGqx70a5RVBY6aF8fuHVwDWv5NePx+uBmu9XfyrLZDOjSoE2udgMRaomXmEzwXkFz90qIOwqc74i1M4Wdwlnd5ziMRZLDn0nVPXLl+XBHCrTIV4a4rpKHMcIr2LMr3H0QmP09qgt+nePCkv3Q9wm7n6zlGBrdae4B2PX4KogQN1vmxila2D+C+0kySe5eReTp1LODHNoUH9NLNzxA1pa1RhiXTXEBGN9iB7KbLqSXjrxhy3A6gmjMH9RLtON/GnmU2hnJ6bRgTWZGMal4uYjzEcV+HqdKOZ8LBuUbCcgC7S+n9RmBzv99m3QPWctfNoER0/BBDmv62Cj7NPgGnX87yuBkyH12soGTailk8p2LzBq0pxHwVIoVNqr6UYKD1QRtG2POksuEHtfs=
   - secure: zf/WVdE6j8uEp6cKEkDp6UjiiDjDoD/w0XvnJzKFz38UEWAR7FoaSUn+7kaPJmBU43c9IVQlE4yGmh8aPVNaxL7ljH8dBnfoKFjejjLqpfaPm1DgLn9EPZm95PwKAymhd7Z767rd9BjtqK16PqIfE+xSDjue24ImK8JnmXMETorvtvfx1aQ9QaKIe4KZ7wbJAS9CEPlU5++PIpB1TQg+MJRQBigvo2jjgO7R6OOl5+9hkeN6lLWB+hfPt7bzexhi9JsXgEP+yGwswnnqDLDrPnW+HIYoGtRzteNVpb70BMeAJ5JOJTREMYC3epFsVHvYLpKqcQVH5bGG14cQEoegb0ILlLqWHU14qMpBsRfXFynXVqDQYDRwZ7loL3yJ1FIq+zES34+KeDdzuY5D6zSXanxdbZBU/8XW0G7eY5yR1bPgxsEJjCef580EBK4wYUaFS37uC1WUqamC+P1rvNYFPXAPOzwmFy5kFU5c2iPd2NFCpzPrpBUWpOkZK7S6pXEYgUZ33qp8SDGfipsNtK6aPET1FXGrbLmzf9z/oyXW9Vafv9ktVk7Cc6s16z3+dZMLZwlYEE+yFpR3ACt2EkjIc8L0LKd8wwmPoFHWmbC9HWmKWsOfmACj4HvC6eJ7+ub0OJf0u7XwLN6sUwCRiukpCqPlZhwPGT9ibPWsaGLebkg=
 matrix:
   include:
@@ -48,6 +38,12 @@ matrix:
     - "./.ci/spec.sh"
   - os: linux
     arch: arm64
+    before_script:
+    - echo linux
+    script:
+    - "./.ci/spec.sh"
+  - os: linux
+    arch: arm64-graviton2
     before_script:
     - echo linux
     script:
