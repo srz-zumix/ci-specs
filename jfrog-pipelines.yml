@@ -42,7 +42,7 @@ pipelines:
       nodePool: windows-latest
     steps:
       - name: spec
-        type: Bash
+        type: PowerShell
         configuration:
           inputResources:
             - name: ci_specs_gitRepo
