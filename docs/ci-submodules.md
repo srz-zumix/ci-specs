@@ -21,7 +21,6 @@
 |[Razorops][]|Auto|TRUE|
 |[Scrutinizer][]|Auto|TRUE|
 |[Semaphore][]|[Manual](https://docs.semaphoreci.com/reference/toolbox-reference/#checkout)|FALSE|
-|[Shippable][]|[Config](http://docs.shippable.com/ci/git-submodules/)|TRUE|
 |[Travis CI][]|[Config](https://docs.travis-ci.com/user/common-build-problems/#git-submodules-are-not-updated-correctly)|TRUE|
 |[wercker][]|[Manual](https://devcenter.wercker.com/integrations/git/submodules/)|FALSE|
 
