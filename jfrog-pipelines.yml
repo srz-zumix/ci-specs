@@ -5,7 +5,7 @@ resources:
       gitProvider: GitHub
       path: srz-zumix/ci-specs
       branches:
-        include: master|^feature/.*
+        include: master|^feature/.*|^jfrog/.*
 pipelines:
   - name: ci_specs_centos
     configuration:
