@@ -1,0 +1,39 @@
+resources:
+  - name: ci_specs_gitRepo
+    type: GitRepo
+    configuration:
+      gitProvider: GitHub
+      path: srz-zumix/ci-specs
+      branches:
+        include: master|^feature/.*
+pipelines:
+  - name: ci_specs_centos
+    configuration:
+      nodePool: centos-latest
+    steps:
+      - name: spec
+        type: Bash
+        configuration:
+          inputResources:
+            - name: ci_specs_gitRepo
+        execution:
+          onExecute:
+            - pushd ${res_ci_specs_gitRepo_resourcePath}
+            - git submodule update --init --recursive
+            - .ci/spec.sh
+            - popd
+  - name: ci_specs_ubuntu
+    configuration:
+      nodePool: ubuntu-latest
+    steps:
+      - name: spec
+        type: Bash
+        configuration:
+          inputResources:
+            - name: ci_specs_gitRepo
+        execution:
+          onExecute:
+            - pushd ${res_ci_specs_gitRepo_resourcePath}
+            - git submodule update --init --recursive
+            - .ci/spec.sh
+            - popd
