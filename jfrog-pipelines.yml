@@ -37,3 +37,18 @@ pipelines:
             - git submodule update --init --recursive
             - .ci/spec.sh
             - popd
+  - name: ci_specs_windows
+    configuration:
+      nodePool: windows-latest
+    steps:
+      - name: spec
+        type: Bash
+        configuration:
+          inputResources:
+            - name: ci_specs_gitRepo
+        execution:
+          onExecute:
+            - pushd ${res_ci_specs_gitRepo_resourcePath}
+            - git submodule update --init --recursive
+            - .ci/spec.sh
+            - popd
