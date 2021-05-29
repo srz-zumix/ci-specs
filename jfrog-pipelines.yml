@@ -64,7 +64,7 @@ pipelines:
           onStart:
             - update_commit_status ci_specs_gitRepo # Status: "processing"
           onExecute:
-            - update_commit_status myGitRepo # Status: "processing"
+            - update_commit_status ci_specs_gitRepo # Status: "processing"
             - pushd ${res_ci_specs_gitRepo_resourcePath}
             - git submodule update --init --recursive
             - .ci/spec.sh
