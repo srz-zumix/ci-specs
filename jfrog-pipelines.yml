@@ -17,11 +17,18 @@ pipelines:
           inputResources:
             - name: ci_specs_gitRepo
         execution:
+          onStart:
+            - update_commit_status ci_specs_gitRepo # Status: "processing"
           onExecute:
+            - update_commit_status ci_specs_gitRepo # Status: "processing"
             - pushd ${res_ci_specs_gitRepo_resourcePath}
             - git submodule update --init --recursive
             - .ci/spec.sh
             - popd
+          onFailure:
+            - update_commit_status ci_specs_gitRepo # Status: "failure"
+          onSuccess:
+            - update_commit_status ci_specs_gitRepo # Status: "success"
   - name: ci_specs_ubuntu
     configuration:
       nodePool: ubuntu-latest
@@ -32,11 +39,18 @@ pipelines:
           inputResources:
             - name: ci_specs_gitRepo
         execution:
+          onStart:
+            - update_commit_status ci_specs_gitRepo # Status: "processing"
           onExecute:
+            - update_commit_status ci_specs_gitRepo # Status: "processing"
             - pushd ${res_ci_specs_gitRepo_resourcePath}
             - git submodule update --init --recursive
             - .ci/spec.sh
             - popd
+          onFailure:
+            - update_commit_status ci_specs_gitRepo # Status: "failure"
+          onSuccess:
+            - update_commit_status ci_specs_gitRepo # Status: "success"
   - name: ci_specs_windows
     configuration:
       nodePool: windows-latest
@@ -47,8 +61,15 @@ pipelines:
           inputResources:
             - name: ci_specs_gitRepo
         execution:
+          onStart:
+            - update_commit_status ci_specs_gitRepo # Status: "processing"
           onExecute:
+            - update_commit_status myGitRepo # Status: "processing"
             - pushd ${res_ci_specs_gitRepo_resourcePath}
             - git submodule update --init --recursive
             - .ci/spec.sh
             - popd
+          onFailure:
+            - update_commit_status ci_specs_gitRepo # Status: "failure"
+          onSuccess:
+            - update_commit_status ci_specs_gitRepo # Status: "success"
