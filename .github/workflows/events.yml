@@ -5,6 +5,7 @@ on:
   page_build:
   release:
 
+name: Event Info
 jobs:
   context:
     runs-on: ubuntu-18.04
@@ -15,5 +16,6 @@ jobs:
         GITHUB_CONTEXT: ${{ toJson(github) }}
       run: |
         echo "$GITHUB_CONTEXT"
+    - name: ENV
       run: |
         env
