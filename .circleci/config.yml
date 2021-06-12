@@ -39,6 +39,14 @@ jobs:
       - checkout
       - *su
       - run: ./.ci/spec.sh
+  spec-arm-large:
+    machine:
+      image: ubuntu-2004:202101-01
+    resource_class: arm.large
+    steps:
+      - checkout
+      - *su
+      - run: ./.ci/spec.sh
   su:
     machine: true
     steps:
@@ -57,6 +65,7 @@ workflows:
       - spec-linux
       # - spec-mac
       - spec-arm
+      - spec-arm-large
       - spec
   maintenance:
     triggers:
