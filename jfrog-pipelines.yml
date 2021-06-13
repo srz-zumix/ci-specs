@@ -13,10 +13,12 @@ pipelines:
     steps:
       - name: spec
         type: Bash
-        configuration:
+        configuration: &config
           inputResources:
             - name: ci_specs_gitRepo
-        execution:
+          integrations:
+            - name: ci_specs_envs
+        execution: &exec
           onStart:
             - update_commit_status ci_specs_gitRepo # Status: "processing"
           onExecute:
@@ -35,41 +37,13 @@ pipelines:
     steps:
       - name: spec
         type: Bash
-        configuration:
-          inputResources:
-            - name: ci_specs_gitRepo
-        execution:
-          onStart:
-            - update_commit_status ci_specs_gitRepo # Status: "processing"
-          onExecute:
-            - update_commit_status ci_specs_gitRepo # Status: "processing"
-            - pushd ${res_ci_specs_gitRepo_resourcePath}
-            - git submodule update --init --recursive
-            - .ci/spec.sh
-            - popd
-          onFailure:
-            - update_commit_status ci_specs_gitRepo # Status: "failure"
-          onSuccess:
-            - update_commit_status ci_specs_gitRepo # Status: "success"
+        configuration: *config
+        execution: *exec
   - name: ci_specs_windows
     configuration:
       nodePool: windows-latest
     steps:
       - name: spec
         type: PowerShell
-        configuration:
-          inputResources:
-            - name: ci_specs_gitRepo
-        execution:
-          onStart:
-            - update_commit_status ci_specs_gitRepo # Status: "processing"
-          onExecute:
-            - update_commit_status ci_specs_gitRepo # Status: "processing"
-            - pushd ${res_ci_specs_gitRepo_resourcePath}
-            - git submodule update --init --recursive
-            - .ci/spec.sh
-            - popd
-          onFailure:
-            - update_commit_status ci_specs_gitRepo # Status: "failure"
-          onSuccess:
-            - update_commit_status ci_specs_gitRepo # Status: "success"
+        configuration: *config
+        execution: *exec
