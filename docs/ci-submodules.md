@@ -11,7 +11,7 @@
 |[Buddy][]|Auto|TRUE|
 |[CircleCI][]|[Manual](https://circleci.com/docs/2.0/configuration-reference/#checkout)|FALSE|
 |[Cirrus CI][]|[Manual](https://github.com/cirruslabs/cirrus-ci-docs/issues/407)|FALSE|
-|[Codefresh][]|[Config](https://codefresh.io/docs/docs/codefresh-yaml/steps/git-clone/)|FALSE|
+|[Codefresh][]|[Config](https://codefresh.io/docs/docs/codefresh-yaml/steps/git-clone/#working-with-git-submodules)|FALSE|
 |[Codeship Basic][]|[Manual](https://documentation.codeship.com/basic/continuous-integration/git-submodules/)|FALSE|
 |[Codeship Pro][]|AUTO|TRUE|
 |[Drone][]|[Manual](https://docs.drone.io/pipeline/docker/syntax/cloning/#the---recursive-flag)|FALSE|
