@@ -27,7 +27,7 @@ pipelines:
             - update_commit_status ci_specs_gitRepo # Status: "processing"
             - pushd ${res_ci_specs_gitRepo_resourcePath}
             - git submodule update --init --recursive
-            - sh .ci/spec.sh
+            - .ci/spec.sh
             - popd
           onFailure:
             - update_commit_status ci_specs_gitRepo # Status: "failure"
@@ -48,4 +48,16 @@ pipelines:
       - name: spec
         type: PowerShell
         configuration: *config
-        execution: *exec
+        execution:
+          onStart:
+            - update_commit_status ci_specs_gitRepo # Status: "processing"
+          onExecute:
+            - update_commit_status ci_specs_gitRepo # Status: "processing"
+            - pushd ${res_ci_specs_gitRepo_resourcePath}
+            - git submodule update --init --recursive
+            - .ci/spec.bat
+            - popd
+          onFailure:
+            - update_commit_status ci_specs_gitRepo # Status: "failure"
+          onSuccess:
+            - update_commit_status ci_specs_gitRepo # Status: "success"

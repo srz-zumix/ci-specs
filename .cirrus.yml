@@ -33,3 +33,12 @@ cirrus_windows_task:
   spec_script: ./.ci/spec.sh
   env:
     CIRRUS_SHELL: bash
+
+cirrus_persistent_osx_arm64_task:
+  persistent_worker:
+    labels:
+      os: darwin
+      arch: arm64
+  auto_cancellation: true
+  submodule_script: *su
+  spec_script: ./.ci/spec.sh
