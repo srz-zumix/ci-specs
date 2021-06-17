@@ -25,6 +25,7 @@ pipelines:
             - update_commit_status ci_specs_gitRepo # Status: "processing"
             - pushd ${res_ci_specs_gitRepo_resourcePath}
             - git submodule update --init --recursive
+            - export INTEGROMAT_WEBHOOK_URL=${int_ci_specs_envs_INTEGROMAT_WEBHOOK_URL}
             - .ci/spec.sh
             - popd
           onFailure:
