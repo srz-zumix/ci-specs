@@ -53,7 +53,7 @@ pipelines:
           integrations:
             - name: ci_specs_envs
           environmentVariables:
-            INTEGROMAT_WEBHOOK_URL: "%int_ci_specs_envs_INTEGROMAT_WEBHOOK_URL%"
+            INTEGROMAT_WEBHOOK_URL: "$env:int_ci_specs_envs_INTEGROMAT_WEBHOOK_URL"
         execution:
           onStart:
             - update_commit_status ci_specs_gitRepo # Status: "processing"
