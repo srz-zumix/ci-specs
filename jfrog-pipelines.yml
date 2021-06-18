@@ -45,7 +45,8 @@ pipelines:
     configuration:
       nodePool: windows-latest
       environmentVariables:
-        INTEGROMAT_WEBHOOK_URL: "%int_ci_specs_envs_INTEGROMAT_WEBHOOK_URL%"
+        readOnly:
+          INTEGROMAT_WEBHOOK_URL: "%int_ci_specs_envs_INTEGROMAT_WEBHOOK_URL%"
     steps:
       - name: spec
         type: PowerShell
