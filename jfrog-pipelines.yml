@@ -75,7 +75,7 @@ pipelines:
     configuration:
       nodePool: ubuntu-latest
     steps:
-      - name: spec
+      - name: noop
         type: Bash
         configuration:
           inputResources:
