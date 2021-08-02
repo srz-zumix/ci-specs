@@ -9,7 +9,7 @@ resources:
   - name: ci_specs_cron_trigger
     type: CronTrigger
     configuration:
-      interval: '0 0 * * 1'     # Every monday
+      interval: '0 0 * * 2'
 
 pipelines:
   - name: ci_specs_centos
