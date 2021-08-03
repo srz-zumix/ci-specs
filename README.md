@@ -69,13 +69,14 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 |[Azure Pipelines](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/agents?view=azure-devops)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:ballot_box_with_check:|:ballot_box_with_check:|
 |[Bitrise](https://devcenter.bitrise.io/infrastructure/virtual-machines/)|:ballot_box_with_check:|:ballot_box_with_check:|-|-|-|:small_red_triangle: [*](https://devcenter.bitrise.io/tutorials/docker/use-your-own-docker-image/)|-|
 |[Buddy][]|-|-|-|-|-|:ballot_box_with_check:|-|
-|[CircleCI](https://circleci.com/docs/2.0/configuration-reference/#docker--machine--macos--windows-executor)|:ballot_box_with_check:|:ballot_box_with_check: [[*]](https://circleci.com/docs/2.0/oss/#overview)|:ballot_box_with_check:|-|-|:ballot_box_with_check:|-|
+|[CircleCI](https://circleci.com/docs/2.0/configuration-reference/#docker--machine--macos--windows-executor)|:ballot_box_with_check:|:ballot_box_with_check: [[*]](https://circleci.com/docs/2.0/oss/#overview)|:ballot_box_with_check:|-|-|:ballot_box_with_check:|[:heavy_dollar_sign:](https://circleci.com/ja/build-environments/runner/)|
 |[Cirrus CI](https://cirrus-ci.org/features/#comparison-with-popular-ciaas)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|:ballot_box_with_check: [[*]](https://cirrus-ci.org/guide/docker-builder-vm/)| :ballot_box_with_check: [persistent-workers](https://cirrus-ci.org/guide/persistent-workers/) / :heavy_dollar_sign: [[*]](https://cirrus-ci.org/guide/supported-computing-services/)|
 |[Codefresh][]|:ballot_box_with_check:|:ballot_box_with_check: [[*]](https://codefresh.io/docs/docs/incubation/osx-ios-builds/)|[Beta](https://codefresh.io/docs/docs/incubation/windows-beta/)|-|-|:ballot_box_with_check:|:ballot_box_with_check:[*](https://codefresh.io/docs/docs/administration/codefresh-runner/)|
 |[Codeship][]|-|-|-|-|-|:ballot_box_with_check:|-|
 |[Drone](https://docs.drone.io/user-guide/pipeline/steps/#platform)||-|-|-|-|:ballot_box_with_check:|:ballot_box_with_check: [[*]](https://exec-runner.docs.drone.io/configuration/platform/)|
 |[GitHub Actions](https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idruns-on)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:ballot_box_with_check:|:ballot_box_with_check:|
-|[JFrog Pipelines][]|:ballot_box_with_check:|:heavy_dollar_sign:|:ballot_box_with_check:|-|:ballot_box_with_check:|:ballot_box_with_check:||[Peakflow](https://www.peakflow.io/)||
+|[JFrog Pipelines][]|:ballot_box_with_check:|:heavy_dollar_sign:|:ballot_box_with_check: (AWS)|-|:ballot_box_with_check:|:ballot_box_with_check:|:heavy_dollar_sign:|
+|[Peakflow](https://www.peakflow.io/)||
 |[Razorops][]|-|-|-|-|-|:ballot_box_with_check:|-|
 |[Scrutinizer][]|:ballot_box_with_check:|-|-|-|-|||
 |[Semaphore](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:|:ballot_box_with_check:|-|-|-|:ballot_box_with_check: [\[*\]](https://docs.semaphoreci.com/ci-cd-environment/custom-ci-cd-environment-with-docker/)|-|
@@ -88,21 +89,22 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 
 |CI|Available Architectures|Agent Supported Architectures|
 |:--|:--|:--|
-|[AppVeyor][]||
-|[Azure Pipelines][]||[x86,x64,arm,RHEL6](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser#install)|
-|[Bitrise][]||
+|[AppVeyor][]|x64||
+|[Azure Pipelines][]|x64|[x86,x64,arm,RHEL6](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser#install)|
+|[Bitrise][]|x64||
 |[Buddy][]||
-|[CircleCI][]|amd64,[arm64](https://circleci.com/docs/2.0/arm-resources/)|
-|[Cirrus CI][]||
-|[Codefresh][]|amd64|[arm](https://codefresh.io/docs/docs/incubation/arm-support/)|
+|[CircleCI][]|x64,[arm64](https://circleci.com/docs/2.0/arm-resources/)||
+|[Cirrus CI][]|x86,x64|[persistent-workers supported](https://cirrus-ci.org/guide/persistent-workers/) (e.g. arm64)|
+|[Codefresh][]|x64|[arm](https://codefresh.io/docs/docs/incubation/arm-support/)|
 |[Codeship][]||
-|[Drone][]|amd64|[Platform](https://docker-runner.docs.drone.io/configuration/platform/)|
-|[GitHub Actions][]||
+|[Drone][]|x64|[Platform](https://docs.drone.io/pipeline/exec/syntax/platform/)|
+|[GitHub Actions][]|x64|[x64,arm32,arm64](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners#supported-architectures-and-operating-systems-for-self-hosted-runners)|
+|[JFrog Pipelines][]||[x86_64](https://www.jfrog.com/confluence/display/JFROG/Managing+Pipelines+Static+Nodes)|
 |[Peakflow][]||
 |[Razorops][]||
 |[Scrutinizer][]||
-|[Semaphore][]||
-|[Travis CI][]|amd64, ppc64le, s390x, arm64||
+|[Semaphore][]|x64||
+|[Travis CI][]|x64, ppc64le, s390x, arm64||
 |[wercker][]||
 
 ## Etc.
