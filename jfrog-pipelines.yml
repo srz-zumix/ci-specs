@@ -6,10 +6,6 @@ resources:
       path: srz-zumix/ci-specs
       branches:
         include: master|^feature/.*|^jfrog/.*
-  - name: ci_specs_cron_trigger
-    type: CronTrigger
-    configuration:
-      interval: '0 0 * * 2'
 
 pipelines:
   - name: ci_specs_centos
@@ -71,15 +67,3 @@ pipelines:
             - update_commit_status ci_specs_gitRepo # Status: "failure"
           onSuccess:
             - update_commit_status ci_specs_gitRepo # Status: "success"
-  - name: ci_specs_noop
-    configuration:
-      nodePool: ubuntu-latest
-    steps:
-      - name: noop
-        type: Bash
-        configuration:
-          inputResources:
-            - name: ci_specs_cron_trigger
-        execution:
-          onExecute:
-            - echo Hello
