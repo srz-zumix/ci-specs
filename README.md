@@ -38,8 +38,8 @@ ci services specs check
 |[Azure Pipelines][]|[Free for OSS](https://azure.microsoft.com/ja-jp/pricing/details/devops/azure-devops-services/)|Unlimited|10|[360min](https://docs.microsoft.com/en-us/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops#microsoft-hosted-cicd)|?||
 |[Bitrise][]|[Free for OSS](https://blog.bitrise.io/free-developer-plan-features-for-open-source-projects-on-bitrise)|Unlimited|1|45min|?||
 |[Buddy][]|[Free for OSS](https://buddy.works/free-for-open-source)|120 build/month|1|?|?|5 projects / 500 MB cache / 1 GB & 2vCPU performance|
-|[CircleCI][]|[Free Plan](https://circleci.com/pricing/)|2,500 free credits / week|1(1 parallel)|[5h](https://circleci.com/docs/2.0/configuration-reference/#jobs)|default 10min ([config: no_output_timeout](https://circleci.com/docs/2.0/configuration-reference/#run))||
-|[CircleCI][]|[Free for OSS](https://circleci.com/docs/2.0/oss/#overview)|100,000 free credits / week|1(4 parallel)|?|?||
+|[CircleCI][]|[Free Plan](https://circleci.com/pricing/)|2,500 free credits / week|30(1 parallel)|[5h](https://circleci.com/docs/2.0/configuration-reference/#jobs)|default 10min ([config: no_output_timeout](https://circleci.com/docs/2.0/configuration-reference/#run))||
+|[CircleCI][]|[Free for OSS](https://circleci.com/docs/2.0/oss/#overview)|100,000 free credits / week|30(4 parallel)|?|?||
 |[Cirrus CI][]|[Free for OSS](https://cirrus-ci.org/pricing/)|Unlimited?|[Linux: 8, Windows: 2, FreeBSD: 2, macOS: 1](https://cirrus-ci.org/features/#no-concurrency-limit-no-queues)|[60min](https://cirrus-ci.org/faq/#instance-timed-out)(max 2h)|?|[Parallel VMs limit](https://cirrus-ci.org/faq/#are-there-any-limits)|
 |[Codefresh][]|[Free Plan](https://codefresh.io/pricing/)|Unlimited|1 (2 step per build) |60min?|15min ?|
 |[Codeship Basic][]|[Forever Free](https://codeship.com/pricing/basic)|100 build/month|1|?|?||
