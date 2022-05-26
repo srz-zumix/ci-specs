@@ -37,3 +37,5 @@ jobs:
     - name: ENV
       run: |
         env
+    - name: Composite Action Event
+      uses: ./.github/actions/composite/events

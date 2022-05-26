@@ -1,0 +1,14 @@
+name: Event Info
+description: 'Event info report'
+
+runs:
+  using: "composite"
+  steps:
+    - name: $github
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: |
+        echo "$GITHUB_CONTEXT"
+    - name: ENV
+      run: |
+        env
