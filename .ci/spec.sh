@@ -82,11 +82,12 @@ if [ "$PLATFORM" = "linux" ]; then
     export DISK="HDD"
   fi
   df -h
-  export FREESPACE=$(df -l --output=avail -h -BG ${BASEDIR} | egrep -o [0-9]+G)
+  FREESPACE=$(df -l --output=avail -h -BG "${BASEDIR}" | grep -E -o [0-9]+G)
+  export FREESPACE
 
   echo ------------------------
   echo PACKAGES
-  dpkg -l || :
+  dpkg -l --no-pager || :
 fi
 
 if [ "$PLATFORM" = "osx" ]; then
