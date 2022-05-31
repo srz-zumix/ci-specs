@@ -86,7 +86,7 @@ if [ "$PLATFORM" = "linux" ]; then
 
   echo ------------------------
   echo PACKAGES
-  dkpg -l || :
+  dpkg -l || :
 fi
 
 if [ "$PLATFORM" = "osx" ]; then
