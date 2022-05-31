@@ -83,6 +83,10 @@ if [ "$PLATFORM" = "linux" ]; then
   fi
   df -h
   export FREESPACE=$(df -l --output=avail -h -BG ${BASEDIR} | egrep -o [0-9]+G)
+
+  echo ------------------------
+  echo PACKAGES
+  dkpg -l || :
 fi
 
 if [ "$PLATFORM" = "osx" ]; then
