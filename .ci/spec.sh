@@ -82,7 +82,7 @@ if [ "$PLATFORM" = "linux" ]; then
     export DISK="HDD"
   fi
   df -h
-  FREESPACE=$(df -l --output=avail -h -BG "${BASEDIR}" | grep -E -o [0-9]+G)
+  FREESPACE=$(df -l --output=avail -h -BG "${BASEDIR}" | grep -E -o "[0-9]+G")
   export FREESPACE
 
   echo ------------------------
