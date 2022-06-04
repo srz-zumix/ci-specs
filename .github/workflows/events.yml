@@ -46,12 +46,12 @@ jobs:
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
       run: |
-        echo "$GITHUB_CONTEXT"
+        echo "${GITHUB_CONTEXT}"
     - name: $job
       env:
         JOB_CONTEXT: ${{ toJson(job) }}
       run: |
-        echo "$JOB_CONTEXT"
+        echo "${JOB_CONTEXT}"
     - name: ENV
       run: |
         env
