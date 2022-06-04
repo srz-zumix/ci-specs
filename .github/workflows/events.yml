@@ -30,7 +30,7 @@ jobs:
     name: Show Context
     services:
       jenkins:
-        image: jenkins/jenkins:${{ matrix.version }}
+        image: jenkins/jenkins:latest
         credentials:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
