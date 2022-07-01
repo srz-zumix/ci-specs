@@ -22,6 +22,7 @@ on:
   issue_comment:
   page_build:
   release:
+  workflow_dispatch:
 
 name: Event Info
 jobs:
@@ -52,6 +53,11 @@ jobs:
         JOB_CONTEXT: ${{ toJson(job) }}
       run: |
         echo "${JOB_CONTEXT}"
+    - name: $runner
+      env:
+        RUNNER_CONTEXT: ${{ toJson(runner) }}
+      run: |
+        echo "${RUNNER_CONTEXT}"
     - name: ENV
       run: |
         env
