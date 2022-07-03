@@ -22,7 +22,6 @@
 |[Scrutinizer][]|Auto|TRUE|
 |[Semaphore][]|[Manual](https://docs.semaphoreci.com/reference/toolbox-reference/#checkout)|FALSE|
 |[Travis CI][]|[Config](https://docs.travis-ci.com/user/common-build-problems/#git-submodules-are-not-updated-correctly)|TRUE|
-|[wercker][]|[Manual](https://devcenter.wercker.com/integrations/git/submodules/)|FALSE|
 
 ### Notes
 
@@ -49,4 +48,3 @@ CirrusCI + FreeBSD : need `pkg install -y git`
 [Scrutinizer]:https://scrutinizer-ci.com
 [Semaphore]:https://semaphoreci.com/
 [Travis CI]:https://travis-ci.com/
-[wercker]:http://www.wercker.com/

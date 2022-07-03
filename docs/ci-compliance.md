@@ -21,7 +21,6 @@
 |[Scrutinizer][]    ||||
 |[Semaphore][]      ||||
 |[Travis CI][]      ||||
-|[wercker][]        ||||
 
 [Appcircle]:https://appcircle.io/
 [AppVeyor]:https://www.appveyor.com
@@ -43,6 +42,5 @@
 [Scrutinizer]:https://scrutinizer-ci.com
 [Semaphore]:https://semaphoreci.com/
 [Travis CI]:https://travis-ci.com/
-[wercker]:http://www.wercker.com/
 
 [ISO 27001]:https://www.jqa.jp/service_list/management/service/iso27001/

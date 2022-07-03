@@ -18,7 +18,6 @@
 |[Scrutinizer](https://scrutinizer-ci.com/docs/build/environment-variables)|true|SCRUTINIZER|
 |[Semaphore 2.0](https://docs.semaphoreci.com/ci-cd-environment/environment-variables/)|true|SEMAPHORE|
 |[Travis CI](https://docs.travis-ci.com/user/environment-variables/)|true|TRAVIS|
-|[wercker](https://devcenter.wercker.com/administration/environment-variables/available-env-vars/)|true|WERCKER_RUN_URL|
 
 ## Secret Environment Variables
 
@@ -47,4 +46,3 @@
 |[Semaphore 2.0](https://docs.semaphoreci.com/guided-tour/environment-variables-and-secrets/)|:o:|YAML, Server and YAML|:x:|
 |[Shippable](http://docs.shippable.com/ci/env-vars/#secure-variables)|:o:|YAML|:x:|
 |[Travis CI](https://docs.travis-ci.com/user/environment-variables/#encrypting-environment-variables)|:o:|YAML, Server|\[secure\] *(Windows :x:)* |
-|[wercker](https://devcenter.wercker.com/administration/environment-variables/)|:o:|Server|:x:|

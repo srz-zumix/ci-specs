@@ -16,4 +16,3 @@
 |[Semaphore CI 2.0](https://status.semaphoreci.com/)|Email,[Twitter](https://twitter.com/StatusSemaphore),[Atom Feed](https://status.semaphoreci.com/history.atom),[RSS](https://status.semaphoreci.com/history.rss)|
 |[Shippable](http://shippable.com)||
 |[Travis CI](https://travis-ci.com/)|
-|[wercker](http://status.wercker.com/)|Email,[Twitter](https://twitter.com/wercker),[Atom Feed](http://status.wercker.com/history.atom),[RSS](http://status.wercker.com/history.rss)|
