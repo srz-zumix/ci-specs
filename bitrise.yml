@@ -25,7 +25,7 @@ workflows:
         - content: "./.ci/spec.sh"
     meta:
       bitrise.io:
-        stack: linux-docker-android-lts
+        stack: linux-docker-android-20.04
   stack-xcode:
     steps:
     - activate-ssh-key@4.0.3:
