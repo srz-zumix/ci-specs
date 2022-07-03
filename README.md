@@ -17,7 +17,6 @@ ci services specs check
 [![Semaphore 2.0 Build Status](https://srz-zumix.semaphoreci.com/badges/ci-specs/branches/master.svg)](https://srz-zumix.semaphoreci.com/projects/ci-specs)
 [![Build Status](https://api.razorops.com/apps/blue-bird-3202/badge.svg?branch=master)](https://dashboard.razorops.com/apps/blue-bird-3202/workflows)
 [![Travis-CI Build Status](https://travis-ci.com/srz-zumix/ci-specs.svg?branch=master)](https://travis-ci.com/srz-zumix/ci-specs)
-[![wercker status](https://app.wercker.com/status/969fcccb15e08d93de063fa7bd7f28d2/s/master "wercker status")](https://app.wercker.com/project/byKey/969fcccb15e08d93de063fa7bd7f28d2)
 
 ## List of Continuous Integration services
 
@@ -53,7 +52,6 @@ ci services specs check
 |[Semaphore][]|[FREE plan](https://semaphoreci.com/pricing)|~~$20~~$10/month|1|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
 |[Semaphore][]|[FREE for OSS](https://semaphoreci.com/pricing)|Unlimited|Linux: 4, macOS: 1|default 60min([config](https://docs.semaphoreci.com/article/50-pipeline-yaml#execution_time_limit))|?|[Quotas and Limits](https://docs.semaphoreci.com/article/133-quotas-and-limits)|
 |[Travis CI][]|[Trial / Free for OSS](https://travis-ci.com/plans)|first 10,000 credits / Request credit each time|1?|[50min](https://docs.travis-ci.com/user/customizing-the-build#build-timeouts)|[10min](https://docs.travis-ci.com/user/customizing-the-build#build-timeouts)||
-|[wercker][]|?|?|2|[default 25min](https://devcenter.wercker.com/reference/wercker-yml/)|[default 5min](https://devcenter.wercker.com/reference/wercker-yml/)||
 
 Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-parallel)
 
@@ -81,7 +79,6 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 |[Scrutinizer][]|:ballot_box_with_check:|-|-|-|-|||
 |[Semaphore](https://docs.semaphoreci.com/category/57-cicd-environment)|:ballot_box_with_check:|:ballot_box_with_check:|-|-|-|:ballot_box_with_check: [\[*\]](https://docs.semaphoreci.com/ci-cd-environment/custom-ci-cd-environment-with-docker/)|-|
 |[Travis CI](https://docs.travis-ci.com/user/multi-os/)|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|-|-|:small_red_triangle: [*](https://docs.travis-ci.com/user/docker/)|-|
-|[wercker][]|-|-|-|-|-|:ballot_box_with_check:|-|
 
 #### CPU Architectures
 
@@ -105,7 +102,6 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 |[Scrutinizer][]||
 |[Semaphore][]|x64||
 |[Travis CI][]|x64, ppc64le, s390x, arm64||
-|[wercker][]||
 
 ## Etc.
 
@@ -132,4 +128,3 @@ Learn more about Concurrency. [ci-parallel](https://github.com/srz-zumix/ci-para
 [Scrutinizer]:https://scrutinizer-ci.com
 [Semaphore]:https://semaphoreci.com/
 [Travis CI]:https://travis-ci.com/
-[wercker]:http://www.wercker.com/

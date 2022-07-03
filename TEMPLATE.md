@@ -17,7 +17,6 @@
 |[Scrutinizer][]||
 |[Semaphore][]||
 |[Travis CI][]||
-|[wercker][]||
 
 [Appcircle]:https://appcircle.io/
 [AppVeyor]:https://www.appveyor.com
@@ -38,4 +37,3 @@
 [Scrutinizer]:https://scrutinizer-ci.com
 [Semaphore]:https://semaphoreci.com/
 [Travis CI]:https://travis-ci.com/
-[wercker]:http://www.wercker.com/

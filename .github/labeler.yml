@@ -33,5 +33,3 @@ Sider:
   - 'sider.yml'
 Travis CI:
   - '.travis.yml'
-Wercker:
-  - 'wercker.yml'
