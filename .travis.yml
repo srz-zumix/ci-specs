@@ -9,6 +9,7 @@ matrix:
   include:
   - env: UPDATE_SUBMODULE=true
   - os: osx
+    env: SPEC_URL_OPTIONS=--insecure
     before_script:
     - echo osx
     script:
