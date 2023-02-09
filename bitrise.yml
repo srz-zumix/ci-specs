@@ -16,10 +16,10 @@ workflows:
     - stack-xcode
   stack-android:
     steps:
-    - activate-ssh-key@4.0.3:
+    - activate-ssh-key@4.1:
         run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
-    - git-clone@4.0.17: {}
-    - script@1.1.5:
+    - git-clone@7.0: {}
+    - script@1.2:
         title: Spec
         inputs:
         - content: "./.ci/spec.sh"
@@ -28,10 +28,10 @@ workflows:
         stack: linux-docker-android-20.04
   stack-xcode:
     steps:
-    - activate-ssh-key@4.0.3:
+    - activate-ssh-key@4.1:
         run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
-    - git-clone@4.0.17: {}
-    - script@1.1.5:
+    - git-clone@7.0: {}
+    - script@1.2:
         title: Spec
         inputs:
         - content: "./.ci/spec.sh"
