@@ -250,7 +250,7 @@ if [ -z ${INTEGROMAT_WEBHOOK_URL} ]; then
 fi
 
 # mask test
-echo ${INTEGROMAT_WEBHOOK_URL}
+echo "${INTEGROMAT_WEBHOOK_URL}"
 
 # shellcheck disable=SC2086
 curl \
