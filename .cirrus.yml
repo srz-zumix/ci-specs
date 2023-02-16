@@ -19,7 +19,7 @@ cirrus_freebsd_task:
 cirrus_osx_task:
   auto_cancellation: true
   osx_instance:
-    image: catalina-xcode
+    image: ghcr.io/cirruslabs/macos-ventura-base:latest
   submodule_script: *su
   spec_script: ./.ci/spec.sh
 
