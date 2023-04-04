@@ -80,7 +80,7 @@ name: Event Info
 jobs:
   context:
     name: Show Context
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     environment: ci-specs
     services:
       jenkins:
