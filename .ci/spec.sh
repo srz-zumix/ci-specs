@@ -250,10 +250,12 @@ if [ -z ${INTEGROMAT_WEBHOOK_URL} ]; then
 fi
 
 # mask test
-echo ${INTEGROMAT_WEBHOOK_URL}
+echo "${INTEGROMAT_WEBHOOK_URL}"
 
+# shellcheck disable=SC2086
 curl \
   -H "Content-Type: application/json" \
   -X POST \
   -d "{\"time\": \"${DATE}\", \"ci\": \"${CI_ENV_NAME}\", \"commit\": \"${CI_ENV_GIT_COMMIT}\", \"os\": \"${PLATFORM}\", \"os_name\": \"${OS_NAME}\", \"arch\": \"${ARCH}\", \"disk\": \"${DISK}\", \"disk_avail\": \"${FREESPACE}\", \"docker\": \"${IS_DOCKER}\", \"nproc\": \"${NUMBER_OF_PROCESSORS}\", \"ram\": \"${RAMSIZE_GB}\", \"vs\":\"${HAS_VS}\", \"vcperf\":\"${HAS_VCPERF}\" }" \
-  ${INTEGROMAT_WEBHOOK_URL}
+  ${SPEC_URL_OPTIONS:-} \
+  "${INTEGROMAT_WEBHOOK_URL}"
