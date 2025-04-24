@@ -14,13 +14,13 @@ on:
   issue_comment:
   issues:
   label:
+  merge_group:
   milestone:
   page_build:
   project:
   project_card:
   project_column:
   public:
-  push:
   pull_request:
     types:
       - assigned
@@ -62,6 +62,7 @@ on:
       - review_request_removed
       - auto_merge_enabled
       - auto_merge_disabled
+  push:
   registry_package:
   release:
   repository_dispatch:
@@ -114,6 +115,6 @@ jobs:
     - name: ENV
       run: |
         env
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Composite Action Event
       uses: ./.github/actions/composite/events
