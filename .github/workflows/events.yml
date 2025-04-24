@@ -115,6 +115,6 @@ jobs:
     - name: ENV
       run: |
         env
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Composite Action Event
       uses: ./.github/actions/composite/events
